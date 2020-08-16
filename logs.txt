@@ -1,0 +1,72 @@
+2020-08-15 16:04:12 WARN  AccountDAO:38 - Encountered an SQLException in AccountDAO.findAll().
+2020-08-15 16:04:12 ERROR AccountDAO:41 - Connection failed in UserDAO.findAll().
+2020-08-15 16:06:58 WARN  AccountDAO:38 - Encountered an SQLException in AccountDAO.findAll().
+2020-08-15 16:06:58 ERROR AccountDAO:41 - Connection failed in UserDAO.findAll().
+2020-08-15 16:08:15 WARN  AccountDAO:34 - Something went horribly wrong with AccountDAO.findAll().
+2020-08-15 16:08:15 INFO  AccountDAO:35 - Returning all Accounts.
+2020-08-15 16:22:44 DEBUG Account:30 - New Account object created.
+2020-08-15 16:22:44 DEBUG Account:55 - owners returned.
+2020-08-15 16:22:44 DEBUG Account:45 - accountID returned.
+2020-08-15 16:22:44 DEBUG Account:65 - accountType returned.
+2020-08-15 16:22:44 DEBUG Account:75 - amount returned.
+2020-08-15 16:22:44 DEBUG Account:85 - status returned.
+2020-08-15 16:22:44 WARN  AccountDAO:213 - Encountered an SQLException in AccountDAO.addAccount().
+2020-08-15 16:22:44 ERROR AccountDAO:216 - Connection failed in AccountDAO.addAccount().
+2020-08-15 16:24:46 DEBUG Account:30 - New Account object created.
+2020-08-15 16:24:47 DEBUG Account:55 - owners returned.
+2020-08-15 16:24:47 DEBUG Account:45 - accountID returned.
+2020-08-15 16:24:47 DEBUG Account:65 - accountType returned.
+2020-08-15 16:24:47 DEBUG Account:75 - amount returned.
+2020-08-15 16:24:47 DEBUG Account:85 - status returned.
+2020-08-15 16:24:47 WARN  AccountDAO:213 - Encountered an SQLException in AccountDAO.addAccount().
+2020-08-15 16:24:47 ERROR AccountDAO:216 - Connection failed in AccountDAO.addAccount().
+2020-08-15 16:28:52 DEBUG User:26 - New User object created.
+2020-08-15 16:28:52 DEBUG User:41 - userID returned.
+2020-08-15 16:28:52 DEBUG User:51 - userName returned.
+2020-08-15 16:28:52 DEBUG User:61 - password returned.
+2020-08-15 16:28:52 DEBUG User:71 - userType returned.
+2020-08-15 16:28:52 DEBUG User:81 - userStatus returned.
+2020-08-15 16:28:53 INFO  UserDAO:183 - Successfully added the new User.
+2020-08-15 16:37:48 DEBUG User:26 - New User object created.
+2020-08-15 16:37:48 DEBUG User:41 - userID returned.
+2020-08-15 16:37:48 DEBUG User:51 - userName returned.
+2020-08-15 16:37:48 DEBUG User:61 - password returned.
+2020-08-15 16:37:48 DEBUG User:71 - userType returned.
+2020-08-15 16:37:48 DEBUG User:81 - userStatus returned.
+2020-08-15 16:37:48 INFO  UserDAO:183 - Successfully added the new User.
+2020-08-15 17:19:46 DEBUG Update:28 - Full Update object created.
+2020-08-15 17:19:46 DEBUG User:37 - Full User object created.
+2020-08-15 17:19:46 INFO  UserDAO:35 - Returning all Users.
+2020-08-15 17:23:02 DEBUG Update:28 - Full Update object created.
+2020-08-15 17:23:02 DEBUG User:37 - Full User object created.
+2020-08-15 17:23:02 INFO  UserDAO:60 - Returning all Users with userType 0.
+2020-08-15 17:24:01 DEBUG Update:28 - Full Update object created.
+2020-08-15 17:24:01 DEBUG User:37 - Full User object created.
+2020-08-15 17:24:01 INFO  UserDAO:60 - Returning all Users with userType 0.
+2020-08-15 17:26:43 DEBUG Update:28 - Full Update object created.
+2020-08-15 17:26:43 DEBUG User:37 - Full User object created.
+2020-08-15 17:26:43 INFO  UserDAO:80 - Returning found user.
+2020-08-15 17:27:29 WARN  UserDAO:111 - Encountered an SQLException in UserDAO.findByUserName().
+2020-08-15 17:27:29 ERROR UserDAO:114 - Connection failed in UserDAO.findByUserName().
+2020-08-15 17:30:34 DEBUG Update:28 - Full Update object created.
+2020-08-15 17:30:34 DEBUG User:37 - Full User object created.
+2020-08-15 17:30:34 INFO  UserDAO:104 - Returning found User.
+2020-08-15 17:34:07 DEBUG Update:28 - Full Update object created.
+2020-08-15 17:34:07 DEBUG User:37 - Full User object created.
+2020-08-15 17:34:07 INFO  UserDAO:133 - Returning all Users with status Approved.
+2020-08-15 17:36:30 WARN  UserDAO:161 - Encountered an SQLException in UserDAO.getUpdate().
+2020-08-15 17:36:30 ERROR UserDAO:164 - Connection failed in UserDAO.getUpdate().
+2020-08-15 17:37:46 WARN  UserDAO:161 - Encountered an SQLException in UserDAO.getUpdate().
+2020-08-15 17:37:46 ERROR UserDAO:164 - Connection failed in UserDAO.getUpdate().
+2020-08-15 23:36:03 WARN  UserDAO:161 - Encountered an SQLException in UserDAO.getUpdate().
+2020-08-15 23:36:03 ERROR UserDAO:164 - Connection failed in UserDAO.getUpdate().
+2020-08-15 23:39:28 DEBUG Update:15 - Blank Update object created.
+2020-08-15 23:39:28 DEBUG Update:36 - updateTime set.
+2020-08-15 23:39:28 DEBUG Update:44 - updater set.
+2020-08-15 23:39:28 INFO  UserDAO:155 - Returning found Update.
+2020-08-15 23:42:01 WARN  UserDAO:208 - Encountered an SQLException in UserDAO.changeStatus().
+2020-08-15 23:42:01 ERROR UserDAO:211 - Connection failed in UserDAO.changeStatus().
+2020-08-15 23:42:34 INFO  UserDAO:205 - Successfully changed the userStatus.
+2020-08-15 23:44:32 WARN  UserDAO:229 - Encountered an SQLException in UserDAO.changePassword().
+2020-08-15 23:44:32 ERROR UserDAO:232 - Connection failed in UserDAO.changePassword().
+2020-08-15 23:44:54 INFO  UserDAO:226 - Successfully changed the password.
