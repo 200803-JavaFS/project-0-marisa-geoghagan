@@ -3,21 +3,15 @@ package com.revature;
 import java.awt.BorderLayout;
 import java.awt.Button;
 import java.awt.Dimension;
-import java.awt.FlowLayout;
 import java.awt.Frame;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
-import java.awt.GridLayout;
 import java.awt.Insets;
 import java.awt.Label;
 import java.awt.Panel;
 import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import java.awt.print.PrinterException;
-import java.text.MessageFormat;
 
 import javax.swing.ButtonGroup;
 import javax.swing.JOptionPane;
@@ -283,15 +277,9 @@ public class GUI extends Frame {
 		btnUserServices.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent evt) {
-				if(user.getUserType() == 0 || user.getUserType() == 1) {
-					log.info("Accessing employeeServices");
-					employeeServicesFrame();
-					servicesDisplay.setVisible(false);
-				} else {
-					log.info("Accessing customerServices");
-					customerServicesFrame();
-					servicesDisplay.setVisible(false);
-				}
+				log.info("Accessing customerServices");
+				userServicesFrame();
+				servicesDisplay.setVisible(false);
 			}
 		});
 		servicesDisplay.add(btnUserServices, c);
@@ -331,156 +319,246 @@ public class GUI extends Frame {
 		setVisible(true);
 	}
 
-	public void customerServicesFrame() {
-		Panel customerServicesDisplay = new Panel(new GridBagLayout());
-		GridBagConstraints c = new GridBagConstraints();
-		c.fill = GridBagConstraints.HORIZONTAL;
-		c.gridwidth = 2;
-		c.gridx = 0;
-		c.gridy = 0;
-		Label label = new Label("Welcome, " + user.getFirstName() + "! How may we serve you today?");
-		label.setAlignment(Label.CENTER);
-		customerServicesDisplay.add(label, c);
+	public void userServicesFrame() {
+		if(user.getUserType() == 0) {
+			Panel adminServicesDisplay = new Panel(new GridBagLayout());
+			GridBagConstraints c = new GridBagConstraints();
+			c.fill = GridBagConstraints.HORIZONTAL;
+			c.gridwidth = 7;
+			c.gridx = 0;
+			c.gridy = 0;
+			Label label = new Label("Welcome, " + user.getFirstName() + "! How may we serve you today?");
+			label.setAlignment(Label.CENTER);
+			adminServicesDisplay.add(label, c);
 
-		c.gridwidth = 1;
-		c.insets = new Insets(10,0,0,10);
-		c.gridx = 0;
-		c.gridy = 1;
-		Button btnChangePassword = new Button("Change Password");
-		btnChangePassword.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent evt) {
-				log.info("Changing password.");
-				changePasswordFrame();
-				customerServicesDisplay.setVisible(false);
-			}
-		});
-		customerServicesDisplay.add(btnChangePassword, c);
+			c.gridwidth = 1;
+			c.insets = new Insets(10,0,0,10);
+			c.gridx = 0;
+			c.gridy = 1;
+			Button btnViewAll = new Button("View All Users");
+			btnViewAll.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					log.info("Viewing all users.");
+					viewAllFrame();
+					adminServicesDisplay.setVisible(false);
+				}
+			});
+			adminServicesDisplay.add(btnViewAll, c);
 
-		c.insets = new Insets(10,10,0,0);
-		c.gridx = 1;
-		c.gridy = 1;
-		Button btnPreviousMenu = new Button("Previous Menu");
-		btnPreviousMenu.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent evt) {
-				log.info("Returning to Services Menu.");
-				servicesFrame();
-				customerServicesDisplay.setVisible(false);
-			}
-		});
-		customerServicesDisplay.add(btnPreviousMenu, c);
+			c.gridx = 1;
+			c.gridy = 1;
+			Button btnFindUser = new Button("Find User by ID");
+			btnFindUser.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					log.info("Accessing User search by ID.");
+					findByUserIDFrame();
+					adminServicesDisplay.setVisible(false);
+				}
+			});
+			adminServicesDisplay.add(btnFindUser, c);
 
-		add(customerServicesDisplay);
-		setVisible(true);
-	}
+			c.gridx = 2;
+			c.gridy = 1;
+			Button btnViewPending = new Button("View Pending Users");
+			btnViewPending.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					log.info("Viewing pending users.");
+					viewPendingFrame();
+					adminServicesDisplay.setVisible(false);
+				}
+			});
+			adminServicesDisplay.add(btnViewPending, c);
 
-	public void employeeServicesFrame() {
-		Panel employeeServicesDisplay = new Panel(new GridBagLayout());
-		GridBagConstraints c = new GridBagConstraints();
-		c.fill = GridBagConstraints.HORIZONTAL;
-		c.gridwidth = 6;
-		c.gridx = 0;
-		c.gridy = 0;
-		Label label = new Label("Welcome, " + user.getFirstName() + "! How may we serve you today?");
-		label.setAlignment(Label.CENTER);
-		employeeServicesDisplay.add(label, c);
+			c.gridx = 3;
+			c.gridy = 1;
+			Button btnChangePassword = new Button("Change Password");
+			btnChangePassword.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					changePasswordFrame();
+					adminServicesDisplay.setVisible(false);
+				}
+			});
+			adminServicesDisplay.add(btnChangePassword, c);
 
-		c.gridwidth = 1;
-		c.insets = new Insets(10,0,0,10);
-		c.gridx = 0;
-		c.gridy = 1;
-		Button btnViewAll = new Button("View All Users");
-		btnViewAll.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent evt) {
-				log.info("Viewing all users.");
-				viewAllFrame();
-				employeeServicesDisplay.setVisible(false);
-			}
-		});
-		employeeServicesDisplay.add(btnViewAll, c);
+			c.gridx = 4;
+			c.gridy = 1;
+			Button btnChangeStatus = new Button("Change Status");
+			btnChangeStatus.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					changeStatusFrame();
+					adminServicesDisplay.setVisible(false);
+				}
+			});
+			adminServicesDisplay.add(btnChangeStatus, c);
+			
+			c.gridx = 5;
+			c.gridy = 1;
+			Button btnChangeType = new Button("Change User Type");
+			btnChangeType.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					changeTypeFrame();
+					adminServicesDisplay.setVisible(false);
+				}
+			});
+			adminServicesDisplay.add(btnChangeType, c);
 
-		c.gridx = 1;
-		c.gridy = 1;
-		Button btnFindUser = new Button("Find User by ID");
-		btnFindUser.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent evt) {
-				log.info("Accessing User search by ID.");
-				findByUserIDFrame();
-				employeeServicesDisplay.setVisible(false);
-			}
-		});
-		employeeServicesDisplay.add(btnFindUser, c);
+			c.insets = new Insets(10,0,0,0);
+			c.gridx = 6;
+			c.gridy = 1;
+			Button btnPreviousMenu = new Button("Previous Menu");
+			btnPreviousMenu.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					log.info("Returning to Services Menu.");
+					servicesFrame();
+					adminServicesDisplay.setVisible(false);
+				}
+			});
+			adminServicesDisplay.add(btnPreviousMenu, c);
 
-		c.gridx = 2;
-		c.gridy = 1;
-		Button btnViewPending = new Button("View Pending Users");
-		btnViewPending.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent evt) {
-				log.info("Viewing pending users.");
-				viewPendingFrame();
-				employeeServicesDisplay.setVisible(false);
-			}
-		});
-		employeeServicesDisplay.add(btnViewPending, c);
+			add(adminServicesDisplay);
+			setVisible(true);
+		} else if(user.getUserType() == 1) {
+			Panel employeeServicesDisplay = new Panel(new GridBagLayout());
+			GridBagConstraints c = new GridBagConstraints();
+			c.fill = GridBagConstraints.HORIZONTAL;
+			c.gridwidth = 6;
+			c.gridx = 0;
+			c.gridy = 0;
+			Label label = new Label("Welcome, " + user.getFirstName() + "! How may we serve you today?");
+			label.setAlignment(Label.CENTER);
+			employeeServicesDisplay.add(label, c);
 
-		c.gridx = 3;
-		c.gridy = 1;
-		Button btnChangePassword = new Button("Change Password");
-		btnChangePassword.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent evt) {
-				if(user.getUserType() == 0) {
-					log.info("Changing Password as Admin.");
-					changePasswordAdminFrame();
+			c.gridwidth = 1;
+			c.insets = new Insets(10,0,0,10);
+			c.gridx = 0;
+			c.gridy = 1;
+			Button btnViewAll = new Button("View All Users");
+			btnViewAll.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					log.info("Viewing all users.");
+					viewAllFrame();
 					employeeServicesDisplay.setVisible(false);
-				} else {
-					log.info("Changing password.");
+				}
+			});
+			employeeServicesDisplay.add(btnViewAll, c);
+
+			c.gridx = 1;
+			c.gridy = 1;
+			Button btnFindUser = new Button("Find User by ID");
+			btnFindUser.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					log.info("Accessing User search by ID.");
+					findByUserIDFrame();
+					employeeServicesDisplay.setVisible(false);
+				}
+			});
+			employeeServicesDisplay.add(btnFindUser, c);
+
+			c.gridx = 2;
+			c.gridy = 1;
+			Button btnViewPending = new Button("View Pending Users");
+			btnViewPending.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					log.info("Viewing pending users.");
+					viewPendingFrame();
+					employeeServicesDisplay.setVisible(false);
+				}
+			});
+			employeeServicesDisplay.add(btnViewPending, c);
+
+			c.gridx = 3;
+			c.gridy = 1;
+			Button btnChangePassword = new Button("Change Password");
+			btnChangePassword.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
 					changePasswordFrame();
 					employeeServicesDisplay.setVisible(false);
 				}
-			}
-		});
-		employeeServicesDisplay.add(btnChangePassword, c);
+			});
+			employeeServicesDisplay.add(btnChangePassword, c);
 
-		c.gridx = 4;
-		c.gridy = 1;
-		Button btnChangeStatus = new Button("Change Status");
-		btnChangeStatus.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent evt) {
-				if(user.getUserType() == 0) {
-					log.info("Changing Status as Admin.");
-					changeStatusAdminFrame();
-					employeeServicesDisplay.setVisible(false);
-				} else {
-					log.info("Changing Status.");
+			c.gridx = 4;
+			c.gridy = 1;
+			Button btnChangeStatus = new Button("Change Status");
+			btnChangeStatus.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
 					changeStatusFrame();
 					employeeServicesDisplay.setVisible(false);
 				}
-			}
-		});
-		employeeServicesDisplay.add(btnChangeStatus, c);
+			});
+			employeeServicesDisplay.add(btnChangeStatus, c);
 
-		c.insets = new Insets(10,10,0,0);
-		c.gridx = 5;
-		c.gridy = 1;
-		Button btnPreviousMenu = new Button("Previous Menu");
-		btnPreviousMenu.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent evt) {
-				log.info("Returning to Services Menu.");
-				servicesFrame();
-				employeeServicesDisplay.setVisible(false);
-			}
-		});
-		employeeServicesDisplay.add(btnPreviousMenu, c);
+			c.insets = new Insets(10,0,0,0);
+			c.gridx = 5;
+			c.gridy = 1;
+			Button btnPreviousMenu = new Button("Previous Menu");
+			btnPreviousMenu.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					log.info("Returning to Services Menu.");
+					servicesFrame();
+					employeeServicesDisplay.setVisible(false);
+				}
+			});
+			employeeServicesDisplay.add(btnPreviousMenu, c);
 
-		add(employeeServicesDisplay);
-		setVisible(true);
+			add(employeeServicesDisplay);
+			setVisible(true);
+		} else {
+			Panel customerServicesDisplay = new Panel(new GridBagLayout());
+			GridBagConstraints c = new GridBagConstraints();
+			c.fill = GridBagConstraints.HORIZONTAL;
+			c.gridwidth = 2;
+			c.gridx = 0;
+			c.gridy = 0;
+			Label label = new Label("Welcome, " + user.getFirstName() + "! How may we serve you today?");
+			label.setAlignment(Label.CENTER);
+			customerServicesDisplay.add(label, c);
+
+			c.gridwidth = 1;
+			c.insets = new Insets(10,0,0,10);
+			c.gridx = 0;
+			c.gridy = 1;
+			Button btnChangePassword = new Button("Change Password");
+			btnChangePassword.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					log.info("Changing password.");
+					changePasswordFrame();
+					customerServicesDisplay.setVisible(false);
+				}
+			});
+			customerServicesDisplay.add(btnChangePassword, c);
+
+			c.insets = new Insets(10,10,0,0);
+			c.gridx = 1;
+			c.gridy = 1;
+			Button btnPreviousMenu = new Button("Previous Menu");
+			btnPreviousMenu.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					log.info("Returning to Services Menu.");
+					servicesFrame();
+					customerServicesDisplay.setVisible(false);
+				}
+			});
+			customerServicesDisplay.add(btnPreviousMenu, c);
+
+			add(customerServicesDisplay);
+			setVisible(true);
+		}
 	}
 
 	public void viewAllFrame() {
@@ -502,7 +580,7 @@ public class GUI extends Frame {
 			@Override
 			public void actionPerformed(ActionEvent evt) {
 				log.info("Returning to Services Menu.");
-				employeeServicesFrame();
+				userServicesFrame();
 				viewAllDisplay.setVisible(false);
 			}
 		});
@@ -552,7 +630,7 @@ public class GUI extends Frame {
 				if(user == null) {
 					log.warn("Invalid userName.");
 					JOptionPane.showMessageDialog(findUserDisplay, "No such username exists.", "Warning!", JOptionPane.WARNING_MESSAGE);
-					employeeServicesFrame();
+					userServicesFrame();
 				} else {
 					findUserDisplay.setVisible(false);
 					Panel foundUserDisplay = new Panel(new GridBagLayout());
@@ -629,7 +707,7 @@ public class GUI extends Frame {
 					btnPrevious.addActionListener(new ActionListener() {
 						@Override
 						public void actionPerformed(ActionEvent evt) {
-							employeeServicesFrame();
+							userServicesFrame();
 							foundUserDisplay.setVisible(false);
 						}
 					});
@@ -648,7 +726,7 @@ public class GUI extends Frame {
 		btnBack.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent evt) {
-				employeeServicesFrame();
+				userServicesFrame();
 				findUserDisplay.setVisible(false);
 			}
 		});
@@ -676,8 +754,8 @@ public class GUI extends Frame {
 		btnPreviousMenu.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent evt) {
-				log.info("Returning to Services Menu.");
-				employeeServicesFrame();
+				log.info("Returning to userServices Menu.");
+				userServicesFrame();
 				pendingUsersDisplay.setVisible(false);
 			}
 		});
@@ -701,157 +779,329 @@ public class GUI extends Frame {
 	}
 
 	public void changePasswordFrame() {
-		Panel changePasswordDisplay = new Panel(new GridBagLayout());
-		GridBagConstraints c = new GridBagConstraints();
-		c.fill = GridBagConstraints.HORIZONTAL;
-		c.insets = new Insets(5,5,5,5);
-		c.gridx = 0;
-		c.gridy = 0;
-		changePasswordDisplay.add(new Label("New Password: "), c);
+		if(user.getUserType() == 0) {
+			log.info("Changing passwords as an admin.");
+			Panel changePasswordAdminDisplay = new Panel(new GridBagLayout());
+			GridBagConstraints c = new GridBagConstraints();
+			c.fill = GridBagConstraints.HORIZONTAL;
+			c.insets = new Insets(5,5,5,5);
+			c.gridx = 0;
+			c.gridy = 0;
+			changePasswordAdminDisplay.add(new Label("User ID: "), c);
 
-		c.gridx = 1;
-		c.gridy = 0;
-		TextField tfUserPW1 = new TextField(30);
-		changePasswordDisplay.add(tfUserPW1, c);
+			c.gridx = 1;
+			c.gridy = 0;
+			TextField tfUserID = new TextField(30);
+			changePasswordAdminDisplay.add(tfUserID, c);
 
-		c.gridx = 0;
-		c.gridy = 1;
-		changePasswordDisplay.add(new Label("Retype New Password: "), c);
+			c.gridx = 0;
+			c.gridy = 1;
+			changePasswordAdminDisplay.add(new Label("New Password: "), c);
 
-		c.gridx = 1;
-		c.gridy = 1;
-		TextField tfUserPW2 = new TextField(30);
-		changePasswordDisplay.add(tfUserPW2, c);
+			c.gridx = 1;
+			c.gridy = 1;
+			TextField tfUserPW1 = new TextField(30);
+			changePasswordAdminDisplay.add(tfUserPW1, c);
 
-		c.insets = new Insets(0,0,10,0);
-		c.gridwidth = 2;
-		c.gridx = 0;
-		c.gridy = 2;
-		Button btnChange = new Button("Change Password");
-		btnChange.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent evt) {
-				if(tfUserPW1.getText().equals(tfUserPW2.getText() )) {
-					uServices.changePassword(user, tfUserPW1.getText(), user.getUserID());
-					JOptionPane.showMessageDialog(changePasswordDisplay, "Password successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
-					if(user.getUserType() == 0 || user.getUserType() == 1) {
-						employeeServicesFrame();
-					} else {
-						customerServicesFrame();
+			c.gridx = 0;
+			c.gridy = 2;
+			changePasswordAdminDisplay.add(new Label("Retype New Password: "), c);
+
+			c.gridx = 1;
+			c.gridy = 2;
+			TextField tfUserPW2 = new TextField(30);
+			changePasswordAdminDisplay.add(tfUserPW2, c);
+
+			c.insets = new Insets(10,0,0,0);
+			c.gridwidth = 2;
+			c.gridx = 0;
+			c.gridy = 3;
+			Button btnChange = new Button("Change Password");
+			btnChange.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					User u = uServices.findByID(tfUserID.getText());
+					if(user == null) {
+						log.warn("Invalid userName.");
+						JOptionPane.showMessageDialog(changePasswordAdminDisplay, "No such username exists.", "Warning!", JOptionPane.WARNING_MESSAGE);
+						userServicesFrame();
 					}
-					changePasswordDisplay.setVisible(false);
+					if(tfUserPW1.getText().equals(tfUserPW2.getText() )) {
+						uServices.changePassword(user, tfUserPW1.getText(), user.getUserID());
+						log.info("Password successfully changed.");
+						JOptionPane.showMessageDialog(changePasswordAdminDisplay, "Password successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
+						userServicesFrame();
+						changePasswordAdminDisplay.setVisible(false);
+					}
 				}
-			}
-		});
-		changePasswordDisplay.add(btnChange, c);
+			});
+			changePasswordAdminDisplay.add(btnChange, c);
 
-		c.insets = new Insets(0,0,0,0);
-		c.gridx = 0;
-		c.gridy = 3;
-		Button btnBack = new Button("Back");
-		btnBack.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent evt) {
-				if(user.getUserType() == 0 || user.getUserType() == 1) {
-					employeeServicesFrame();
-				} else {
-					customerServicesFrame();
-				}
-				changePasswordDisplay.setVisible(false);
-			}
-		});
-		changePasswordDisplay.add(btnBack, c);
-
-		add(changePasswordDisplay);
-		setVisible(true);
-	}
-
-	public void changePasswordAdminFrame() {
-		Panel changePasswordAdminDisplay = new Panel(new GridBagLayout());
-		GridBagConstraints c = new GridBagConstraints();
-		c.fill = GridBagConstraints.HORIZONTAL;
-		c.insets = new Insets(5,5,5,5);
-		c.gridx = 0;
-		c.gridy = 0;
-		changePasswordAdminDisplay.add(new Label("User ID: "), c);
-
-		c.gridx = 1;
-		c.gridy = 0;
-		TextField tfUserID = new TextField(30);
-		changePasswordAdminDisplay.add(tfUserID, c);
-
-		c.gridx = 0;
-		c.gridy = 1;
-		changePasswordAdminDisplay.add(new Label("New Password: "), c);
-
-		c.gridx = 1;
-		c.gridy = 1;
-		TextField tfUserPW1 = new TextField(30);
-		changePasswordAdminDisplay.add(tfUserPW1, c);
-
-		c.gridx = 0;
-		c.gridy = 2;
-		changePasswordAdminDisplay.add(new Label("Retype New Password: "), c);
-
-		c.gridx = 1;
-		c.gridy = 2;
-		TextField tfUserPW2 = new TextField(30);
-		changePasswordAdminDisplay.add(tfUserPW2, c);
-
-		c.insets = new Insets(10,0,0,10);
-		c.gridwidth = 2;
-		c.gridx = 0;
-		c.gridy = 3;
-		Button btnChange = new Button("Change Password");
-		btnChange.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent evt) {
-				User u = uServices.findByID(tfUserID.getText());
-				if(user == null) {
-					log.warn("Invalid userName.");
-					JOptionPane.showMessageDialog(changePasswordAdminDisplay, "No such username exists.", "Warning!", JOptionPane.WARNING_MESSAGE);
-					employeeServicesFrame();
-				}
-				if(tfUserPW1.getText().equals(tfUserPW2.getText() )) {
-					uServices.changePassword(user, tfUserPW1.getText(), user.getUserID());
-					JOptionPane.showMessageDialog(changePasswordAdminDisplay, "Password successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
-					employeeServicesFrame();
+			c.insets = new Insets(10,0,0,0);
+			c.gridx = 0;
+			c.gridy = 4;
+			Button btnBack = new Button("Back");
+			btnBack.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					userServicesFrame();
 					changePasswordAdminDisplay.setVisible(false);
 				}
-			}
-		});
-		changePasswordAdminDisplay.add(btnChange, c);
+			});
+			changePasswordAdminDisplay.add(btnBack, c);
 
-		c.insets = new Insets(10,10,0,0);
-		c.gridx = 2;
-		c.gridy = 3;
-		Button btnBack = new Button("Back");
-		btnBack.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent evt) {
-				employeeServicesFrame();
-				changePasswordAdminDisplay.setVisible(false);
-			}
-		});
-		changePasswordAdminDisplay.add(btnBack, c);
-
-		add(changePasswordAdminDisplay);
-		setVisible(true);
+			add(changePasswordAdminDisplay);
+			setVisible(true);
+		} else {
+			log.info("Changing passwords as an employee or customer.");
+			Panel changePasswordDisplay = new Panel(new GridBagLayout());
+			GridBagConstraints c = new GridBagConstraints();
+			c.fill = GridBagConstraints.HORIZONTAL;
+			c.insets = new Insets(5,5,5,5);
+			c.gridx = 0;
+			c.gridy = 0;
+			changePasswordDisplay.add(new Label("New Password: "), c);
+	
+			c.gridx = 1;
+			c.gridy = 0;
+			TextField tfUserPW1 = new TextField(30);
+			changePasswordDisplay.add(tfUserPW1, c);
+	
+			c.gridx = 0;
+			c.gridy = 1;
+			changePasswordDisplay.add(new Label("Retype New Password: "), c);
+	
+			c.gridx = 1;
+			c.gridy = 1;
+			TextField tfUserPW2 = new TextField(30);
+			changePasswordDisplay.add(tfUserPW2, c);
+	
+			c.gridwidth = 2;
+			c.insets = new Insets(0,0,10,0);
+			c.gridx = 0;
+			c.gridy = 2;
+			Button btnChange = new Button("Change Password");
+			btnChange.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					if(tfUserPW1.getText().equals(tfUserPW2.getText() )) {
+						uServices.changePassword(user, tfUserPW1.getText(), user.getUserID());
+						JOptionPane.showMessageDialog(changePasswordDisplay, "Password successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
+						userServicesFrame();
+						changePasswordDisplay.setVisible(false);
+					} else {
+						log.warn("Passwords do not match.");
+						JOptionPane.showMessageDialog(changePasswordDisplay, "Passwords do not match.", "Warning!", JOptionPane.WARNING_MESSAGE);
+						changePasswordFrame();
+					}
+				}
+			});
+			changePasswordDisplay.add(btnChange, c);
+	
+			c.insets = new Insets(0,0,0,0);
+			c.gridx = 0;
+			c.gridy = 3;
+			Button btnBack = new Button("Back");
+			btnBack.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					userServicesFrame();
+					changePasswordDisplay.setVisible(false);
+				}
+			});
+			changePasswordDisplay.add(btnBack, c);
+	
+			add(changePasswordDisplay);
+			setVisible(true);
+		}
 	}
 
 	public void changeStatusFrame() {
-		Panel changeStatusDisplay = new Panel(new GridBagLayout());
+		if(user.getUserType() == 0) {
+			Panel changeStatusAdminDisplay = new Panel(new GridBagLayout());
+			GridBagConstraints c = new GridBagConstraints();
+			c.fill = GridBagConstraints.HORIZONTAL;
+			c.insets = new Insets(5,5,5,5);
+			c.gridx = 0;
+			c.gridy = 0;
+			changeStatusAdminDisplay.add(new Label("User ID: "), c);
+
+			c.gridx = 1;
+			c.gridy = 0;
+			TextField tfUserID = new TextField(30);
+			changeStatusAdminDisplay.add(tfUserID, c);
+
+			c.insets = new Insets(0,0,0,0);
+			c.gridx = 2;
+			c.gridy = 0;
+			c.gridheight = 2;
+			ButtonGroup bg = new ButtonGroup();
+			Panel buttonPanel = new Panel();
+			JRadioButton pending = new JRadioButton("Pending", true);
+			buttonPanel.add(pending);
+			bg.add(pending);
+			JRadioButton approved = new JRadioButton("Approved");
+			buttonPanel.add(approved);
+			bg.add(approved);
+			JRadioButton deleted = new JRadioButton("Deleted");
+			buttonPanel.add(deleted);
+			bg.add(deleted);
+			changeStatusAdminDisplay.add(buttonPanel, c);
+
+			c.insets = new Insets(10,0,0,10);
+			c.gridwidth = 2;
+			c.gridx = 0;
+			c.gridy = 1;
+			Button btnChange = new Button("Change Status");
+			btnChange.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					User found = uServices.findByID(tfUserID.getText());
+					if (found == null) {
+						JOptionPane.showMessageDialog(changeStatusAdminDisplay, "No such User ID exists in our database..", "Warning!", JOptionPane.WARNING_MESSAGE);
+						userServicesFrame();
+						changeStatusAdminDisplay.setVisible(false);
+					} else {
+						if(pending.isSelected()) {
+							log.info("Changed to Pending status.");
+							uServices.changeStatus(uServices.stringToInt(tfUserID.getText()), "Pending", user.getUserID());
+							JOptionPane.showMessageDialog(changeStatusAdminDisplay, "Status successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
+							userServicesFrame();
+							changeStatusAdminDisplay.setVisible(false);
+						} else if(approved.isSelected()) {
+							log.info("Changed to Approved status.");
+							uServices.changeStatus(uServices.stringToInt(tfUserID.getText()), "Approved", user.getUserID());
+							JOptionPane.showMessageDialog(changeStatusAdminDisplay, "Status successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
+							userServicesFrame();
+							changeStatusAdminDisplay.setVisible(false);
+						} else if(deleted.isSelected()) {
+							log.info("Changed to Deleted status.");
+							uServices.changeStatus(uServices.stringToInt(tfUserID.getText()), "Deleted", user.getUserID());
+							JOptionPane.showMessageDialog(changeStatusAdminDisplay, "Status successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
+							userServicesFrame();
+							changeStatusAdminDisplay.setVisible(false);
+						} else {
+							log.warn("Something went horribly wrong.");
+							userServicesFrame();
+							changeStatusAdminDisplay.setVisible(false);
+						}
+					}
+				}
+			});
+			changeStatusAdminDisplay.add(btnChange, c);
+
+			c.gridwidth = 1;
+			c.insets = new Insets(10,0,0,0);
+			c.gridx = 2;
+			c.gridy = 1;
+			Button btnBack = new Button("Back");
+			btnBack.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					userServicesFrame();
+					changeStatusAdminDisplay.setVisible(false);
+				}
+			});
+			changeStatusAdminDisplay.add(btnBack, c);
+
+			add(changeStatusAdminDisplay);
+			setVisible(true);
+		} else {
+			Panel changeStatusDisplay = new Panel(new GridBagLayout());
+			GridBagConstraints c = new GridBagConstraints();
+			c.fill = GridBagConstraints.HORIZONTAL;
+			c.insets = new Insets(5,5,5,5);
+			c.gridx = 0;
+			c.gridy = 0;
+			changeStatusDisplay.add(new Label("User ID: "), c);
+	
+			c.gridx = 1;
+			c.gridy = 0;
+			TextField tfUserID = new TextField(30);
+			changeStatusDisplay.add(tfUserID, c);
+	
+			c.insets = new Insets(0,0,0,0);
+			c.gridx = 2;
+			c.gridy = 0;
+			c.gridheight = 2;
+			ButtonGroup bg = new ButtonGroup();
+			Panel buttonPanel = new Panel();
+			JRadioButton pending = new JRadioButton("Pending", true);
+			buttonPanel.add(pending);
+			bg.add(pending);
+			JRadioButton approved = new JRadioButton("Approved");
+			buttonPanel.add(approved);
+			bg.add(approved);
+			changeStatusDisplay.add(buttonPanel, c);
+	
+			c.insets = new Insets(10,0,0,10);
+			c.gridwidth = 2;
+			c.gridx = 0;
+			c.gridy = 1;
+			Button btnChange = new Button("Change Status");
+			btnChange.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					User found = uServices.findByID(tfUserID.getText());
+					if (found == null) {
+						JOptionPane.showMessageDialog(changeStatusDisplay, "No such User ID exists in our database..", "Warning!", JOptionPane.WARNING_MESSAGE);
+						userServicesFrame();
+						changeStatusDisplay.setVisible(false);
+					} else {
+						if(pending.isSelected()) {
+							log.info("Changed to Pending status.");
+							uServices.changeStatus(uServices.stringToInt(tfUserID.getText()), "Pending", user.getUserID());
+							JOptionPane.showMessageDialog(changeStatusDisplay, "Status successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
+							userServicesFrame();
+							changeStatusDisplay.setVisible(false);
+						} else if(approved.isSelected()) {
+							log.info("Changed to Approved status.");
+							uServices.changeStatus(uServices.stringToInt(tfUserID.getText()), "Approved", user.getUserID());
+							JOptionPane.showMessageDialog(changeStatusDisplay, "Status successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
+							userServicesFrame();
+							changeStatusDisplay.setVisible(false);
+						} else {
+							log.warn("Something went horribly wrong.");
+							userServicesFrame();
+							changeStatusDisplay.setVisible(false);
+						}
+					}
+				}
+			});
+			changeStatusDisplay.add(btnChange, c);
+	
+			c.insets = new Insets(10,10,0,0);
+			c.gridwidth = 1;
+			c.gridx = 2;
+			c.gridy = 1;
+			Button btnBack = new Button("Back");
+			btnBack.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					userServicesFrame();
+					changeStatusDisplay.setVisible(false);
+				}
+			});
+			changeStatusDisplay.add(btnBack, c);
+	
+			add(changeStatusDisplay);
+			setVisible(true);
+		}
+	}
+
+	public void changeTypeFrame() {
+		Panel changeTypeDisplay = new Panel(new GridBagLayout());
 		GridBagConstraints c = new GridBagConstraints();
 		c.fill = GridBagConstraints.HORIZONTAL;
 		c.insets = new Insets(5,5,5,5);
 		c.gridx = 0;
 		c.gridy = 0;
-		changeStatusDisplay.add(new Label("User ID: "), c);
+		changeTypeDisplay.add(new Label("User ID: "), c);
 
 		c.gridx = 1;
 		c.gridy = 0;
 		TextField tfUserID = new TextField(30);
-		changeStatusDisplay.add(tfUserID, c);
+		changeTypeDisplay.add(tfUserID, c);
 
 		c.insets = new Insets(0,0,0,0);
 		c.gridx = 2;
@@ -859,13 +1109,16 @@ public class GUI extends Frame {
 		c.gridheight = 2;
 		ButtonGroup bg = new ButtonGroup();
 		Panel buttonPanel = new Panel();
-		JRadioButton pending = new JRadioButton("Pending", true);
-		buttonPanel.add(pending);
-		bg.add(pending);
-		JRadioButton approved = new JRadioButton("Approved");
-		buttonPanel.add(approved);
-		bg.add(approved);
-		changeStatusDisplay.add(buttonPanel, c);
+		JRadioButton customer = new JRadioButton("Customer", true);
+		buttonPanel.add(customer);
+		bg.add(customer);
+		JRadioButton employee = new JRadioButton("Employee");
+		buttonPanel.add(employee);
+		bg.add(employee);
+		JRadioButton admin = new JRadioButton("Administrator");
+		buttonPanel.add(admin);
+		bg.add(admin);
+		changeTypeDisplay.add(buttonPanel, c);
 
 		c.insets = new Insets(10,0,0,10);
 		c.gridwidth = 2;
@@ -877,140 +1130,56 @@ public class GUI extends Frame {
 			public void actionPerformed(ActionEvent evt) {
 				User found = uServices.findByID(tfUserID.getText());
 				if (found == null) {
-					JOptionPane.showMessageDialog(changeStatusDisplay, "No such User ID exists in our database..", "Warning!", JOptionPane.WARNING_MESSAGE);
-					employeeServicesFrame();
-					changeStatusDisplay.setVisible(false);
+					JOptionPane.showMessageDialog(changeTypeDisplay, "No such User ID exists in our database..", "Warning!", JOptionPane.WARNING_MESSAGE);
+					userServicesFrame();
+					changeTypeDisplay.setVisible(false);
 				} else {
-					if(pending.isSelected()) {
-						log.info("Changed to Pending status.");
-						uServices.changeStatus(uServices.stringToInt(tfUserID.getText()), "Pending", user.getUserID());
-						JOptionPane.showMessageDialog(changeStatusDisplay, "Status successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
-						employeeServicesFrame();
-						changeStatusDisplay.setVisible(false);
-					} else if(approved.isSelected()) {
-						log.info("Changed to Approved status.");
-						uServices.changeStatus(uServices.stringToInt(tfUserID.getText()), "Approved", user.getUserID());
-						JOptionPane.showMessageDialog(changeStatusDisplay, "Status successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
-						employeeServicesFrame();
-						changeStatusDisplay.setVisible(false);
+					if(customer.isSelected()) {
+						log.info("Changed to Customer status.");
+						uServices.changeType(found.getUserID(), 2, user.getUserID());
+						JOptionPane.showMessageDialog(changeTypeDisplay, "User type successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
+						userServicesFrame();
+						changeTypeDisplay.setVisible(false);
+					} else if(employee.isSelected()) {
+						log.info("Changed to Employee status.");
+						uServices.changeType(found.getUserID(), 1, user.getUserID());
+						JOptionPane.showMessageDialog(changeTypeDisplay, "User type successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
+						userServicesFrame();
+						changeTypeDisplay.setVisible(false);
+					} else if(admin.isSelected()) {
+						log.info("Changed to Admin status.");
+						uServices.changeType(found.getUserID(), 0, user.getUserID());
+						JOptionPane.showMessageDialog(changeTypeDisplay, "User type successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
+						userServicesFrame();
+						changeTypeDisplay.setVisible(false);
 					} else {
 						log.warn("Something went horribly wrong.");
-						employeeServicesFrame();
-						changeStatusDisplay.setVisible(false);
+						userServicesFrame();
+						changeTypeDisplay.setVisible(false);
 					}
 				}
 			}
 		});
-		changeStatusDisplay.add(btnChange, c);
+		changeTypeDisplay.add(btnChange, c);
 
-		c.insets = new Insets(10,10,0,0);
 		c.gridwidth = 1;
+		c.insets = new Insets(10,0,0,0);
 		c.gridx = 2;
 		c.gridy = 1;
 		Button btnBack = new Button("Back");
 		btnBack.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent evt) {
-				employeeServicesFrame();
-				changeStatusDisplay.setVisible(false);
+				userServicesFrame();
+				changeTypeDisplay.setVisible(false);
 			}
 		});
-		changeStatusDisplay.add(btnBack, c);
+		changeTypeDisplay.add(btnBack, c);
 
-		add(changeStatusDisplay);
+		add(changeTypeDisplay);
 		setVisible(true);
 	}
-
-	public void changeStatusAdminFrame() {
-		Panel changeStatusAdminDisplay = new Panel(new GridBagLayout());
-		GridBagConstraints c = new GridBagConstraints();
-		c.fill = GridBagConstraints.HORIZONTAL;
-		c.insets = new Insets(5,5,5,5);
-		c.gridx = 0;
-		c.gridy = 0;
-		changeStatusAdminDisplay.add(new Label("User ID: "), c);
-
-		c.gridx = 1;
-		c.gridy = 0;
-		TextField tfUserID = new TextField(30);
-		changeStatusAdminDisplay.add(tfUserID, c);
-
-		c.insets = new Insets(0,0,0,0);
-		c.gridx = 2;
-		c.gridy = 0;
-		c.gridheight = 2;
-		ButtonGroup bg = new ButtonGroup();
-		Panel buttonPanel = new Panel();
-		JRadioButton pending = new JRadioButton("Pending", true);
-		buttonPanel.add(pending);
-		bg.add(pending);
-		JRadioButton approved = new JRadioButton("Approved");
-		buttonPanel.add(approved);
-		bg.add(approved);
-		JRadioButton deleted = new JRadioButton("Deleted");
-		buttonPanel.add(deleted);
-		bg.add(deleted);
-		changeStatusAdminDisplay.add(buttonPanel, c);
-
-		c.insets = new Insets(0,0,10,0);
-		c.gridwidth = 2;
-		c.gridx = 0;
-		c.gridy = 1;
-		Button btnChange = new Button("Change Status");
-		btnChange.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent evt) {
-				User found = uServices.findByID(tfUserID.getText());
-				if (found == null) {
-					JOptionPane.showMessageDialog(changeStatusAdminDisplay, "No such User ID exists in our database..", "Warning!", JOptionPane.WARNING_MESSAGE);
-					employeeServicesFrame();
-					changeStatusAdminDisplay.setVisible(false);
-				} else {
-					if(pending.isSelected()) {
-						log.info("Changed to Pending status.");
-						uServices.changeStatus(uServices.stringToInt(tfUserID.getText()), "Pending", user.getUserID());
-						JOptionPane.showMessageDialog(changeStatusAdminDisplay, "Status successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
-						employeeServicesFrame();
-						changeStatusAdminDisplay.setVisible(false);
-					} else if(approved.isSelected()) {
-						log.info("Changed to Approved status.");
-						uServices.changeStatus(uServices.stringToInt(tfUserID.getText()), "Approved", user.getUserID());
-						JOptionPane.showMessageDialog(changeStatusAdminDisplay, "Status successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
-						employeeServicesFrame();
-						changeStatusAdminDisplay.setVisible(false);
-					} else if(deleted.isSelected()) {
-						log.info("Changed to Deleted status.");
-						uServices.changeStatus(uServices.stringToInt(tfUserID.getText()), "Deleted", user.getUserID());
-						JOptionPane.showMessageDialog(changeStatusAdminDisplay, "Status successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
-						employeeServicesFrame();
-						changeStatusAdminDisplay.setVisible(false);
-					} else {
-						log.warn("Something went horribly wrong.");
-						employeeServicesFrame();
-						changeStatusAdminDisplay.setVisible(false);
-					}
-				}
-			}
-		});
-		changeStatusAdminDisplay.add(btnChange, c);
-
-		c.insets = new Insets(0,0,0,0);
-		c.gridx = 0;
-		c.gridy = 3;
-		Button btnBack = new Button("Back");
-		btnBack.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent evt) {
-				employeeServicesFrame();
-				changeStatusAdminDisplay.setVisible(false);
-			}
-		});
-		changeStatusAdminDisplay.add(btnBack, c);
-
-		add(changeStatusAdminDisplay);
-		setVisible(true);
-	}
-
+	
 	public void accountServicesFrame() {
 		if(user.getUserType() == 0) {
 			log.info("Accessing adminAccountServices");
@@ -1040,6 +1209,7 @@ public class GUI extends Frame {
 			});
 			adminAccountServicesDisplay.add(btnViewAll, c);
 
+			c.insets = new Insets(10,10,0,10);
 			c.gridx = 1;
 			c.gridy = 1;
 			Button btnFindByOwner = new Button("Find Account by Owner");
@@ -1242,7 +1412,7 @@ public class GUI extends Frame {
 				@Override
 				public void actionPerformed(ActionEvent evt) {
 					log.info("Opening new joint account.");
-					openJointAccountFrame();
+					viewOwnedAccountsFrame();
 					customerAccountServicesDisplay.setVisible(false);
 				}
 			});
@@ -1402,6 +1572,7 @@ public class GUI extends Frame {
 		btnSearch.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent evt) {
+				findAccountDisplay.setVisible(false);
 				Panel viewByOwnerDisplay = new Panel(new GridBagLayout());
 				GridBagConstraints c = new GridBagConstraints();
 				c.fill = GridBagConstraints.HORIZONTAL;
@@ -1501,7 +1672,7 @@ public class GUI extends Frame {
 			public void actionPerformed(ActionEvent evt) {
 				if(checking.isSelected()) {
 					log.info("New checking account selected.");
-					if(aServices.openAccount(true, user.getUserID(), user.getUserID())) {
+					if(aServices.openAccount(true, new int[] {user.getUserID(), 0}, user.getUserID())) {
 						log.info("New checking account created.");
 						JOptionPane.showMessageDialog(openAccountDisplay, "Your new Checking account must be approved before it can be used. Please wait patiently for approval.", "Message", JOptionPane.PLAIN_MESSAGE);
 						accountServicesFrame();
@@ -1514,7 +1685,7 @@ public class GUI extends Frame {
 					}
 				} else if(savings.isSelected()) {
 					log.info("New savings account selected.");
-					if(aServices.openAccount(false, user.getUserID(), user.getUserID())) {
+					if(aServices.openAccount(false, new int[] {user.getUserID(), 0}, user.getUserID())) {
 						log.info("New savings account created.");
 						JOptionPane.showMessageDialog(openAccountDisplay, "Your new Savings account must be approved before it can be used. Please wait patiently for approval.", "Message", JOptionPane.PLAIN_MESSAGE);
 						accountServicesFrame();
@@ -1860,17 +2031,30 @@ public class GUI extends Frame {
 				double amount = aServices.stringToDouble(tfAmount.getText());
 				account = aServices.findByID(aServices.stringToInt(tfAccountID.getText()));
 				if (account == null) {
+					log.warn("No such account.");
 					JOptionPane.showMessageDialog(withdrawDisplay, "No such Account ID exists in our database.", "Warning!", JOptionPane.WARNING_MESSAGE);
 					withdrawDisplay.setVisible(false);
 					withdrawFrame();
 				} else if(user.getUserType() == 2 && !aServices.isOwner(aServices.stringToInt(tfAccountID.getText()), user.getUserID())) {
+					log.warn("Attempted to access non-owned account.");
 					JOptionPane.showMessageDialog(withdrawDisplay, "That account doesn't belong to you!", "Warning!", JOptionPane.WARNING_MESSAGE);
+					withdrawDisplay.setVisible(false);
+					withdrawFrame();
+				}
+				if (!account.getStatus().equals("Approved")) {
+					log.warn("Account has not been approved.");
+					JOptionPane.showMessageDialog(withdrawDisplay, "That account isn't approved yet. Thank you for your patience.", "Warning!", JOptionPane.WARNING_MESSAGE);
 					withdrawDisplay.setVisible(false);
 					withdrawFrame();
 				}
 				if (amount < 0) {
 					log.warn("Negative amount entered for withdraw.");
 					JOptionPane.showMessageDialog(withdrawDisplay, "Please enter a positive amount.", "Warning!", JOptionPane.WARNING_MESSAGE);
+					withdrawDisplay.setVisible(false);
+					withdrawFrame();
+				} else if(account.getAmount() < amount) {
+					log.warn("Withdraw unsuccessful, amount is greater than balance.");
+					JOptionPane.showMessageDialog(withdrawDisplay, "You cannot withdraw more than $" + Double.toString(account.getAmount()) + ", the balance of the account.", "Warning!", JOptionPane.WARNING_MESSAGE);
 					withdrawDisplay.setVisible(false);
 					withdrawFrame();
 				} else {
@@ -1948,6 +2132,12 @@ public class GUI extends Frame {
 					depositDisplay.setVisible(false);
 					depositFrame();
 				}
+				if (!account.getStatus().equals("Approved")) {
+					log.warn("Account has not been approved.");
+					JOptionPane.showMessageDialog(depositDisplay, "That account isn't approved yet. Thank you for your patience.", "Warning!", JOptionPane.WARNING_MESSAGE);
+					depositDisplay.setVisible(false);
+					depositFrame();
+				}
 				if (amount < 0) {
 					log.warn("Negative amount entered for deposit.");
 					JOptionPane.showMessageDialog(depositDisplay, "Please enter a positive amount.", "Warning!", JOptionPane.WARNING_MESSAGE);
@@ -1963,7 +2153,7 @@ public class GUI extends Frame {
 						JOptionPane.showMessageDialog(depositDisplay, "Deposit was unsuccessful; please contact an administrator.", "Warning!", JOptionPane.WARNING_MESSAGE);
 					}
 					depositDisplay.setVisible(false);
-					depositFrame();
+					accountServicesFrame();
 				}
 			}
 		});
@@ -2026,6 +2216,7 @@ public class GUI extends Frame {
 		btnChange.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent evt) {
+				double amount = aServices.stringToDouble(tfAmount.getText());
 				Account giving = aServices.findByID(aServices.stringToInt(tfGivingID.getText()));
 				Account receiving = aServices.findByID(aServices.stringToInt(tfReceivingID.getText()));
 				if (giving == null || receiving == null) {
@@ -2036,9 +2227,27 @@ public class GUI extends Frame {
 					JOptionPane.showMessageDialog(transferDisplay, "That account doesn't belong to you!", "Warning!", JOptionPane.WARNING_MESSAGE);
 					transferDisplay.setVisible(false);
 					transferFrame();
+				}
+				if (!account.getStatus().equals("Approved")) {
+					log.warn("Account has not been approved.");
+					JOptionPane.showMessageDialog(transferDisplay, "That account isn't approved yet. Thank you for your patience.", "Warning!", JOptionPane.WARNING_MESSAGE);
+					transferDisplay.setVisible(false);
+					withdrawFrame();
+				}
+				if (amount < 0) {
+					log.warn("Negative amount entered for transfer.");
+					JOptionPane.showMessageDialog(transferDisplay, "Please enter a positive amount.", "Warning!", JOptionPane.WARNING_MESSAGE);
+					transferDisplay.setVisible(false);
+					transferFrame();
+				} else if(giving.getAmount() < amount) {
+					log.warn("Transfer unsuccessful, amount is greater than giving balance.");
+					JOptionPane.showMessageDialog(transferDisplay, "You cannot withdraw more than $" + Double.toString(giving.getAmount()) + ", the balance of the account.", "Warning!", JOptionPane.WARNING_MESSAGE);
+					transferDisplay.setVisible(false);
+					transferFrame();
 				} else {
 					log.info("Transferring amount...");
-					aServices.transfer(giving.getAccountID(), receiving.getAccountID(), aServices.stringToDouble(tfAmount.getText()), user.getUserID());
+					aServices.transfer(giving.getAccountID(), receiving.getAccountID(), amount, user.getUserID());
+					log.info("Transfer successful.");
 					JOptionPane.showMessageDialog(transferDisplay, "Amount successfully transferred.", "Message", JOptionPane.PLAIN_MESSAGE);
 					transferDisplay.setVisible(false);
 					accountServicesFrame();

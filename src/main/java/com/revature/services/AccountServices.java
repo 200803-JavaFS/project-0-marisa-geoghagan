@@ -11,7 +11,6 @@ import com.revature.models.Account;
 public class AccountServices {
 	private static final Logger log = LogManager.getLogger(UserServices.class);
 	private AccountDAO adao = new AccountDAO();
-	private Account a;
 	
 	public static boolean isInteger(String input) {
 		try { 
@@ -43,6 +42,7 @@ public class AccountServices {
 		if(isInteger(input)) {
 			return Integer.parseInt(input);
 		} else {
+			log.warn("Something has gone seriously wrong.");
 			return -1;
 		}
 	}
@@ -51,6 +51,7 @@ public class AccountServices {
 		if(isDouble(input)) {
 			return Double.parseDouble(input);
 		} else {
+			log.warn("Something has gone seriously wrong.");
 			return -1;
 		}
 	}
@@ -85,8 +86,8 @@ public class AccountServices {
 		array[1] = "First Owner";
 		array[2] = "Second Owner";
 		array[3] = "Account Type";
-		array[4] = "Amount";
-		array[5] = "Account Status";
+		array[4] = "Account Status";
+		array[5] = "Amount";
 		array[6] = "Last Update Time";
 		array[7] = "Last Updater";
 		return array;
@@ -94,66 +95,56 @@ public class AccountServices {
 	
 	public String typeToString(boolean type) {
 		if(type) {
+			log.debug("This is a checking account.");
 			return "Checking";
 		} else {
+			log.debug("This is a savings account.");
 			return "Savings";
 		}
 	}
 	
 	public double checkAmount(int accountID) {
-		return findByID(accountID).getAmount();
+		return adao.findByAccountID(accountID).getAmount();
 	}
 	
 	public List<Account> findByOwner(int userID) {
 		return adao.findByOwner(userID);
 	}
 	
-	public boolean openAccount(boolean type, int owner, int updatingUserID) {
-		int[] owners = new int[2];
-		owners[0] = owner;
-		if(owner == updatingUserID) {
-			owners[1] = 0;
-		} else {
-			owners[1] = updatingUserID;
-		}
-		Account account = new Account(owners, type);
-		return adao.addAccount(account, updatingUserID);
-	}
-	
 	public boolean isOwner(int accountID, int userID) {
 		Account account = findByID(accountID);
 		int[] owners = account.getOwners();
 		if(userID == owners[0]) {
+			log.debug("Owner found.");
 			return true;
 		} else if(userID == owners[1]) {
+			log.debug("Owner found.");
 			return true;
 		} else {
+			log.debug("Owner not found.");
 			return false;
 		}
 	}
 	
 	public boolean openAccount(boolean type, int[] owners, int updatingUserID) {
-		Account account = new Account(owners, type);
-		return adao.addAccount(account, updatingUserID);
+		log.info("UserID " + updatingUserID + " created a new " + typeToString(type) + " account owned by " + owners[0] + " and " + owners[1] + ".");
+		return adao.addAccount(new Account(owners, type), updatingUserID);
 	}
 	
 	public boolean withdraw(int accountID, double amount, int updatingUserID) {
-		double current = checkAmount(accountID);
-		if(current < amount) {
-			return false;
-		} else {
-			double updated = current - amount;
-			return adao.updateAmount(accountID, updated, updatingUserID);
-		}
+		log.info("UserID " + updatingUserID + "withdrew $" + amount + " from accountID " + accountID + ".");
+		double updated = checkAmount(accountID) - amount;
+		return adao.updateAmount(accountID, updated, updatingUserID);
 	}
 	
 	public boolean deposit(int accountID, double amount, int updatingUserID) {
-		double current = checkAmount(accountID);
-		double updated = current + amount;
+		log.info("UserID " + updatingUserID + "deposited $" + amount + " into accountID " + accountID + ".");
+		double updated = checkAmount(accountID) + amount;
 		return adao.updateAmount(accountID, updated, updatingUserID);
 	}
 	
 	public boolean transfer(int accountID1, int accountID2, double amount, int updatingUserID) {
+		log.info("Transferred $" + amount + " from accountID " + accountID1 + " to accountID " + accountID2 + ".");
 		return adao.transfer(accountID1, accountID2, amount, updatingUserID);
 	}
 }

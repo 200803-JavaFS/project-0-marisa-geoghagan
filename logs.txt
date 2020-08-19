@@ -4285,3 +4285,2031 @@
 2020-08-19 09:17:50 INFO  GUI:1201 - Accessing customerAccountServices
 2020-08-19 09:17:50 DEBUG User:97 - firstName returned.
 2020-08-19 09:17:51 INFO  Driver:21 - Exiting the program.
+2020-08-19 11:35:58 INFO  UserDAO:107 - No User with that userName exists.
+2020-08-19 11:35:58 DEBUG User:30 - New User object created.
+2020-08-19 11:35:59 DEBUG User:57 - userName returned.
+2020-08-19 11:35:59 DEBUG User:67 - password returned.
+2020-08-19 11:35:59 DEBUG User:77 - userType returned.
+2020-08-19 11:35:59 DEBUG User:87 - userStatus returned.
+2020-08-19 11:35:59 DEBUG User:97 - firstName returned.
+2020-08-19 11:35:59 DEBUG User:107 - lastName returned.
+2020-08-19 11:35:59 WARN  UserDAO:187 - Encountered an SQLException in UserDAO.addUser().
+2020-08-19 11:35:59 ERROR UserDAO:190 - Connection failed in UserDAO.addUser().
+2020-08-19 11:36:14 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:36:14 DEBUG User:43 - Full User object created.
+2020-08-19 11:36:14 INFO  UserDAO:104 - Returning found User.
+2020-08-19 11:36:14 DEBUG User:87 - userStatus returned.
+2020-08-19 11:36:14 DEBUG User:87 - userStatus returned.
+2020-08-19 11:36:14 DEBUG User:67 - password returned.
+2020-08-19 11:36:14 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 11:36:14 INFO  GUI:168 - Successful login.
+2020-08-19 11:36:14 DEBUG User:97 - firstName returned.
+2020-08-19 11:36:17 DEBUG User:77 - userType returned.
+2020-08-19 11:36:17 INFO  GUI:287 - Accessing employeeServices
+2020-08-19 11:36:17 DEBUG User:97 - firstName returned.
+2020-08-19 11:36:19 INFO  GUI:397 - Viewing all users.
+2020-08-19 11:36:19 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:36:19 DEBUG User:43 - Full User object created.
+2020-08-19 11:36:19 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:36:19 DEBUG User:43 - Full User object created.
+2020-08-19 11:36:19 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:36:19 DEBUG User:43 - Full User object created.
+2020-08-19 11:36:19 INFO  UserDAO:35 - Returning all Users.
+2020-08-19 11:36:19 DEBUG User:47 - userID returned.
+2020-08-19 11:36:19 DEBUG User:57 - userName returned.
+2020-08-19 11:36:19 DEBUG User:67 - password returned.
+2020-08-19 11:36:19 DEBUG User:77 - userType returned.
+2020-08-19 11:36:19 DEBUG User:87 - userStatus returned.
+2020-08-19 11:36:19 DEBUG User:97 - firstName returned.
+2020-08-19 11:36:19 DEBUG User:107 - lastName returned.
+2020-08-19 11:36:19 DEBUG User:117 - update returned.
+2020-08-19 11:36:19 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:36:19 DEBUG User:117 - update returned.
+2020-08-19 11:36:19 DEBUG Update:40 - updater returned.
+2020-08-19 11:36:19 DEBUG User:47 - userID returned.
+2020-08-19 11:36:19 DEBUG User:57 - userName returned.
+2020-08-19 11:36:19 DEBUG User:67 - password returned.
+2020-08-19 11:36:19 DEBUG User:77 - userType returned.
+2020-08-19 11:36:19 DEBUG User:87 - userStatus returned.
+2020-08-19 11:36:19 DEBUG User:97 - firstName returned.
+2020-08-19 11:36:19 DEBUG User:107 - lastName returned.
+2020-08-19 11:36:19 DEBUG User:117 - update returned.
+2020-08-19 11:36:19 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:36:19 DEBUG User:117 - update returned.
+2020-08-19 11:36:19 DEBUG Update:40 - updater returned.
+2020-08-19 11:36:19 DEBUG User:47 - userID returned.
+2020-08-19 11:36:19 DEBUG User:57 - userName returned.
+2020-08-19 11:36:19 DEBUG User:67 - password returned.
+2020-08-19 11:36:19 DEBUG User:77 - userType returned.
+2020-08-19 11:36:19 DEBUG User:87 - userStatus returned.
+2020-08-19 11:36:19 DEBUG User:97 - firstName returned.
+2020-08-19 11:36:19 DEBUG User:107 - lastName returned.
+2020-08-19 11:36:19 DEBUG User:117 - update returned.
+2020-08-19 11:36:19 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:36:19 DEBUG User:117 - update returned.
+2020-08-19 11:36:19 DEBUG Update:40 - updater returned.
+2020-08-19 11:36:36 INFO  GUI:504 - Returning to Services Menu.
+2020-08-19 11:36:36 DEBUG User:97 - firstName returned.
+2020-08-19 11:36:37 INFO  GUI:410 - Accessing User search by ID.
+2020-08-19 11:36:39 INFO  UserServices:126 - Returning found user.
+2020-08-19 11:36:40 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:36:40 DEBUG User:43 - Full User object created.
+2020-08-19 11:36:40 INFO  UserDAO:80 - Returning found user.
+2020-08-19 11:36:40 INFO  UserServices:126 - Returning found user.
+2020-08-19 11:36:40 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:36:40 DEBUG User:43 - Full User object created.
+2020-08-19 11:36:40 INFO  UserDAO:80 - Returning found user.
+2020-08-19 11:36:40 DEBUG User:57 - userName returned.
+2020-08-19 11:36:40 DEBUG User:67 - password returned.
+2020-08-19 11:36:40 DEBUG User:77 - userType returned.
+2020-08-19 11:36:40 DEBUG User:87 - userStatus returned.
+2020-08-19 11:36:40 DEBUG User:97 - firstName returned.
+2020-08-19 11:36:40 DEBUG User:107 - lastName returned.
+2020-08-19 11:36:40 DEBUG User:117 - update returned.
+2020-08-19 11:36:40 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:36:40 DEBUG User:117 - update returned.
+2020-08-19 11:36:40 DEBUG Update:40 - updater returned.
+2020-08-19 11:36:44 DEBUG User:97 - firstName returned.
+2020-08-19 11:36:46 INFO  GUI:423 - Viewing pending users.
+2020-08-19 11:36:47 WARN  UserDAO:132 - No Users with that status exist.
+2020-08-19 11:36:47 INFO  UserDAO:133 - Returning all Users with status Pending.
+2020-08-19 11:36:48 INFO  GUI:679 - Returning to Services Menu.
+2020-08-19 11:36:48 DEBUG User:97 - firstName returned.
+2020-08-19 11:36:52 DEBUG User:77 - userType returned.
+2020-08-19 11:36:52 INFO  GUI:437 - Changing Password as Admin.
+2020-08-19 11:37:06 INFO  UserServices:126 - Returning found user.
+2020-08-19 11:37:07 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:37:07 DEBUG User:43 - Full User object created.
+2020-08-19 11:37:07 INFO  UserDAO:80 - Returning found user.
+2020-08-19 11:37:07 DEBUG User:47 - userID returned.
+2020-08-19 11:37:07 DEBUG User:47 - userID returned.
+2020-08-19 11:37:07 INFO  UserDAO:226 - Successfully changed the password.
+2020-08-19 11:37:08 DEBUG User:97 - firstName returned.
+2020-08-19 11:37:11 DEBUG User:77 - userType returned.
+2020-08-19 11:37:11 INFO  GUI:456 - Changing Status as Admin.
+2020-08-19 11:37:25 INFO  UserServices:126 - Returning found user.
+2020-08-19 11:37:25 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:37:25 DEBUG User:43 - Full User object created.
+2020-08-19 11:37:25 INFO  UserDAO:80 - Returning found user.
+2020-08-19 11:37:25 INFO  GUI:982 - Changed to Deleted status.
+2020-08-19 11:37:25 DEBUG User:47 - userID returned.
+2020-08-19 11:37:25 INFO  UserDAO:205 - Successfully changed the userStatus.
+2020-08-19 11:37:27 DEBUG User:97 - firstName returned.
+2020-08-19 11:37:28 INFO  GUI:397 - Viewing all users.
+2020-08-19 11:37:28 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:37:28 DEBUG User:43 - Full User object created.
+2020-08-19 11:37:28 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:37:28 DEBUG User:43 - Full User object created.
+2020-08-19 11:37:28 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:37:28 DEBUG User:43 - Full User object created.
+2020-08-19 11:37:28 INFO  UserDAO:35 - Returning all Users.
+2020-08-19 11:37:28 DEBUG User:47 - userID returned.
+2020-08-19 11:37:28 DEBUG User:57 - userName returned.
+2020-08-19 11:37:28 DEBUG User:67 - password returned.
+2020-08-19 11:37:28 DEBUG User:77 - userType returned.
+2020-08-19 11:37:28 DEBUG User:87 - userStatus returned.
+2020-08-19 11:37:28 DEBUG User:97 - firstName returned.
+2020-08-19 11:37:28 DEBUG User:107 - lastName returned.
+2020-08-19 11:37:28 DEBUG User:117 - update returned.
+2020-08-19 11:37:28 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:37:28 DEBUG User:117 - update returned.
+2020-08-19 11:37:28 DEBUG Update:40 - updater returned.
+2020-08-19 11:37:28 DEBUG User:47 - userID returned.
+2020-08-19 11:37:28 DEBUG User:57 - userName returned.
+2020-08-19 11:37:28 DEBUG User:67 - password returned.
+2020-08-19 11:37:28 DEBUG User:77 - userType returned.
+2020-08-19 11:37:28 DEBUG User:87 - userStatus returned.
+2020-08-19 11:37:28 DEBUG User:97 - firstName returned.
+2020-08-19 11:37:28 DEBUG User:107 - lastName returned.
+2020-08-19 11:37:28 DEBUG User:117 - update returned.
+2020-08-19 11:37:28 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:37:28 DEBUG User:117 - update returned.
+2020-08-19 11:37:28 DEBUG Update:40 - updater returned.
+2020-08-19 11:37:28 DEBUG User:47 - userID returned.
+2020-08-19 11:37:28 DEBUG User:57 - userName returned.
+2020-08-19 11:37:28 DEBUG User:67 - password returned.
+2020-08-19 11:37:28 DEBUG User:77 - userType returned.
+2020-08-19 11:37:28 DEBUG User:87 - userStatus returned.
+2020-08-19 11:37:28 DEBUG User:97 - firstName returned.
+2020-08-19 11:37:28 DEBUG User:107 - lastName returned.
+2020-08-19 11:37:28 DEBUG User:117 - update returned.
+2020-08-19 11:37:28 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:37:28 DEBUG User:117 - update returned.
+2020-08-19 11:37:28 DEBUG Update:40 - updater returned.
+2020-08-19 11:37:33 INFO  GUI:504 - Returning to Services Menu.
+2020-08-19 11:37:33 DEBUG User:97 - firstName returned.
+2020-08-19 11:37:34 INFO  GUI:475 - Returning to Services Menu.
+2020-08-19 11:37:34 DEBUG User:97 - firstName returned.
+2020-08-19 11:37:38 INFO  GUI:306 - Accessing account services.
+2020-08-19 11:37:38 DEBUG User:77 - userType returned.
+2020-08-19 11:37:38 INFO  GUI:1016 - Accessing adminAccountServices
+2020-08-19 11:37:38 DEBUG User:97 - firstName returned.
+2020-08-19 11:37:39 INFO  GUI:1036 - Viewing all accounts.
+2020-08-19 11:37:39 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:37:39 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:37:39 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:37:39 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:37:39 INFO  AccountDAO:35 - Returning all Accounts.
+2020-08-19 11:37:39 DEBUG Account:54 - owners returned.
+2020-08-19 11:37:39 DEBUG Account:44 - accountID returned.
+2020-08-19 11:37:39 DEBUG Account:64 - accountType returned.
+2020-08-19 11:37:39 DEBUG Account:84 - status returned.
+2020-08-19 11:37:39 DEBUG Account:74 - amount returned.
+2020-08-19 11:37:39 DEBUG Account:94 - update returned.
+2020-08-19 11:37:39 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:37:39 DEBUG Account:94 - update returned.
+2020-08-19 11:37:39 DEBUG Update:40 - updater returned.
+2020-08-19 11:37:39 DEBUG Account:54 - owners returned.
+2020-08-19 11:37:39 DEBUG Account:44 - accountID returned.
+2020-08-19 11:37:39 DEBUG Account:64 - accountType returned.
+2020-08-19 11:37:39 DEBUG Account:84 - status returned.
+2020-08-19 11:37:39 DEBUG Account:74 - amount returned.
+2020-08-19 11:37:39 DEBUG Account:94 - update returned.
+2020-08-19 11:37:39 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:37:39 DEBUG Account:94 - update returned.
+2020-08-19 11:37:39 DEBUG Update:40 - updater returned.
+2020-08-19 11:37:57 INFO  GUI:1317 - Returning to Account Services Menu.
+2020-08-19 11:37:57 DEBUG User:77 - userType returned.
+2020-08-19 11:37:57 INFO  GUI:1016 - Accessing adminAccountServices
+2020-08-19 11:37:57 DEBUG User:97 - firstName returned.
+2020-08-19 11:37:59 INFO  GUI:1049 - Accessing User search by ID.
+2020-08-19 11:38:02 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:38:02 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:38:02 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:38:02 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:38:03 INFO  AccountDAO:81 - Returning all Accounts owned by 1.
+2020-08-19 11:38:03 DEBUG Account:54 - owners returned.
+2020-08-19 11:38:03 DEBUG Account:44 - accountID returned.
+2020-08-19 11:38:03 DEBUG Account:64 - accountType returned.
+2020-08-19 11:38:03 DEBUG Account:84 - status returned.
+2020-08-19 11:38:03 DEBUG Account:74 - amount returned.
+2020-08-19 11:38:03 DEBUG Account:94 - update returned.
+2020-08-19 11:38:03 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:38:03 DEBUG Account:94 - update returned.
+2020-08-19 11:38:03 DEBUG Update:40 - updater returned.
+2020-08-19 11:38:03 DEBUG Account:54 - owners returned.
+2020-08-19 11:38:03 DEBUG Account:44 - accountID returned.
+2020-08-19 11:38:03 DEBUG Account:64 - accountType returned.
+2020-08-19 11:38:03 DEBUG Account:84 - status returned.
+2020-08-19 11:38:03 DEBUG Account:74 - amount returned.
+2020-08-19 11:38:03 DEBUG Account:94 - update returned.
+2020-08-19 11:38:03 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:38:03 DEBUG Account:94 - update returned.
+2020-08-19 11:38:03 DEBUG Update:40 - updater returned.
+2020-08-19 11:38:07 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:38:07 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:38:07 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:38:07 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:38:07 INFO  AccountDAO:81 - Returning all Accounts owned by 1.
+2020-08-19 11:38:07 DEBUG Account:54 - owners returned.
+2020-08-19 11:38:07 DEBUG Account:44 - accountID returned.
+2020-08-19 11:38:07 DEBUG Account:64 - accountType returned.
+2020-08-19 11:38:07 DEBUG Account:84 - status returned.
+2020-08-19 11:38:07 DEBUG Account:74 - amount returned.
+2020-08-19 11:38:07 DEBUG Account:94 - update returned.
+2020-08-19 11:38:07 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:38:07 DEBUG Account:94 - update returned.
+2020-08-19 11:38:07 DEBUG Update:40 - updater returned.
+2020-08-19 11:38:07 DEBUG Account:54 - owners returned.
+2020-08-19 11:38:07 DEBUG Account:44 - accountID returned.
+2020-08-19 11:38:07 DEBUG Account:64 - accountType returned.
+2020-08-19 11:38:07 DEBUG Account:84 - status returned.
+2020-08-19 11:38:07 DEBUG Account:74 - amount returned.
+2020-08-19 11:38:07 DEBUG Account:94 - update returned.
+2020-08-19 11:38:07 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:38:07 DEBUG Account:94 - update returned.
+2020-08-19 11:38:07 DEBUG Update:40 - updater returned.
+2020-08-19 11:38:11 DEBUG User:77 - userType returned.
+2020-08-19 11:38:11 INFO  GUI:1016 - Accessing adminAccountServices
+2020-08-19 11:38:11 DEBUG User:97 - firstName returned.
+2020-08-19 11:38:12 INFO  GUI:1422 - Returning to Account Services Menu.
+2020-08-19 11:38:12 DEBUG User:77 - userType returned.
+2020-08-19 11:38:12 INFO  GUI:1016 - Accessing adminAccountServices
+2020-08-19 11:38:12 DEBUG User:97 - firstName returned.
+2020-08-19 11:38:13 INFO  GUI:1422 - Returning to Account Services Menu.
+2020-08-19 11:38:13 DEBUG User:77 - userType returned.
+2020-08-19 11:38:13 INFO  GUI:1016 - Accessing adminAccountServices
+2020-08-19 11:38:13 DEBUG User:97 - firstName returned.
+2020-08-19 11:38:19 INFO  GUI:1088 - Depositing as Admin.
+2020-08-19 11:38:21 INFO  GUI:1088 - Depositing as Admin.
+2020-08-19 11:38:24 INFO  GUI:1088 - Depositing as Admin.
+2020-08-19 11:38:32 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:38:32 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:38:32 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 11:38:32 DEBUG User:77 - userType returned.
+2020-08-19 11:38:32 INFO  GUI:1957 - Attempting to deposit...
+2020-08-19 11:38:32 DEBUG Account:44 - accountID returned.
+2020-08-19 11:38:32 DEBUG User:47 - userID returned.
+2020-08-19 11:38:32 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:38:32 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:38:32 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 11:38:32 DEBUG Account:74 - amount returned.
+2020-08-19 11:38:33 INFO  AccountDAO:242 - Successfully updated the amount.
+2020-08-19 11:38:33 INFO  GUI:1959 - Deposit successful!
+2020-08-19 11:38:36 DEBUG User:77 - userType returned.
+2020-08-19 11:38:36 INFO  GUI:1016 - Accessing adminAccountServices
+2020-08-19 11:38:36 DEBUG User:97 - firstName returned.
+2020-08-19 11:38:37 DEBUG User:77 - userType returned.
+2020-08-19 11:38:37 INFO  GUI:1016 - Accessing adminAccountServices
+2020-08-19 11:38:37 DEBUG User:97 - firstName returned.
+2020-08-19 11:38:38 DEBUG User:77 - userType returned.
+2020-08-19 11:38:38 INFO  GUI:1016 - Accessing adminAccountServices
+2020-08-19 11:38:38 DEBUG User:97 - firstName returned.
+2020-08-19 11:38:39 INFO  GUI:1036 - Viewing all accounts.
+2020-08-19 11:38:39 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:38:39 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:38:39 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:38:39 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:38:39 INFO  AccountDAO:35 - Returning all Accounts.
+2020-08-19 11:38:39 DEBUG Account:54 - owners returned.
+2020-08-19 11:38:39 DEBUG Account:44 - accountID returned.
+2020-08-19 11:38:39 DEBUG Account:64 - accountType returned.
+2020-08-19 11:38:39 DEBUG Account:84 - status returned.
+2020-08-19 11:38:39 DEBUG Account:74 - amount returned.
+2020-08-19 11:38:39 DEBUG Account:94 - update returned.
+2020-08-19 11:38:39 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:38:39 DEBUG Account:94 - update returned.
+2020-08-19 11:38:39 DEBUG Update:40 - updater returned.
+2020-08-19 11:38:39 DEBUG Account:54 - owners returned.
+2020-08-19 11:38:39 DEBUG Account:44 - accountID returned.
+2020-08-19 11:38:39 DEBUG Account:64 - accountType returned.
+2020-08-19 11:38:39 DEBUG Account:84 - status returned.
+2020-08-19 11:38:39 DEBUG Account:74 - amount returned.
+2020-08-19 11:38:39 DEBUG Account:94 - update returned.
+2020-08-19 11:38:39 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:38:39 DEBUG Account:94 - update returned.
+2020-08-19 11:38:39 DEBUG Update:40 - updater returned.
+2020-08-19 11:38:40 INFO  GUI:1036 - Viewing all accounts.
+2020-08-19 11:38:40 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:38:40 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:38:40 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:38:40 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:38:40 INFO  AccountDAO:35 - Returning all Accounts.
+2020-08-19 11:38:40 DEBUG Account:54 - owners returned.
+2020-08-19 11:38:40 DEBUG Account:44 - accountID returned.
+2020-08-19 11:38:40 DEBUG Account:64 - accountType returned.
+2020-08-19 11:38:40 DEBUG Account:84 - status returned.
+2020-08-19 11:38:40 DEBUG Account:74 - amount returned.
+2020-08-19 11:38:40 DEBUG Account:94 - update returned.
+2020-08-19 11:38:40 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:38:40 DEBUG Account:94 - update returned.
+2020-08-19 11:38:40 DEBUG Update:40 - updater returned.
+2020-08-19 11:38:40 DEBUG Account:54 - owners returned.
+2020-08-19 11:38:40 DEBUG Account:44 - accountID returned.
+2020-08-19 11:38:40 DEBUG Account:64 - accountType returned.
+2020-08-19 11:38:40 DEBUG Account:84 - status returned.
+2020-08-19 11:38:40 DEBUG Account:74 - amount returned.
+2020-08-19 11:38:40 DEBUG Account:94 - update returned.
+2020-08-19 11:38:40 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:38:40 DEBUG Account:94 - update returned.
+2020-08-19 11:38:40 DEBUG Update:40 - updater returned.
+2020-08-19 11:38:41 INFO  GUI:1036 - Viewing all accounts.
+2020-08-19 11:38:41 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:38:41 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:38:41 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:38:41 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:38:41 INFO  AccountDAO:35 - Returning all Accounts.
+2020-08-19 11:38:41 DEBUG Account:54 - owners returned.
+2020-08-19 11:38:41 DEBUG Account:44 - accountID returned.
+2020-08-19 11:38:41 DEBUG Account:64 - accountType returned.
+2020-08-19 11:38:41 DEBUG Account:84 - status returned.
+2020-08-19 11:38:41 DEBUG Account:74 - amount returned.
+2020-08-19 11:38:41 DEBUG Account:94 - update returned.
+2020-08-19 11:38:41 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:38:41 DEBUG Account:94 - update returned.
+2020-08-19 11:38:41 DEBUG Update:40 - updater returned.
+2020-08-19 11:38:41 DEBUG Account:54 - owners returned.
+2020-08-19 11:38:41 DEBUG Account:44 - accountID returned.
+2020-08-19 11:38:41 DEBUG Account:64 - accountType returned.
+2020-08-19 11:38:41 DEBUG Account:84 - status returned.
+2020-08-19 11:38:41 DEBUG Account:74 - amount returned.
+2020-08-19 11:38:41 DEBUG Account:94 - update returned.
+2020-08-19 11:38:41 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:38:41 DEBUG Account:94 - update returned.
+2020-08-19 11:38:41 DEBUG Update:40 - updater returned.
+2020-08-19 11:38:46 INFO  GUI:1317 - Returning to Account Services Menu.
+2020-08-19 11:38:46 DEBUG User:77 - userType returned.
+2020-08-19 11:38:46 INFO  GUI:1016 - Accessing adminAccountServices
+2020-08-19 11:38:46 DEBUG User:97 - firstName returned.
+2020-08-19 11:38:47 INFO  GUI:1317 - Returning to Account Services Menu.
+2020-08-19 11:38:47 DEBUG User:77 - userType returned.
+2020-08-19 11:38:47 INFO  GUI:1016 - Accessing adminAccountServices
+2020-08-19 11:38:47 DEBUG User:97 - firstName returned.
+2020-08-19 11:38:48 INFO  GUI:1317 - Returning to Account Services Menu.
+2020-08-19 11:38:48 DEBUG User:77 - userType returned.
+2020-08-19 11:38:48 INFO  GUI:1016 - Accessing adminAccountServices
+2020-08-19 11:38:48 DEBUG User:97 - firstName returned.
+2020-08-19 11:38:49 INFO  GUI:1101 - Transferring as Admin.
+2020-08-19 11:38:50 INFO  GUI:1101 - Transferring as Admin.
+2020-08-19 11:38:50 INFO  GUI:1101 - Transferring as Admin.
+2020-08-19 11:39:05 INFO  AccountDAO:155 - No Account with that accountID exists.
+2020-08-19 11:39:05 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:39:05 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:39:05 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 11:39:07 DEBUG User:77 - userType returned.
+2020-08-19 11:39:07 INFO  GUI:1016 - Accessing adminAccountServices
+2020-08-19 11:39:07 DEBUG User:97 - firstName returned.
+2020-08-19 11:39:14 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:39:14 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:39:14 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 11:39:14 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:39:14 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:39:14 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 11:39:14 DEBUG User:77 - userType returned.
+2020-08-19 11:39:14 INFO  GUI:2040 - Transferring amount...
+2020-08-19 11:39:14 DEBUG Account:44 - accountID returned.
+2020-08-19 11:39:14 DEBUG Account:44 - accountID returned.
+2020-08-19 11:39:14 DEBUG User:47 - userID returned.
+2020-08-19 11:39:15 INFO  AccountDAO:242 - Successfully updated the amount.
+2020-08-19 11:39:15 INFO  AccountDAO:256 - Successfully updated 2.
+2020-08-19 11:39:15 INFO  AccountDAO:242 - Successfully updated the amount.
+2020-08-19 11:39:15 INFO  AccountDAO:258 - Successfully updated 1.
+2020-08-19 11:39:17 DEBUG User:77 - userType returned.
+2020-08-19 11:39:17 INFO  GUI:1016 - Accessing adminAccountServices
+2020-08-19 11:39:17 DEBUG User:97 - firstName returned.
+2020-08-19 11:39:18 DEBUG User:77 - userType returned.
+2020-08-19 11:39:18 INFO  GUI:1016 - Accessing adminAccountServices
+2020-08-19 11:39:18 DEBUG User:97 - firstName returned.
+2020-08-19 11:39:19 INFO  GUI:1036 - Viewing all accounts.
+2020-08-19 11:39:20 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:39:20 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:39:20 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:39:20 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:39:20 INFO  AccountDAO:35 - Returning all Accounts.
+2020-08-19 11:39:20 DEBUG Account:54 - owners returned.
+2020-08-19 11:39:20 DEBUG Account:44 - accountID returned.
+2020-08-19 11:39:20 DEBUG Account:64 - accountType returned.
+2020-08-19 11:39:20 DEBUG Account:84 - status returned.
+2020-08-19 11:39:20 DEBUG Account:74 - amount returned.
+2020-08-19 11:39:20 DEBUG Account:94 - update returned.
+2020-08-19 11:39:20 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:39:20 DEBUG Account:94 - update returned.
+2020-08-19 11:39:20 DEBUG Update:40 - updater returned.
+2020-08-19 11:39:20 DEBUG Account:54 - owners returned.
+2020-08-19 11:39:20 DEBUG Account:44 - accountID returned.
+2020-08-19 11:39:20 DEBUG Account:64 - accountType returned.
+2020-08-19 11:39:20 DEBUG Account:84 - status returned.
+2020-08-19 11:39:20 DEBUG Account:74 - amount returned.
+2020-08-19 11:39:20 DEBUG Account:94 - update returned.
+2020-08-19 11:39:20 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:39:20 DEBUG Account:94 - update returned.
+2020-08-19 11:39:20 DEBUG Update:40 - updater returned.
+2020-08-19 11:39:21 INFO  GUI:1036 - Viewing all accounts.
+2020-08-19 11:39:21 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:39:21 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:39:21 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:39:21 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:39:21 INFO  AccountDAO:35 - Returning all Accounts.
+2020-08-19 11:39:21 DEBUG Account:54 - owners returned.
+2020-08-19 11:39:21 DEBUG Account:44 - accountID returned.
+2020-08-19 11:39:21 DEBUG Account:64 - accountType returned.
+2020-08-19 11:39:21 DEBUG Account:84 - status returned.
+2020-08-19 11:39:21 DEBUG Account:74 - amount returned.
+2020-08-19 11:39:21 DEBUG Account:94 - update returned.
+2020-08-19 11:39:21 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:39:21 DEBUG Account:94 - update returned.
+2020-08-19 11:39:21 DEBUG Update:40 - updater returned.
+2020-08-19 11:39:21 DEBUG Account:54 - owners returned.
+2020-08-19 11:39:21 DEBUG Account:44 - accountID returned.
+2020-08-19 11:39:21 DEBUG Account:64 - accountType returned.
+2020-08-19 11:39:21 DEBUG Account:84 - status returned.
+2020-08-19 11:39:21 DEBUG Account:74 - amount returned.
+2020-08-19 11:39:21 DEBUG Account:94 - update returned.
+2020-08-19 11:39:21 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:39:21 DEBUG Account:94 - update returned.
+2020-08-19 11:39:21 DEBUG Update:40 - updater returned.
+2020-08-19 11:39:21 INFO  GUI:1036 - Viewing all accounts.
+2020-08-19 11:39:22 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:39:22 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:39:22 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:39:22 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:39:22 INFO  AccountDAO:35 - Returning all Accounts.
+2020-08-19 11:39:22 DEBUG Account:54 - owners returned.
+2020-08-19 11:39:22 DEBUG Account:44 - accountID returned.
+2020-08-19 11:39:22 DEBUG Account:64 - accountType returned.
+2020-08-19 11:39:22 DEBUG Account:84 - status returned.
+2020-08-19 11:39:22 DEBUG Account:74 - amount returned.
+2020-08-19 11:39:22 DEBUG Account:94 - update returned.
+2020-08-19 11:39:22 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:39:22 DEBUG Account:94 - update returned.
+2020-08-19 11:39:22 DEBUG Update:40 - updater returned.
+2020-08-19 11:39:22 DEBUG Account:54 - owners returned.
+2020-08-19 11:39:22 DEBUG Account:44 - accountID returned.
+2020-08-19 11:39:22 DEBUG Account:64 - accountType returned.
+2020-08-19 11:39:22 DEBUG Account:84 - status returned.
+2020-08-19 11:39:22 DEBUG Account:74 - amount returned.
+2020-08-19 11:39:22 DEBUG Account:94 - update returned.
+2020-08-19 11:39:22 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:39:22 DEBUG Account:94 - update returned.
+2020-08-19 11:39:22 DEBUG Update:40 - updater returned.
+2020-08-19 11:39:22 INFO  GUI:1036 - Viewing all accounts.
+2020-08-19 11:39:22 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:39:22 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:39:22 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:39:22 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:39:22 INFO  AccountDAO:35 - Returning all Accounts.
+2020-08-19 11:39:22 DEBUG Account:54 - owners returned.
+2020-08-19 11:39:22 DEBUG Account:44 - accountID returned.
+2020-08-19 11:39:22 DEBUG Account:64 - accountType returned.
+2020-08-19 11:39:22 DEBUG Account:84 - status returned.
+2020-08-19 11:39:22 DEBUG Account:74 - amount returned.
+2020-08-19 11:39:22 DEBUG Account:94 - update returned.
+2020-08-19 11:39:22 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:39:22 DEBUG Account:94 - update returned.
+2020-08-19 11:39:22 DEBUG Update:40 - updater returned.
+2020-08-19 11:39:22 DEBUG Account:54 - owners returned.
+2020-08-19 11:39:22 DEBUG Account:44 - accountID returned.
+2020-08-19 11:39:22 DEBUG Account:64 - accountType returned.
+2020-08-19 11:39:22 DEBUG Account:84 - status returned.
+2020-08-19 11:39:22 DEBUG Account:74 - amount returned.
+2020-08-19 11:39:22 DEBUG Account:94 - update returned.
+2020-08-19 11:39:22 DEBUG Update:32 - updateTime returned.
+2020-08-19 11:39:22 DEBUG Account:94 - update returned.
+2020-08-19 11:39:22 DEBUG Update:40 - updater returned.
+2020-08-19 11:39:27 INFO  GUI:1317 - Returning to Account Services Menu.
+2020-08-19 11:39:27 DEBUG User:77 - userType returned.
+2020-08-19 11:39:27 INFO  GUI:1016 - Accessing adminAccountServices
+2020-08-19 11:39:27 DEBUG User:97 - firstName returned.
+2020-08-19 11:39:27 INFO  GUI:1317 - Returning to Account Services Menu.
+2020-08-19 11:39:27 DEBUG User:77 - userType returned.
+2020-08-19 11:39:27 INFO  GUI:1016 - Accessing adminAccountServices
+2020-08-19 11:39:27 DEBUG User:97 - firstName returned.
+2020-08-19 11:39:27 INFO  GUI:1317 - Returning to Account Services Menu.
+2020-08-19 11:39:27 DEBUG User:77 - userType returned.
+2020-08-19 11:39:27 INFO  GUI:1016 - Accessing adminAccountServices
+2020-08-19 11:39:27 DEBUG User:97 - firstName returned.
+2020-08-19 11:39:28 INFO  GUI:1317 - Returning to Account Services Menu.
+2020-08-19 11:39:28 DEBUG User:77 - userType returned.
+2020-08-19 11:39:28 INFO  GUI:1016 - Accessing adminAccountServices
+2020-08-19 11:39:28 DEBUG User:97 - firstName returned.
+2020-08-19 11:39:32 INFO  GUI:1115 - Returning to Services Menu.
+2020-08-19 11:39:32 DEBUG User:97 - firstName returned.
+2020-08-19 11:39:33 INFO  GUI:1115 - Returning to Services Menu.
+2020-08-19 11:39:33 DEBUG User:97 - firstName returned.
+2020-08-19 11:39:33 INFO  GUI:1115 - Returning to Services Menu.
+2020-08-19 11:39:33 DEBUG User:97 - firstName returned.
+2020-08-19 11:39:34 INFO  GUI:1115 - Returning to Services Menu.
+2020-08-19 11:39:34 DEBUG User:97 - firstName returned.
+2020-08-19 11:39:35 INFO  GUI:320 - Logging out...
+2020-08-19 11:39:37 INFO  GUI:320 - Logging out...
+2020-08-19 11:39:40 INFO  Driver:21 - Exiting the program.
+2020-08-19 11:39:53 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:39:53 DEBUG User:43 - Full User object created.
+2020-08-19 11:39:53 INFO  UserDAO:104 - Returning found User.
+2020-08-19 11:39:53 DEBUG User:87 - userStatus returned.
+2020-08-19 11:39:53 WARN  GUI:160 - userStatus still pending.
+2020-08-19 11:40:14 INFO  UserDAO:107 - No User with that userName exists.
+2020-08-19 11:40:14 DEBUG User:30 - New User object created.
+2020-08-19 11:40:14 DEBUG User:57 - userName returned.
+2020-08-19 11:40:14 DEBUG User:67 - password returned.
+2020-08-19 11:40:14 DEBUG User:77 - userType returned.
+2020-08-19 11:40:14 DEBUG User:87 - userStatus returned.
+2020-08-19 11:40:14 DEBUG User:97 - firstName returned.
+2020-08-19 11:40:14 DEBUG User:107 - lastName returned.
+2020-08-19 11:40:14 WARN  UserDAO:187 - Encountered an SQLException in UserDAO.addUser().
+2020-08-19 11:40:14 ERROR UserDAO:190 - Connection failed in UserDAO.addUser().
+2020-08-19 11:41:15 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:41:15 DEBUG User:43 - Full User object created.
+2020-08-19 11:41:15 INFO  UserDAO:133 - Returning all Users with status Approved.
+2020-08-19 11:41:15 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:41:15 DEBUG User:43 - Full User object created.
+2020-08-19 11:41:15 INFO  UserDAO:80 - Returning found user.
+2020-08-19 11:41:15 DEBUG User:30 - New User object created.
+2020-08-19 11:41:16 DEBUG User:57 - userName returned.
+2020-08-19 11:41:16 DEBUG User:67 - password returned.
+2020-08-19 11:41:16 DEBUG User:77 - userType returned.
+2020-08-19 11:41:16 DEBUG User:87 - userStatus returned.
+2020-08-19 11:41:16 DEBUG User:97 - firstName returned.
+2020-08-19 11:41:16 DEBUG User:107 - lastName returned.
+2020-08-19 11:41:16 INFO  UserDAO:184 - Successfully added the new User.
+2020-08-19 11:41:16 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:41:16 DEBUG User:43 - Full User object created.
+2020-08-19 11:41:16 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:41:16 DEBUG User:43 - Full User object created.
+2020-08-19 11:41:16 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:41:16 DEBUG User:43 - Full User object created.
+2020-08-19 11:41:16 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:41:16 DEBUG User:43 - Full User object created.
+2020-08-19 11:41:16 INFO  UserDAO:35 - Returning all Users.
+2020-08-19 11:41:16 INFO  UserDAO:226 - Successfully changed the password.
+2020-08-19 11:41:16 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:41:16 DEBUG User:43 - Full User object created.
+2020-08-19 11:41:16 INFO  UserDAO:104 - Returning found User.
+2020-08-19 11:41:17 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:41:17 DEBUG User:43 - Full User object created.
+2020-08-19 11:41:17 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:41:17 DEBUG User:43 - Full User object created.
+2020-08-19 11:41:17 INFO  UserDAO:60 - Returning all Users with userType 1.
+2020-08-19 11:41:17 INFO  UserDAO:205 - Successfully changed the userStatus.
+2020-08-19 11:41:17 DEBUG Update:15 - Blank Update object created.
+2020-08-19 11:41:17 DEBUG Update:36 - updateTime set.
+2020-08-19 11:41:17 DEBUG Update:44 - updater set.
+2020-08-19 11:41:17 INFO  UserDAO:155 - Returning found Update.
+2020-08-19 11:41:17 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:41:17 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:41:17 INFO  AccountDAO:106 - Returning all Accounts with accountStatus Pending.
+2020-08-19 11:41:17 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:41:17 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:41:17 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:41:17 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:41:17 INFO  AccountDAO:35 - Returning all Accounts.
+2020-08-19 11:41:18 INFO  AccountDAO:130 - No Accounts exist with that type.
+2020-08-19 11:41:18 INFO  AccountDAO:131 - Returning all Accounts with accountType false.
+2020-08-19 11:41:18 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:41:18 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:41:18 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 11:41:18 DEBUG Update:15 - Blank Update object created.
+2020-08-19 11:41:18 DEBUG Update:36 - updateTime set.
+2020-08-19 11:41:18 DEBUG Update:44 - updater set.
+2020-08-19 11:41:18 INFO  AccountDAO:178 - Returning found Update.
+2020-08-19 11:41:18 INFO  AccountDAO:242 - Successfully updated the amount.
+2020-08-19 11:41:18 DEBUG Account:29 - New Account object created.
+2020-08-19 11:41:18 DEBUG Account:54 - owners returned.
+2020-08-19 11:41:18 DEBUG Account:64 - accountType returned.
+2020-08-19 11:41:18 DEBUG Account:74 - amount returned.
+2020-08-19 11:41:18 DEBUG Account:84 - status returned.
+2020-08-19 11:41:18 WARN  AccountDAO:210 - Encountered an SQLException in AccountDAO.addAccount().
+2020-08-19 11:41:18 ERROR AccountDAO:213 - Connection failed in AccountDAO.addAccount().
+2020-08-19 11:41:19 DEBUG AccountDAO:61 - No owners in owner1 match that userID.
+2020-08-19 11:41:19 DEBUG Update:28 - Full Update object created.
+2020-08-19 11:41:19 DEBUG Account:40 - Full Account object created.
+2020-08-19 11:41:19 INFO  AccountDAO:81 - Returning all Accounts owned by 0.
+2020-08-19 11:41:19 INFO  AccountDAO:313 - Successfully changed the accountStatus.
+2020-08-19 11:41:19 INFO  AccountDAO:292 - accountType successfully converted to true.
+2020-08-19 11:41:20 INFO  AccountDAO:242 - Successfully updated the amount.
+2020-08-19 11:41:20 INFO  AccountDAO:256 - Successfully updated 2.
+2020-08-19 11:41:20 INFO  AccountDAO:230 - No Account with that accountID exists.
+2020-08-19 11:41:20 INFO  AccountDAO:258 - Successfully updated 3.
+2020-08-19 11:41:53 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:02:19 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:02:19 DEBUG User:43 - Full User object created.
+2020-08-19 12:02:19 INFO  UserDAO:133 - Returning all Users with status Approved.
+2020-08-19 12:02:19 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:02:19 DEBUG User:43 - Full User object created.
+2020-08-19 12:02:19 INFO  UserDAO:80 - Returning found user.
+2020-08-19 12:02:19 DEBUG User:30 - New User object created.
+2020-08-19 12:02:19 DEBUG User:57 - userName returned.
+2020-08-19 12:02:19 DEBUG User:67 - password returned.
+2020-08-19 12:02:19 DEBUG User:77 - userType returned.
+2020-08-19 12:02:19 DEBUG User:87 - userStatus returned.
+2020-08-19 12:02:19 DEBUG User:97 - firstName returned.
+2020-08-19 12:02:19 DEBUG User:107 - lastName returned.
+2020-08-19 12:02:19 INFO  UserDAO:184 - Successfully added the new User.
+2020-08-19 12:02:19 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:02:19 DEBUG User:43 - Full User object created.
+2020-08-19 12:02:19 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:02:19 DEBUG User:43 - Full User object created.
+2020-08-19 12:02:19 INFO  UserDAO:35 - Returning all Users.
+2020-08-19 12:02:20 INFO  UserDAO:226 - Successfully changed the password.
+2020-08-19 12:02:20 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:02:20 DEBUG User:43 - Full User object created.
+2020-08-19 12:02:20 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:02:20 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:02:20 DEBUG User:43 - Full User object created.
+2020-08-19 12:02:20 INFO  UserDAO:60 - Returning all Users with userType 1.
+2020-08-19 12:02:20 INFO  UserDAO:205 - Successfully changed the userStatus.
+2020-08-19 12:02:21 DEBUG Update:15 - Blank Update object created.
+2020-08-19 12:02:21 INFO  UserDAO:158 - No User with that userID exists.
+2020-08-19 12:02:21 INFO  AccountDAO:105 - No Accounts exist with that status.
+2020-08-19 12:02:21 INFO  AccountDAO:106 - Returning all Accounts with accountStatus Pending.
+2020-08-19 12:02:21 WARN  AccountDAO:34 - Something went horribly wrong with AccountDAO.findAll().
+2020-08-19 12:02:21 INFO  AccountDAO:35 - Returning all Accounts.
+2020-08-19 12:02:21 INFO  AccountDAO:130 - No Accounts exist with that type.
+2020-08-19 12:02:21 INFO  AccountDAO:131 - Returning all Accounts with accountType false.
+2020-08-19 12:02:21 INFO  AccountDAO:155 - No Account with that accountID exists.
+2020-08-19 12:02:22 DEBUG Update:15 - Blank Update object created.
+2020-08-19 12:02:22 INFO  AccountDAO:181 - No Account with that accountID exists.
+2020-08-19 12:02:22 INFO  AccountDAO:230 - No Account with that accountID exists.
+2020-08-19 12:02:22 DEBUG Account:29 - New Account object created.
+2020-08-19 12:02:22 DEBUG Account:54 - owners returned.
+2020-08-19 12:02:22 DEBUG Account:64 - accountType returned.
+2020-08-19 12:02:22 DEBUG Account:74 - amount returned.
+2020-08-19 12:02:22 DEBUG Account:84 - status returned.
+2020-08-19 12:02:22 INFO  AccountDAO:207 - Successfully added new Account.
+2020-08-19 12:02:22 DEBUG AccountDAO:61 - No owners in owner1 match that userID.
+2020-08-19 12:02:22 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:02:22 DEBUG Account:40 - Full Account object created.
+2020-08-19 12:02:22 INFO  AccountDAO:81 - Returning all Accounts owned by 0.
+2020-08-19 12:02:22 INFO  AccountDAO:313 - Successfully changed the accountStatus.
+2020-08-19 12:02:23 INFO  AccountDAO:281 - No Account with that accountID exists.
+2020-08-19 12:02:23 INFO  AccountDAO:230 - No Account with that accountID exists.
+2020-08-19 12:02:23 INFO  AccountDAO:256 - Successfully updated 2.
+2020-08-19 12:02:23 INFO  AccountDAO:230 - No Account with that accountID exists.
+2020-08-19 12:02:23 INFO  AccountDAO:258 - Successfully updated 3.
+2020-08-19 12:03:08 INFO  UserDAO:107 - No User with that userName exists.
+2020-08-19 12:03:08 DEBUG User:30 - New User object created.
+2020-08-19 12:03:08 DEBUG User:57 - userName returned.
+2020-08-19 12:03:08 DEBUG User:67 - password returned.
+2020-08-19 12:03:08 DEBUG User:77 - userType returned.
+2020-08-19 12:03:08 DEBUG User:87 - userStatus returned.
+2020-08-19 12:03:08 DEBUG User:97 - firstName returned.
+2020-08-19 12:03:08 DEBUG User:107 - lastName returned.
+2020-08-19 12:03:08 INFO  UserDAO:184 - Successfully added the new User.
+2020-08-19 12:03:25 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:03:25 DEBUG User:43 - Full User object created.
+2020-08-19 12:03:25 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:03:25 DEBUG User:87 - userStatus returned.
+2020-08-19 12:03:25 WARN  GUI:160 - userStatus still pending.
+2020-08-19 12:03:34 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:03:34 DEBUG User:43 - Full User object created.
+2020-08-19 12:03:34 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:03:34 DEBUG User:87 - userStatus returned.
+2020-08-19 12:03:34 DEBUG User:87 - userStatus returned.
+2020-08-19 12:03:34 DEBUG User:67 - password returned.
+2020-08-19 12:03:34 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:03:34 INFO  GUI:168 - Successful login.
+2020-08-19 12:03:34 DEBUG User:97 - firstName returned.
+2020-08-19 12:04:00 DEBUG User:77 - userType returned.
+2020-08-19 12:04:00 INFO  GUI:287 - Accessing employeeServices
+2020-08-19 12:04:00 DEBUG User:97 - firstName returned.
+2020-08-19 12:04:02 INFO  GUI:423 - Viewing pending users.
+2020-08-19 12:04:02 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:04:02 DEBUG User:43 - Full User object created.
+2020-08-19 12:04:02 INFO  UserDAO:133 - Returning all Users with status Pending.
+2020-08-19 12:04:02 DEBUG User:47 - userID returned.
+2020-08-19 12:04:02 DEBUG User:57 - userName returned.
+2020-08-19 12:04:02 DEBUG User:67 - password returned.
+2020-08-19 12:04:02 DEBUG User:77 - userType returned.
+2020-08-19 12:04:02 DEBUG User:87 - userStatus returned.
+2020-08-19 12:04:02 DEBUG User:97 - firstName returned.
+2020-08-19 12:04:02 DEBUG User:107 - lastName returned.
+2020-08-19 12:04:02 DEBUG User:117 - update returned.
+2020-08-19 12:04:02 DEBUG Update:32 - updateTime returned.
+2020-08-19 12:04:02 DEBUG User:117 - update returned.
+2020-08-19 12:04:02 DEBUG Update:40 - updater returned.
+2020-08-19 12:04:05 INFO  GUI:679 - Returning to Services Menu.
+2020-08-19 12:04:05 DEBUG User:97 - firstName returned.
+2020-08-19 12:04:10 DEBUG User:77 - userType returned.
+2020-08-19 12:04:10 INFO  GUI:456 - Changing Status as Admin.
+2020-08-19 12:04:16 INFO  UserServices:126 - Returning found user.
+2020-08-19 12:04:16 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:04:16 DEBUG User:43 - Full User object created.
+2020-08-19 12:04:16 INFO  UserDAO:80 - Returning found user.
+2020-08-19 12:04:16 INFO  GUI:976 - Changed to Approved status.
+2020-08-19 12:04:16 DEBUG User:47 - userID returned.
+2020-08-19 12:04:16 INFO  UserDAO:205 - Successfully changed the userStatus.
+2020-08-19 12:04:17 DEBUG User:97 - firstName returned.
+2020-08-19 12:04:21 INFO  GUI:397 - Viewing all users.
+2020-08-19 12:04:22 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:04:22 DEBUG User:43 - Full User object created.
+2020-08-19 12:04:22 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:04:22 DEBUG User:43 - Full User object created.
+2020-08-19 12:04:22 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:04:22 DEBUG User:43 - Full User object created.
+2020-08-19 12:04:22 INFO  UserDAO:35 - Returning all Users.
+2020-08-19 12:04:22 DEBUG User:47 - userID returned.
+2020-08-19 12:04:22 DEBUG User:57 - userName returned.
+2020-08-19 12:04:22 DEBUG User:67 - password returned.
+2020-08-19 12:04:22 DEBUG User:77 - userType returned.
+2020-08-19 12:04:22 DEBUG User:87 - userStatus returned.
+2020-08-19 12:04:22 DEBUG User:97 - firstName returned.
+2020-08-19 12:04:22 DEBUG User:107 - lastName returned.
+2020-08-19 12:04:22 DEBUG User:117 - update returned.
+2020-08-19 12:04:22 DEBUG Update:32 - updateTime returned.
+2020-08-19 12:04:22 DEBUG User:117 - update returned.
+2020-08-19 12:04:22 DEBUG Update:40 - updater returned.
+2020-08-19 12:04:22 DEBUG User:47 - userID returned.
+2020-08-19 12:04:22 DEBUG User:57 - userName returned.
+2020-08-19 12:04:22 DEBUG User:67 - password returned.
+2020-08-19 12:04:22 DEBUG User:77 - userType returned.
+2020-08-19 12:04:22 DEBUG User:87 - userStatus returned.
+2020-08-19 12:04:22 DEBUG User:97 - firstName returned.
+2020-08-19 12:04:22 DEBUG User:107 - lastName returned.
+2020-08-19 12:04:22 DEBUG User:117 - update returned.
+2020-08-19 12:04:22 DEBUG Update:32 - updateTime returned.
+2020-08-19 12:04:22 DEBUG User:117 - update returned.
+2020-08-19 12:04:22 DEBUG Update:40 - updater returned.
+2020-08-19 12:04:22 DEBUG User:47 - userID returned.
+2020-08-19 12:04:22 DEBUG User:57 - userName returned.
+2020-08-19 12:04:22 DEBUG User:67 - password returned.
+2020-08-19 12:04:22 DEBUG User:77 - userType returned.
+2020-08-19 12:04:22 DEBUG User:87 - userStatus returned.
+2020-08-19 12:04:22 DEBUG User:97 - firstName returned.
+2020-08-19 12:04:22 DEBUG User:107 - lastName returned.
+2020-08-19 12:04:22 DEBUG User:117 - update returned.
+2020-08-19 12:04:22 DEBUG Update:32 - updateTime returned.
+2020-08-19 12:04:22 DEBUG User:117 - update returned.
+2020-08-19 12:04:22 DEBUG Update:40 - updater returned.
+2020-08-19 12:04:33 INFO  GUI:504 - Returning to Services Menu.
+2020-08-19 12:04:33 DEBUG User:97 - firstName returned.
+2020-08-19 12:04:42 INFO  GUI:410 - Accessing User search by ID.
+2020-08-19 12:04:43 INFO  UserServices:126 - Returning found user.
+2020-08-19 12:04:44 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:04:44 DEBUG User:43 - Full User object created.
+2020-08-19 12:04:44 INFO  UserDAO:80 - Returning found user.
+2020-08-19 12:04:44 INFO  UserServices:126 - Returning found user.
+2020-08-19 12:04:44 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:04:44 DEBUG User:43 - Full User object created.
+2020-08-19 12:04:44 INFO  UserDAO:80 - Returning found user.
+2020-08-19 12:04:44 DEBUG User:57 - userName returned.
+2020-08-19 12:04:44 DEBUG User:67 - password returned.
+2020-08-19 12:04:44 DEBUG User:77 - userType returned.
+2020-08-19 12:04:44 DEBUG User:87 - userStatus returned.
+2020-08-19 12:04:44 DEBUG User:97 - firstName returned.
+2020-08-19 12:04:44 DEBUG User:107 - lastName returned.
+2020-08-19 12:04:44 DEBUG User:117 - update returned.
+2020-08-19 12:04:44 DEBUG Update:32 - updateTime returned.
+2020-08-19 12:04:44 DEBUG User:117 - update returned.
+2020-08-19 12:04:44 DEBUG Update:40 - updater returned.
+2020-08-19 12:04:46 DEBUG User:97 - firstName returned.
+2020-08-19 12:04:47 INFO  GUI:410 - Accessing User search by ID.
+2020-08-19 12:04:48 INFO  UserServices:126 - Returning found user.
+2020-08-19 12:04:48 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:04:48 DEBUG User:43 - Full User object created.
+2020-08-19 12:04:48 INFO  UserDAO:80 - Returning found user.
+2020-08-19 12:04:48 INFO  UserServices:126 - Returning found user.
+2020-08-19 12:04:48 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:04:48 DEBUG User:43 - Full User object created.
+2020-08-19 12:04:48 INFO  UserDAO:80 - Returning found user.
+2020-08-19 12:04:48 DEBUG User:57 - userName returned.
+2020-08-19 12:04:48 DEBUG User:67 - password returned.
+2020-08-19 12:04:48 DEBUG User:77 - userType returned.
+2020-08-19 12:04:48 DEBUG User:87 - userStatus returned.
+2020-08-19 12:04:48 DEBUG User:97 - firstName returned.
+2020-08-19 12:04:48 DEBUG User:107 - lastName returned.
+2020-08-19 12:04:48 DEBUG User:117 - update returned.
+2020-08-19 12:04:48 DEBUG Update:32 - updateTime returned.
+2020-08-19 12:04:48 DEBUG User:117 - update returned.
+2020-08-19 12:04:48 DEBUG Update:40 - updater returned.
+2020-08-19 12:04:49 DEBUG User:97 - firstName returned.
+2020-08-19 12:04:51 INFO  GUI:423 - Viewing pending users.
+2020-08-19 12:04:52 WARN  UserDAO:132 - No Users with that status exist.
+2020-08-19 12:04:52 INFO  UserDAO:133 - Returning all Users with status Pending.
+2020-08-19 12:04:52 INFO  GUI:679 - Returning to Services Menu.
+2020-08-19 12:04:52 DEBUG User:97 - firstName returned.
+2020-08-19 12:04:55 DEBUG User:77 - userType returned.
+2020-08-19 12:04:55 INFO  GUI:437 - Changing Password as Admin.
+2020-08-19 12:05:06 INFO  UserServices:126 - Returning found user.
+2020-08-19 12:05:06 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:05:06 DEBUG User:43 - Full User object created.
+2020-08-19 12:05:06 INFO  UserDAO:80 - Returning found user.
+2020-08-19 12:05:06 DEBUG User:47 - userID returned.
+2020-08-19 12:05:06 DEBUG User:47 - userID returned.
+2020-08-19 12:05:06 INFO  UserDAO:226 - Successfully changed the password.
+2020-08-19 12:05:07 DEBUG User:97 - firstName returned.
+2020-08-19 12:05:42 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:05:42 DEBUG User:43 - Full User object created.
+2020-08-19 12:05:42 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:05:42 DEBUG User:87 - userStatus returned.
+2020-08-19 12:05:42 DEBUG User:87 - userStatus returned.
+2020-08-19 12:05:42 DEBUG User:67 - password returned.
+2020-08-19 12:05:42 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:05:42 INFO  GUI:168 - Successful login.
+2020-08-19 12:05:42 DEBUG User:97 - firstName returned.
+2020-08-19 12:05:43 DEBUG User:77 - userType returned.
+2020-08-19 12:05:43 INFO  GUI:287 - Accessing employeeServices
+2020-08-19 12:05:43 DEBUG User:97 - firstName returned.
+2020-08-19 12:05:44 DEBUG User:77 - userType returned.
+2020-08-19 12:05:44 INFO  GUI:437 - Changing Password as Admin.
+2020-08-19 12:05:50 DEBUG User:97 - firstName returned.
+2020-08-19 12:05:51 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:06:40 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:06:40 DEBUG User:43 - Full User object created.
+2020-08-19 12:06:40 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:06:40 DEBUG User:87 - userStatus returned.
+2020-08-19 12:06:40 DEBUG User:87 - userStatus returned.
+2020-08-19 12:06:40 DEBUG User:67 - password returned.
+2020-08-19 12:06:40 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:06:40 INFO  GUI:168 - Successful login.
+2020-08-19 12:06:40 DEBUG User:97 - firstName returned.
+2020-08-19 12:06:43 DEBUG User:77 - userType returned.
+2020-08-19 12:06:43 DEBUG User:77 - userType returned.
+2020-08-19 12:06:43 INFO  GUI:291 - Accessing customerServices
+2020-08-19 12:06:43 DEBUG User:97 - firstName returned.
+2020-08-19 12:06:44 INFO  GUI:353 - Changing password.
+2020-08-19 12:06:47 DEBUG User:77 - userType returned.
+2020-08-19 12:06:47 DEBUG User:77 - userType returned.
+2020-08-19 12:06:47 DEBUG User:97 - firstName returned.
+2020-08-19 12:06:48 INFO  GUI:367 - Returning to Services Menu.
+2020-08-19 12:06:48 DEBUG User:97 - firstName returned.
+2020-08-19 12:06:48 INFO  GUI:306 - Accessing account services.
+2020-08-19 12:06:48 DEBUG User:77 - userType returned.
+2020-08-19 12:06:48 DEBUG User:77 - userType returned.
+2020-08-19 12:06:48 INFO  GUI:1201 - Accessing customerAccountServices
+2020-08-19 12:06:48 DEBUG User:97 - firstName returned.
+2020-08-19 12:06:51 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:07:03 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:07:03 DEBUG User:43 - Full User object created.
+2020-08-19 12:07:03 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:07:03 DEBUG User:87 - userStatus returned.
+2020-08-19 12:07:03 DEBUG User:87 - userStatus returned.
+2020-08-19 12:07:03 DEBUG User:67 - password returned.
+2020-08-19 12:07:03 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:07:03 INFO  GUI:168 - Successful login.
+2020-08-19 12:07:03 DEBUG User:97 - firstName returned.
+2020-08-19 12:07:04 DEBUG User:77 - userType returned.
+2020-08-19 12:07:04 INFO  GUI:287 - Accessing employeeServices
+2020-08-19 12:07:04 DEBUG User:97 - firstName returned.
+2020-08-19 12:07:06 DEBUG User:77 - userType returned.
+2020-08-19 12:07:06 INFO  GUI:437 - Changing Password as Admin.
+2020-08-19 12:07:12 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:07:48 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:07:48 DEBUG User:43 - Full User object created.
+2020-08-19 12:07:48 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:07:48 DEBUG User:87 - userStatus returned.
+2020-08-19 12:07:48 DEBUG User:87 - userStatus returned.
+2020-08-19 12:07:48 DEBUG User:67 - password returned.
+2020-08-19 12:07:48 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:07:48 INFO  GUI:168 - Successful login.
+2020-08-19 12:07:48 DEBUG User:97 - firstName returned.
+2020-08-19 12:07:50 DEBUG User:77 - userType returned.
+2020-08-19 12:07:50 INFO  GUI:287 - Accessing employeeServices
+2020-08-19 12:07:50 DEBUG User:97 - firstName returned.
+2020-08-19 12:07:51 DEBUG User:77 - userType returned.
+2020-08-19 12:07:51 INFO  GUI:437 - Changing Password as Admin.
+2020-08-19 12:07:58 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:08:32 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:08:32 DEBUG User:43 - Full User object created.
+2020-08-19 12:08:32 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:08:32 DEBUG User:87 - userStatus returned.
+2020-08-19 12:08:32 DEBUG User:87 - userStatus returned.
+2020-08-19 12:08:32 DEBUG User:67 - password returned.
+2020-08-19 12:08:32 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:08:32 INFO  GUI:168 - Successful login.
+2020-08-19 12:08:32 DEBUG User:97 - firstName returned.
+2020-08-19 12:08:33 DEBUG User:77 - userType returned.
+2020-08-19 12:08:33 INFO  GUI:287 - Accessing employeeServices
+2020-08-19 12:08:33 DEBUG User:97 - firstName returned.
+2020-08-19 12:08:34 DEBUG User:77 - userType returned.
+2020-08-19 12:08:34 INFO  GUI:437 - Changing Password as Admin.
+2020-08-19 12:08:42 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:10:14 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:12:43 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:12:43 DEBUG User:43 - Full User object created.
+2020-08-19 12:12:43 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:12:43 DEBUG User:87 - userStatus returned.
+2020-08-19 12:12:43 DEBUG User:87 - userStatus returned.
+2020-08-19 12:12:43 DEBUG User:67 - password returned.
+2020-08-19 12:12:43 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:12:43 INFO  GUI:168 - Successful login.
+2020-08-19 12:12:43 DEBUG User:97 - firstName returned.
+2020-08-19 12:12:45 DEBUG User:77 - userType returned.
+2020-08-19 12:12:45 INFO  GUI:287 - Accessing employeeServices
+2020-08-19 12:12:45 DEBUG User:97 - firstName returned.
+2020-08-19 12:12:46 DEBUG User:77 - userType returned.
+2020-08-19 12:12:46 INFO  GUI:437 - Changing Password as Admin.
+2020-08-19 12:12:52 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:14:54 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:14:54 DEBUG User:43 - Full User object created.
+2020-08-19 12:14:54 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:14:54 DEBUG User:87 - userStatus returned.
+2020-08-19 12:14:54 DEBUG User:87 - userStatus returned.
+2020-08-19 12:14:54 DEBUG User:67 - password returned.
+2020-08-19 12:14:54 INFO  UserServices:71 - Invalid password.
+2020-08-19 12:14:54 WARN  GUI:171 - Incorrect password.
+2020-08-19 12:14:59 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:14:59 DEBUG User:43 - Full User object created.
+2020-08-19 12:14:59 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:14:59 DEBUG User:87 - userStatus returned.
+2020-08-19 12:14:59 DEBUG User:87 - userStatus returned.
+2020-08-19 12:14:59 DEBUG User:67 - password returned.
+2020-08-19 12:14:59 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:14:59 INFO  GUI:168 - Successful login.
+2020-08-19 12:14:59 DEBUG User:97 - firstName returned.
+2020-08-19 12:15:00 DEBUG User:77 - userType returned.
+2020-08-19 12:15:00 INFO  GUI:287 - Accessing employeeServices
+2020-08-19 12:15:00 DEBUG User:97 - firstName returned.
+2020-08-19 12:15:01 DEBUG User:77 - userType returned.
+2020-08-19 12:15:01 INFO  GUI:437 - Changing Password as Admin.
+2020-08-19 12:15:08 DEBUG User:97 - firstName returned.
+2020-08-19 12:15:09 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:16:11 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:16:11 DEBUG User:43 - Full User object created.
+2020-08-19 12:16:11 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:16:11 DEBUG User:87 - userStatus returned.
+2020-08-19 12:16:11 DEBUG User:87 - userStatus returned.
+2020-08-19 12:16:11 DEBUG User:67 - password returned.
+2020-08-19 12:16:11 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:16:11 INFO  GUI:168 - Successful login.
+2020-08-19 12:16:11 DEBUG User:97 - firstName returned.
+2020-08-19 12:16:11 DEBUG User:77 - userType returned.
+2020-08-19 12:16:11 INFO  GUI:287 - Accessing employeeServices
+2020-08-19 12:16:11 DEBUG User:97 - firstName returned.
+2020-08-19 12:16:12 DEBUG User:77 - userType returned.
+2020-08-19 12:16:12 INFO  GUI:456 - Changing Status as Admin.
+2020-08-19 12:16:14 DEBUG User:97 - firstName returned.
+2020-08-19 12:16:16 DEBUG User:77 - userType returned.
+2020-08-19 12:16:16 INFO  GUI:437 - Changing Password as Admin.
+2020-08-19 12:16:19 DEBUG User:97 - firstName returned.
+2020-08-19 12:16:20 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:16:40 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:16:40 DEBUG User:43 - Full User object created.
+2020-08-19 12:16:40 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:16:40 DEBUG User:87 - userStatus returned.
+2020-08-19 12:16:40 DEBUG User:87 - userStatus returned.
+2020-08-19 12:16:40 DEBUG User:67 - password returned.
+2020-08-19 12:16:40 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:16:40 INFO  GUI:168 - Successful login.
+2020-08-19 12:16:40 DEBUG User:97 - firstName returned.
+2020-08-19 12:16:40 DEBUG User:77 - userType returned.
+2020-08-19 12:16:40 INFO  GUI:287 - Accessing employeeServices
+2020-08-19 12:16:40 DEBUG User:97 - firstName returned.
+2020-08-19 12:16:41 DEBUG User:77 - userType returned.
+2020-08-19 12:16:41 INFO  GUI:437 - Changing Password as Admin.
+2020-08-19 12:16:43 DEBUG User:97 - firstName returned.
+2020-08-19 12:16:43 DEBUG User:77 - userType returned.
+2020-08-19 12:16:43 INFO  GUI:456 - Changing Status as Admin.
+2020-08-19 12:16:46 DEBUG User:97 - firstName returned.
+2020-08-19 12:16:47 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:17:49 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:17:49 DEBUG User:43 - Full User object created.
+2020-08-19 12:17:49 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:17:49 DEBUG User:87 - userStatus returned.
+2020-08-19 12:17:49 DEBUG User:87 - userStatus returned.
+2020-08-19 12:17:49 DEBUG User:67 - password returned.
+2020-08-19 12:17:49 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:17:49 INFO  GUI:168 - Successful login.
+2020-08-19 12:17:49 DEBUG User:97 - firstName returned.
+2020-08-19 12:17:50 DEBUG User:77 - userType returned.
+2020-08-19 12:17:50 INFO  GUI:287 - Accessing employeeServices
+2020-08-19 12:17:50 DEBUG User:97 - firstName returned.
+2020-08-19 12:17:51 DEBUG User:77 - userType returned.
+2020-08-19 12:17:51 INFO  GUI:456 - Changing Status as Admin.
+2020-08-19 12:17:58 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:19:49 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:19:49 DEBUG User:43 - Full User object created.
+2020-08-19 12:19:49 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:19:49 DEBUG User:87 - userStatus returned.
+2020-08-19 12:19:49 DEBUG User:87 - userStatus returned.
+2020-08-19 12:19:49 DEBUG User:67 - password returned.
+2020-08-19 12:19:49 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:19:49 INFO  GUI:168 - Successful login.
+2020-08-19 12:19:49 DEBUG User:97 - firstName returned.
+2020-08-19 12:19:51 DEBUG User:77 - userType returned.
+2020-08-19 12:19:51 INFO  GUI:287 - Accessing employeeServices
+2020-08-19 12:19:51 DEBUG User:97 - firstName returned.
+2020-08-19 12:19:52 DEBUG User:77 - userType returned.
+2020-08-19 12:19:52 INFO  GUI:456 - Changing Status as Admin.
+2020-08-19 12:19:57 DEBUG User:97 - firstName returned.
+2020-08-19 12:19:59 INFO  GUI:397 - Viewing all users.
+2020-08-19 12:19:59 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:19:59 DEBUG User:43 - Full User object created.
+2020-08-19 12:19:59 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:19:59 DEBUG User:43 - Full User object created.
+2020-08-19 12:19:59 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:19:59 DEBUG User:43 - Full User object created.
+2020-08-19 12:19:59 INFO  UserDAO:35 - Returning all Users.
+2020-08-19 12:19:59 DEBUG User:47 - userID returned.
+2020-08-19 12:19:59 DEBUG User:57 - userName returned.
+2020-08-19 12:19:59 DEBUG User:67 - password returned.
+2020-08-19 12:19:59 DEBUG User:77 - userType returned.
+2020-08-19 12:19:59 DEBUG User:87 - userStatus returned.
+2020-08-19 12:19:59 DEBUG User:97 - firstName returned.
+2020-08-19 12:19:59 DEBUG User:107 - lastName returned.
+2020-08-19 12:19:59 DEBUG User:117 - update returned.
+2020-08-19 12:19:59 DEBUG Update:32 - updateTime returned.
+2020-08-19 12:19:59 DEBUG User:117 - update returned.
+2020-08-19 12:19:59 DEBUG Update:40 - updater returned.
+2020-08-19 12:19:59 DEBUG User:47 - userID returned.
+2020-08-19 12:19:59 DEBUG User:57 - userName returned.
+2020-08-19 12:19:59 DEBUG User:67 - password returned.
+2020-08-19 12:19:59 DEBUG User:77 - userType returned.
+2020-08-19 12:19:59 DEBUG User:87 - userStatus returned.
+2020-08-19 12:19:59 DEBUG User:97 - firstName returned.
+2020-08-19 12:19:59 DEBUG User:107 - lastName returned.
+2020-08-19 12:19:59 DEBUG User:117 - update returned.
+2020-08-19 12:19:59 DEBUG Update:32 - updateTime returned.
+2020-08-19 12:19:59 DEBUG User:117 - update returned.
+2020-08-19 12:19:59 DEBUG Update:40 - updater returned.
+2020-08-19 12:19:59 DEBUG User:47 - userID returned.
+2020-08-19 12:19:59 DEBUG User:57 - userName returned.
+2020-08-19 12:19:59 DEBUG User:67 - password returned.
+2020-08-19 12:19:59 DEBUG User:77 - userType returned.
+2020-08-19 12:19:59 DEBUG User:87 - userStatus returned.
+2020-08-19 12:19:59 DEBUG User:97 - firstName returned.
+2020-08-19 12:19:59 DEBUG User:107 - lastName returned.
+2020-08-19 12:19:59 DEBUG User:117 - update returned.
+2020-08-19 12:19:59 DEBUG Update:32 - updateTime returned.
+2020-08-19 12:19:59 DEBUG User:117 - update returned.
+2020-08-19 12:19:59 DEBUG Update:40 - updater returned.
+2020-08-19 12:20:00 INFO  GUI:504 - Returning to Services Menu.
+2020-08-19 12:20:00 DEBUG User:97 - firstName returned.
+2020-08-19 12:20:01 INFO  GUI:410 - Accessing User search by ID.
+2020-08-19 12:20:03 DEBUG User:97 - firstName returned.
+2020-08-19 12:20:04 INFO  GUI:423 - Viewing pending users.
+2020-08-19 12:20:04 WARN  UserDAO:132 - No Users with that status exist.
+2020-08-19 12:20:04 INFO  UserDAO:133 - Returning all Users with status Pending.
+2020-08-19 12:20:05 INFO  GUI:679 - Returning to Services Menu.
+2020-08-19 12:20:05 DEBUG User:97 - firstName returned.
+2020-08-19 12:20:08 DEBUG User:77 - userType returned.
+2020-08-19 12:20:08 INFO  GUI:437 - Changing Password as Admin.
+2020-08-19 12:20:12 DEBUG User:97 - firstName returned.
+2020-08-19 12:20:13 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:21:13 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:21:13 DEBUG User:43 - Full User object created.
+2020-08-19 12:21:13 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:21:13 DEBUG User:87 - userStatus returned.
+2020-08-19 12:21:13 DEBUG User:87 - userStatus returned.
+2020-08-19 12:21:13 DEBUG User:67 - password returned.
+2020-08-19 12:21:13 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:21:13 INFO  GUI:168 - Successful login.
+2020-08-19 12:21:13 DEBUG User:97 - firstName returned.
+2020-08-19 12:21:14 DEBUG User:77 - userType returned.
+2020-08-19 12:21:14 INFO  GUI:287 - Accessing employeeServices
+2020-08-19 12:21:14 DEBUG User:97 - firstName returned.
+2020-08-19 12:21:15 DEBUG User:77 - userType returned.
+2020-08-19 12:21:15 INFO  GUI:437 - Changing Password as Admin.
+2020-08-19 12:21:17 DEBUG User:97 - firstName returned.
+2020-08-19 12:21:18 DEBUG User:77 - userType returned.
+2020-08-19 12:21:18 INFO  GUI:456 - Changing Status as Admin.
+2020-08-19 12:21:26 DEBUG User:97 - firstName returned.
+2020-08-19 12:21:29 DEBUG User:77 - userType returned.
+2020-08-19 12:21:29 INFO  GUI:437 - Changing Password as Admin.
+2020-08-19 12:21:31 DEBUG User:97 - firstName returned.
+2020-08-19 12:21:33 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:22:44 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:22:44 DEBUG User:43 - Full User object created.
+2020-08-19 12:22:44 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:22:44 DEBUG User:87 - userStatus returned.
+2020-08-19 12:22:44 DEBUG User:87 - userStatus returned.
+2020-08-19 12:22:44 DEBUG User:67 - password returned.
+2020-08-19 12:22:44 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:22:44 INFO  GUI:168 - Successful login.
+2020-08-19 12:22:44 DEBUG User:97 - firstName returned.
+2020-08-19 12:22:45 DEBUG User:77 - userType returned.
+2020-08-19 12:22:45 INFO  GUI:287 - Accessing employeeServices
+2020-08-19 12:22:45 DEBUG User:97 - firstName returned.
+2020-08-19 12:22:46 DEBUG User:77 - userType returned.
+2020-08-19 12:22:46 INFO  GUI:437 - Changing Password as Admin.
+2020-08-19 12:22:47 DEBUG User:97 - firstName returned.
+2020-08-19 12:22:48 DEBUG User:77 - userType returned.
+2020-08-19 12:22:48 INFO  GUI:456 - Changing Status as Admin.
+2020-08-19 12:23:14 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:23:34 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:23:34 DEBUG User:43 - Full User object created.
+2020-08-19 12:23:34 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:23:34 DEBUG User:87 - userStatus returned.
+2020-08-19 12:23:34 DEBUG User:87 - userStatus returned.
+2020-08-19 12:23:34 DEBUG User:67 - password returned.
+2020-08-19 12:23:34 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:23:34 INFO  GUI:168 - Successful login.
+2020-08-19 12:23:34 DEBUG User:97 - firstName returned.
+2020-08-19 12:23:35 DEBUG User:77 - userType returned.
+2020-08-19 12:23:35 INFO  GUI:287 - Accessing employeeServices
+2020-08-19 12:23:35 DEBUG User:97 - firstName returned.
+2020-08-19 12:23:37 DEBUG User:77 - userType returned.
+2020-08-19 12:23:37 INFO  GUI:456 - Changing Status as Admin.
+2020-08-19 12:23:43 DEBUG User:97 - firstName returned.
+2020-08-19 12:23:45 DEBUG User:77 - userType returned.
+2020-08-19 12:23:45 INFO  GUI:437 - Changing Password as Admin.
+2020-08-19 12:23:46 DEBUG User:97 - firstName returned.
+2020-08-19 12:23:46 INFO  GUI:423 - Viewing pending users.
+2020-08-19 12:23:47 WARN  UserDAO:132 - No Users with that status exist.
+2020-08-19 12:23:47 INFO  UserDAO:133 - Returning all Users with status Pending.
+2020-08-19 12:23:48 INFO  GUI:679 - Returning to Services Menu.
+2020-08-19 12:23:48 DEBUG User:97 - firstName returned.
+2020-08-19 12:23:49 INFO  GUI:475 - Returning to Services Menu.
+2020-08-19 12:23:49 DEBUG User:97 - firstName returned.
+2020-08-19 12:23:50 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:24:21 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:24:21 DEBUG User:43 - Full User object created.
+2020-08-19 12:24:21 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:24:21 DEBUG User:87 - userStatus returned.
+2020-08-19 12:24:21 DEBUG User:87 - userStatus returned.
+2020-08-19 12:24:21 DEBUG User:67 - password returned.
+2020-08-19 12:24:21 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:24:21 INFO  GUI:168 - Successful login.
+2020-08-19 12:24:21 DEBUG User:97 - firstName returned.
+2020-08-19 12:24:23 DEBUG User:77 - userType returned.
+2020-08-19 12:24:23 DEBUG User:77 - userType returned.
+2020-08-19 12:24:23 INFO  GUI:291 - Accessing customerServices
+2020-08-19 12:24:23 DEBUG User:97 - firstName returned.
+2020-08-19 12:24:28 INFO  GUI:353 - Changing password.
+2020-08-19 12:24:32 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:25:06 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:25:06 DEBUG User:43 - Full User object created.
+2020-08-19 12:25:06 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:25:06 DEBUG User:87 - userStatus returned.
+2020-08-19 12:25:06 DEBUG User:87 - userStatus returned.
+2020-08-19 12:25:06 DEBUG User:67 - password returned.
+2020-08-19 12:25:06 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:25:06 INFO  GUI:168 - Successful login.
+2020-08-19 12:25:06 DEBUG User:97 - firstName returned.
+2020-08-19 12:25:07 DEBUG User:77 - userType returned.
+2020-08-19 12:25:07 DEBUG User:77 - userType returned.
+2020-08-19 12:25:07 INFO  GUI:291 - Accessing customerServices
+2020-08-19 12:25:07 DEBUG User:97 - firstName returned.
+2020-08-19 12:25:07 INFO  GUI:353 - Changing password.
+2020-08-19 12:25:10 DEBUG User:77 - userType returned.
+2020-08-19 12:25:10 DEBUG User:77 - userType returned.
+2020-08-19 12:25:10 DEBUG User:97 - firstName returned.
+2020-08-19 12:25:11 INFO  GUI:367 - Returning to Services Menu.
+2020-08-19 12:25:11 DEBUG User:97 - firstName returned.
+2020-08-19 12:25:13 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:26:08 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:26:08 DEBUG User:43 - Full User object created.
+2020-08-19 12:26:08 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:26:08 DEBUG User:87 - userStatus returned.
+2020-08-19 12:26:08 DEBUG User:87 - userStatus returned.
+2020-08-19 12:26:08 DEBUG User:67 - password returned.
+2020-08-19 12:26:08 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:26:08 INFO  GUI:162 - Successful login.
+2020-08-19 12:26:08 DEBUG User:97 - firstName returned.
+2020-08-19 12:26:09 INFO  GUI:300 - Accessing account services.
+2020-08-19 12:26:09 DEBUG User:77 - userType returned.
+2020-08-19 12:26:09 INFO  GUI:1015 - Accessing adminAccountServices
+2020-08-19 12:26:09 DEBUG User:97 - firstName returned.
+2020-08-19 12:26:10 INFO  GUI:1035 - Viewing all accounts.
+2020-08-19 12:26:10 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:26:10 DEBUG Account:40 - Full Account object created.
+2020-08-19 12:26:10 INFO  AccountDAO:35 - Returning all Accounts.
+2020-08-19 12:26:10 DEBUG Account:54 - owners returned.
+2020-08-19 12:26:10 DEBUG Account:44 - accountID returned.
+2020-08-19 12:26:10 DEBUG Account:64 - accountType returned.
+2020-08-19 12:26:10 DEBUG Account:84 - status returned.
+2020-08-19 12:26:10 DEBUG Account:74 - amount returned.
+2020-08-19 12:26:10 DEBUG Account:94 - update returned.
+2020-08-19 12:26:10 DEBUG Update:32 - updateTime returned.
+2020-08-19 12:26:10 DEBUG Account:94 - update returned.
+2020-08-19 12:26:10 DEBUG Update:40 - updater returned.
+2020-08-19 12:26:12 INFO  GUI:1316 - Returning to Account Services Menu.
+2020-08-19 12:26:12 DEBUG User:77 - userType returned.
+2020-08-19 12:26:12 INFO  GUI:1015 - Accessing adminAccountServices
+2020-08-19 12:26:12 DEBUG User:97 - firstName returned.
+2020-08-19 12:26:13 INFO  GUI:1048 - Accessing User search by ID.
+2020-08-19 12:26:15 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:26:15 DEBUG Account:40 - Full Account object created.
+2020-08-19 12:26:15 INFO  AccountDAO:81 - Returning all Accounts owned by 1.
+2020-08-19 12:26:15 DEBUG Account:54 - owners returned.
+2020-08-19 12:26:15 DEBUG Account:44 - accountID returned.
+2020-08-19 12:26:15 DEBUG Account:64 - accountType returned.
+2020-08-19 12:26:15 DEBUG Account:84 - status returned.
+2020-08-19 12:26:15 DEBUG Account:74 - amount returned.
+2020-08-19 12:26:15 DEBUG Account:94 - update returned.
+2020-08-19 12:26:15 DEBUG Update:32 - updateTime returned.
+2020-08-19 12:26:15 DEBUG Account:94 - update returned.
+2020-08-19 12:26:15 DEBUG Update:40 - updater returned.
+2020-08-19 12:26:17 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:26:17 DEBUG Account:40 - Full Account object created.
+2020-08-19 12:26:17 INFO  AccountDAO:81 - Returning all Accounts owned by 1.
+2020-08-19 12:26:17 DEBUG Account:54 - owners returned.
+2020-08-19 12:26:17 DEBUG Account:44 - accountID returned.
+2020-08-19 12:26:17 DEBUG Account:64 - accountType returned.
+2020-08-19 12:26:17 DEBUG Account:84 - status returned.
+2020-08-19 12:26:17 DEBUG Account:74 - amount returned.
+2020-08-19 12:26:17 DEBUG Account:94 - update returned.
+2020-08-19 12:26:17 DEBUG Update:32 - updateTime returned.
+2020-08-19 12:26:17 DEBUG Account:94 - update returned.
+2020-08-19 12:26:17 DEBUG Update:40 - updater returned.
+2020-08-19 12:26:21 DEBUG User:77 - userType returned.
+2020-08-19 12:26:21 INFO  GUI:1015 - Accessing adminAccountServices
+2020-08-19 12:26:21 DEBUG User:97 - firstName returned.
+2020-08-19 12:26:25 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:31:56 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:31:56 DEBUG User:43 - Full User object created.
+2020-08-19 12:31:56 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:31:56 DEBUG User:87 - userStatus returned.
+2020-08-19 12:31:56 DEBUG User:87 - userStatus returned.
+2020-08-19 12:31:56 DEBUG User:67 - password returned.
+2020-08-19 12:31:56 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:31:56 INFO  GUI:162 - Successful login.
+2020-08-19 12:31:56 DEBUG User:97 - firstName returned.
+2020-08-19 12:31:59 INFO  GUI:300 - Accessing account services.
+2020-08-19 12:31:59 DEBUG User:77 - userType returned.
+2020-08-19 12:31:59 INFO  GUI:1015 - Accessing adminAccountServices
+2020-08-19 12:31:59 DEBUG User:97 - firstName returned.
+2020-08-19 12:32:00 INFO  GUI:1048 - Accessing User search by ID.
+2020-08-19 12:32:02 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:32:02 DEBUG Account:40 - Full Account object created.
+2020-08-19 12:32:02 INFO  AccountDAO:81 - Returning all Accounts owned by 1.
+2020-08-19 12:32:02 DEBUG Account:54 - owners returned.
+2020-08-19 12:32:02 DEBUG Account:44 - accountID returned.
+2020-08-19 12:32:02 DEBUG Account:64 - accountType returned.
+2020-08-19 12:32:02 DEBUG Account:84 - status returned.
+2020-08-19 12:32:02 DEBUG Account:74 - amount returned.
+2020-08-19 12:32:02 DEBUG Account:94 - update returned.
+2020-08-19 12:32:02 DEBUG Update:32 - updateTime returned.
+2020-08-19 12:32:02 DEBUG Account:94 - update returned.
+2020-08-19 12:32:02 DEBUG Update:40 - updater returned.
+2020-08-19 12:32:10 INFO  GUI:1420 - Returning to Account Services Menu.
+2020-08-19 12:32:10 DEBUG User:77 - userType returned.
+2020-08-19 12:32:10 INFO  GUI:1015 - Accessing adminAccountServices
+2020-08-19 12:32:10 DEBUG User:97 - firstName returned.
+2020-08-19 12:32:13 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:33:18 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:33:18 DEBUG User:43 - Full User object created.
+2020-08-19 12:33:18 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:33:18 DEBUG User:87 - userStatus returned.
+2020-08-19 12:33:18 DEBUG User:87 - userStatus returned.
+2020-08-19 12:33:18 DEBUG User:67 - password returned.
+2020-08-19 12:33:18 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:33:18 INFO  GUI:162 - Successful login.
+2020-08-19 12:33:18 DEBUG User:97 - firstName returned.
+2020-08-19 12:33:18 INFO  GUI:300 - Accessing account services.
+2020-08-19 12:33:18 DEBUG User:77 - userType returned.
+2020-08-19 12:33:18 INFO  GUI:1015 - Accessing adminAccountServices
+2020-08-19 12:33:18 DEBUG User:97 - firstName returned.
+2020-08-19 12:33:20 INFO  GUI:1048 - Accessing User search by ID.
+2020-08-19 12:33:22 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:33:22 DEBUG Account:40 - Full Account object created.
+2020-08-19 12:33:22 INFO  AccountDAO:81 - Returning all Accounts owned by 1.
+2020-08-19 12:33:22 DEBUG Account:54 - owners returned.
+2020-08-19 12:33:22 DEBUG Account:44 - accountID returned.
+2020-08-19 12:33:22 DEBUG Account:64 - accountType returned.
+2020-08-19 12:33:22 DEBUG Account:84 - status returned.
+2020-08-19 12:33:22 DEBUG Account:74 - amount returned.
+2020-08-19 12:33:22 DEBUG Account:94 - update returned.
+2020-08-19 12:33:22 DEBUG Update:32 - updateTime returned.
+2020-08-19 12:33:22 DEBUG Account:94 - update returned.
+2020-08-19 12:33:22 DEBUG Update:40 - updater returned.
+2020-08-19 12:33:26 INFO  GUI:1422 - Returning to Account Services Menu.
+2020-08-19 12:33:26 DEBUG User:77 - userType returned.
+2020-08-19 12:33:26 INFO  GUI:1015 - Accessing adminAccountServices
+2020-08-19 12:33:26 DEBUG User:97 - firstName returned.
+2020-08-19 12:33:27 INFO  GUI:1061 - Changing Status as Admin.
+2020-08-19 12:33:32 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:33:32 DEBUG Account:40 - Full Account object created.
+2020-08-19 12:33:32 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 12:33:32 INFO  GUI:1709 - Changed to Approved status.
+2020-08-19 12:33:32 DEBUG User:47 - userID returned.
+2020-08-19 12:33:32 INFO  UserDAO:205 - Successfully changed the userStatus.
+2020-08-19 12:33:33 DEBUG User:77 - userType returned.
+2020-08-19 12:33:33 INFO  GUI:1015 - Accessing adminAccountServices
+2020-08-19 12:33:33 DEBUG User:97 - firstName returned.
+2020-08-19 12:33:34 INFO  GUI:1061 - Changing Status as Admin.
+2020-08-19 12:33:36 INFO  AccountDAO:155 - No Account with that accountID exists.
+2020-08-19 12:33:37 DEBUG User:77 - userType returned.
+2020-08-19 12:33:37 INFO  GUI:1015 - Accessing adminAccountServices
+2020-08-19 12:33:37 DEBUG User:97 - firstName returned.
+2020-08-19 12:33:43 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:43:55 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:43:55 DEBUG User:43 - Full User object created.
+2020-08-19 12:43:55 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:43:55 DEBUG User:87 - userStatus returned.
+2020-08-19 12:43:55 DEBUG User:87 - userStatus returned.
+2020-08-19 12:43:55 DEBUG User:67 - password returned.
+2020-08-19 12:43:55 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:43:55 INFO  GUI:162 - Successful login.
+2020-08-19 12:43:55 DEBUG User:97 - firstName returned.
+2020-08-19 12:43:56 INFO  GUI:300 - Accessing account services.
+2020-08-19 12:43:56 DEBUG User:77 - userType returned.
+2020-08-19 12:43:56 INFO  GUI:1015 - Accessing adminAccountServices
+2020-08-19 12:43:56 DEBUG User:97 - firstName returned.
+2020-08-19 12:43:57 INFO  GUI:1100 - Transferring as Admin.
+2020-08-19 12:44:10 DEBUG User:77 - userType returned.
+2020-08-19 12:44:10 INFO  GUI:1015 - Accessing adminAccountServices
+2020-08-19 12:44:10 DEBUG User:97 - firstName returned.
+2020-08-19 12:44:18 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:46:13 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:46:13 DEBUG User:43 - Full User object created.
+2020-08-19 12:46:13 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:46:13 DEBUG User:87 - userStatus returned.
+2020-08-19 12:46:13 DEBUG User:87 - userStatus returned.
+2020-08-19 12:46:13 DEBUG User:67 - password returned.
+2020-08-19 12:46:13 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:46:13 INFO  GUI:162 - Successful login.
+2020-08-19 12:46:13 DEBUG User:97 - firstName returned.
+2020-08-19 12:46:14 INFO  GUI:300 - Accessing account services.
+2020-08-19 12:46:14 DEBUG User:77 - userType returned.
+2020-08-19 12:46:14 DEBUG User:77 - userType returned.
+2020-08-19 12:46:14 INFO  GUI:1201 - Accessing customerAccountServices
+2020-08-19 12:46:14 DEBUG User:97 - firstName returned.
+2020-08-19 12:46:15 INFO  GUI:1218 - Opening new account.
+2020-08-19 12:46:18 INFO  GUI:1517 - New savings account selected.
+2020-08-19 12:46:18 DEBUG User:47 - userID returned.
+2020-08-19 12:46:18 DEBUG User:47 - userID returned.
+2020-08-19 12:46:18 DEBUG Account:29 - New Account object created.
+2020-08-19 12:46:19 DEBUG Account:54 - owners returned.
+2020-08-19 12:46:19 DEBUG Account:64 - accountType returned.
+2020-08-19 12:46:19 DEBUG Account:74 - amount returned.
+2020-08-19 12:46:19 DEBUG Account:84 - status returned.
+2020-08-19 12:46:19 INFO  AccountDAO:207 - Successfully added new Account.
+2020-08-19 12:46:19 INFO  GUI:1519 - New savings account created.
+2020-08-19 12:46:22 DEBUG User:77 - userType returned.
+2020-08-19 12:46:22 DEBUG User:77 - userType returned.
+2020-08-19 12:46:22 INFO  GUI:1201 - Accessing customerAccountServices
+2020-08-19 12:46:22 DEBUG User:97 - firstName returned.
+2020-08-19 12:46:24 INFO  GUI:1244 - Opening new joint account.
+2020-08-19 12:46:29 DEBUG User:77 - userType returned.
+2020-08-19 12:46:29 DEBUG User:77 - userType returned.
+2020-08-19 12:46:29 INFO  GUI:1201 - Accessing customerAccountServices
+2020-08-19 12:46:29 DEBUG User:97 - firstName returned.
+2020-08-19 12:46:30 INFO  GUI:1244 - Opening new joint account.
+2020-08-19 12:46:34 DEBUG User:77 - userType returned.
+2020-08-19 12:46:34 DEBUG User:77 - userType returned.
+2020-08-19 12:46:34 INFO  GUI:1201 - Accessing customerAccountServices
+2020-08-19 12:46:34 DEBUG User:97 - firstName returned.
+2020-08-19 12:46:37 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:49:22 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:49:22 DEBUG User:43 - Full User object created.
+2020-08-19 12:49:22 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:49:22 DEBUG User:87 - userStatus returned.
+2020-08-19 12:49:22 DEBUG User:87 - userStatus returned.
+2020-08-19 12:49:22 DEBUG User:67 - password returned.
+2020-08-19 12:49:22 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:49:22 INFO  GUI:162 - Successful login.
+2020-08-19 12:49:22 DEBUG User:97 - firstName returned.
+2020-08-19 12:49:23 INFO  GUI:300 - Accessing account services.
+2020-08-19 12:49:23 DEBUG User:77 - userType returned.
+2020-08-19 12:49:23 DEBUG User:77 - userType returned.
+2020-08-19 12:49:23 INFO  GUI:1201 - Accessing customerAccountServices
+2020-08-19 12:49:23 DEBUG User:97 - firstName returned.
+2020-08-19 12:49:24 INFO  GUI:1244 - Opening new joint account.
+2020-08-19 12:49:24 DEBUG User:47 - userID returned.
+2020-08-19 12:49:24 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:49:24 DEBUG Account:40 - Full Account object created.
+2020-08-19 12:49:24 INFO  AccountDAO:81 - Returning all Accounts owned by 2.
+2020-08-19 12:49:24 DEBUG Account:54 - owners returned.
+2020-08-19 12:49:24 DEBUG Account:44 - accountID returned.
+2020-08-19 12:49:24 DEBUG Account:64 - accountType returned.
+2020-08-19 12:49:24 DEBUG Account:84 - status returned.
+2020-08-19 12:49:24 DEBUG Account:74 - amount returned.
+2020-08-19 12:49:24 DEBUG Account:94 - update returned.
+2020-08-19 12:49:24 DEBUG Update:32 - updateTime returned.
+2020-08-19 12:49:24 DEBUG Account:94 - update returned.
+2020-08-19 12:49:24 DEBUG Update:40 - updater returned.
+2020-08-19 12:49:30 INFO  GUI:1359 - Returning to Account Services Menu.
+2020-08-19 12:49:30 DEBUG User:77 - userType returned.
+2020-08-19 12:49:30 DEBUG User:77 - userType returned.
+2020-08-19 12:49:30 INFO  GUI:1201 - Accessing customerAccountServices
+2020-08-19 12:49:30 DEBUG User:97 - firstName returned.
+2020-08-19 12:49:31 INFO  GUI:1273 - Calling deposit...
+2020-08-19 12:49:36 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:49:36 DEBUG Account:40 - Full Account object created.
+2020-08-19 12:49:36 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 12:49:36 DEBUG User:77 - userType returned.
+2020-08-19 12:49:36 DEBUG User:47 - userID returned.
+2020-08-19 12:49:36 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:49:36 DEBUG Account:40 - Full Account object created.
+2020-08-19 12:49:36 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 12:49:36 DEBUG Account:54 - owners returned.
+2020-08-19 12:49:36 INFO  GUI:1963 - Attempting to deposit...
+2020-08-19 12:49:36 DEBUG Account:44 - accountID returned.
+2020-08-19 12:49:36 DEBUG User:47 - userID returned.
+2020-08-19 12:49:36 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:49:36 DEBUG Account:40 - Full Account object created.
+2020-08-19 12:49:36 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 12:49:36 DEBUG Account:74 - amount returned.
+2020-08-19 12:49:36 INFO  AccountDAO:242 - Successfully updated the amount.
+2020-08-19 12:49:36 INFO  GUI:1965 - Deposit successful!
+2020-08-19 12:49:38 DEBUG User:77 - userType returned.
+2020-08-19 12:49:38 DEBUG User:77 - userType returned.
+2020-08-19 12:49:38 INFO  GUI:1201 - Accessing customerAccountServices
+2020-08-19 12:49:38 DEBUG User:97 - firstName returned.
+2020-08-19 12:49:43 INFO  GUI:1244 - Opening new joint account.
+2020-08-19 12:49:43 DEBUG User:47 - userID returned.
+2020-08-19 12:49:43 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:49:43 DEBUG Account:40 - Full Account object created.
+2020-08-19 12:49:43 INFO  AccountDAO:81 - Returning all Accounts owned by 2.
+2020-08-19 12:49:43 DEBUG Account:54 - owners returned.
+2020-08-19 12:49:43 DEBUG Account:44 - accountID returned.
+2020-08-19 12:49:43 DEBUG Account:64 - accountType returned.
+2020-08-19 12:49:43 DEBUG Account:84 - status returned.
+2020-08-19 12:49:43 DEBUG Account:74 - amount returned.
+2020-08-19 12:49:43 DEBUG Account:94 - update returned.
+2020-08-19 12:49:43 DEBUG Update:32 - updateTime returned.
+2020-08-19 12:49:43 DEBUG Account:94 - update returned.
+2020-08-19 12:49:43 DEBUG Update:40 - updater returned.
+2020-08-19 12:49:44 INFO  GUI:1359 - Returning to Account Services Menu.
+2020-08-19 12:49:44 DEBUG User:77 - userType returned.
+2020-08-19 12:49:44 DEBUG User:77 - userType returned.
+2020-08-19 12:49:44 INFO  GUI:1201 - Accessing customerAccountServices
+2020-08-19 12:49:44 DEBUG User:97 - firstName returned.
+2020-08-19 12:49:48 INFO  Driver:21 - Exiting the program.
+2020-08-19 12:51:24 DEBUG Update:28 - Full Update object created.
+2020-08-19 12:51:24 DEBUG User:43 - Full User object created.
+2020-08-19 12:51:24 INFO  UserDAO:104 - Returning found User.
+2020-08-19 12:51:24 DEBUG User:87 - userStatus returned.
+2020-08-19 12:51:24 DEBUG User:87 - userStatus returned.
+2020-08-19 12:51:24 DEBUG User:67 - password returned.
+2020-08-19 12:51:24 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 12:51:24 INFO  GUI:162 - Successful login.
+2020-08-19 12:51:24 DEBUG User:97 - firstName returned.
+2020-08-19 12:51:25 DEBUG User:77 - userType returned.
+2020-08-19 12:51:25 INFO  GUI:281 - Accessing employeeServices
+2020-08-19 12:51:25 DEBUG User:97 - firstName returned.
+2020-08-19 12:51:31 INFO  Driver:21 - Exiting the program.
+2020-08-19 13:17:05 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:17:05 DEBUG User:43 - Full User object created.
+2020-08-19 13:17:05 INFO  UserDAO:104 - Returning found User.
+2020-08-19 13:17:05 DEBUG User:87 - userStatus returned.
+2020-08-19 13:17:05 DEBUG User:87 - userStatus returned.
+2020-08-19 13:17:05 DEBUG User:67 - password returned.
+2020-08-19 13:17:05 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 13:17:05 INFO  GUI:162 - Successful login.
+2020-08-19 13:17:05 DEBUG User:97 - firstName returned.
+2020-08-19 13:17:06 INFO  GUI:280 - Accessing customerServices
+2020-08-19 13:17:06 DEBUG User:77 - userType returned.
+2020-08-19 13:17:06 DEBUG User:97 - firstName returned.
+2020-08-19 13:17:11 DEBUG User:77 - userType returned.
+2020-08-19 13:17:11 DEBUG User:97 - firstName returned.
+2020-08-19 13:17:12 INFO  GUI:342 - Viewing all users.
+2020-08-19 13:17:12 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:17:12 DEBUG User:43 - Full User object created.
+2020-08-19 13:17:12 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:17:12 DEBUG User:43 - Full User object created.
+2020-08-19 13:17:12 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:17:12 DEBUG User:43 - Full User object created.
+2020-08-19 13:17:12 INFO  UserDAO:35 - Returning all Users.
+2020-08-19 13:17:12 DEBUG User:47 - userID returned.
+2020-08-19 13:17:12 DEBUG User:57 - userName returned.
+2020-08-19 13:17:12 DEBUG User:67 - password returned.
+2020-08-19 13:17:12 DEBUG User:77 - userType returned.
+2020-08-19 13:17:12 DEBUG User:87 - userStatus returned.
+2020-08-19 13:17:12 DEBUG User:97 - firstName returned.
+2020-08-19 13:17:12 DEBUG User:107 - lastName returned.
+2020-08-19 13:17:12 DEBUG User:117 - update returned.
+2020-08-19 13:17:12 DEBUG Update:32 - updateTime returned.
+2020-08-19 13:17:12 DEBUG User:117 - update returned.
+2020-08-19 13:17:12 DEBUG Update:40 - updater returned.
+2020-08-19 13:17:12 DEBUG User:47 - userID returned.
+2020-08-19 13:17:12 DEBUG User:57 - userName returned.
+2020-08-19 13:17:12 DEBUG User:67 - password returned.
+2020-08-19 13:17:12 DEBUG User:77 - userType returned.
+2020-08-19 13:17:12 DEBUG User:87 - userStatus returned.
+2020-08-19 13:17:12 DEBUG User:97 - firstName returned.
+2020-08-19 13:17:12 DEBUG User:107 - lastName returned.
+2020-08-19 13:17:12 DEBUG User:117 - update returned.
+2020-08-19 13:17:12 DEBUG Update:32 - updateTime returned.
+2020-08-19 13:17:12 DEBUG User:117 - update returned.
+2020-08-19 13:17:12 DEBUG Update:40 - updater returned.
+2020-08-19 13:17:12 DEBUG User:47 - userID returned.
+2020-08-19 13:17:12 DEBUG User:57 - userName returned.
+2020-08-19 13:17:12 DEBUG User:67 - password returned.
+2020-08-19 13:17:12 DEBUG User:77 - userType returned.
+2020-08-19 13:17:12 DEBUG User:87 - userStatus returned.
+2020-08-19 13:17:12 DEBUG User:97 - firstName returned.
+2020-08-19 13:17:12 DEBUG User:107 - lastName returned.
+2020-08-19 13:17:12 DEBUG User:117 - update returned.
+2020-08-19 13:17:12 DEBUG Update:32 - updateTime returned.
+2020-08-19 13:17:12 DEBUG User:117 - update returned.
+2020-08-19 13:17:12 DEBUG Update:40 - updater returned.
+2020-08-19 13:17:14 INFO  GUI:492 - Returning to Services Menu.
+2020-08-19 13:17:14 DEBUG User:77 - userType returned.
+2020-08-19 13:17:14 DEBUG User:97 - firstName returned.
+2020-08-19 13:17:18 INFO  UserServices:126 - Returning found user.
+2020-08-19 13:17:18 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:17:18 DEBUG User:43 - Full User object created.
+2020-08-19 13:17:18 INFO  UserDAO:80 - Returning found user.
+2020-08-19 13:17:18 INFO  GUI:1054 - Changed to Employee status.
+2020-08-19 13:17:18 DEBUG User:47 - userID returned.
+2020-08-19 13:17:18 DEBUG User:47 - userID returned.
+2020-08-19 13:17:18 WARN  UserDAO:250 - Encountered an SQLException in UserDAO.changeType().
+2020-08-19 13:17:18 ERROR UserDAO:253 - Connection failed in UserDAO.changeType().
+2020-08-19 13:17:20 DEBUG User:77 - userType returned.
+2020-08-19 13:17:20 DEBUG User:97 - firstName returned.
+2020-08-19 13:17:21 INFO  Driver:21 - Exiting the program.
+2020-08-19 13:17:52 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:17:52 DEBUG User:43 - Full User object created.
+2020-08-19 13:17:52 INFO  UserDAO:104 - Returning found User.
+2020-08-19 13:17:52 DEBUG User:87 - userStatus returned.
+2020-08-19 13:17:52 DEBUG User:87 - userStatus returned.
+2020-08-19 13:17:52 DEBUG User:67 - password returned.
+2020-08-19 13:17:52 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 13:17:52 INFO  GUI:162 - Successful login.
+2020-08-19 13:17:52 DEBUG User:97 - firstName returned.
+2020-08-19 13:17:53 INFO  GUI:280 - Accessing customerServices
+2020-08-19 13:17:53 DEBUG User:77 - userType returned.
+2020-08-19 13:17:53 DEBUG User:97 - firstName returned.
+2020-08-19 13:17:56 INFO  UserServices:126 - Returning found user.
+2020-08-19 13:17:57 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:17:57 DEBUG User:43 - Full User object created.
+2020-08-19 13:17:57 INFO  UserDAO:80 - Returning found user.
+2020-08-19 13:17:57 INFO  GUI:1054 - Changed to Employee status.
+2020-08-19 13:17:57 DEBUG User:47 - userID returned.
+2020-08-19 13:17:57 DEBUG User:47 - userID returned.
+2020-08-19 13:17:57 INFO  UserDAO:247 - Successfully changed the userType.
+2020-08-19 13:17:58 DEBUG User:77 - userType returned.
+2020-08-19 13:17:58 DEBUG User:97 - firstName returned.
+2020-08-19 13:18:00 INFO  GUI:418 - Returning to Services Menu.
+2020-08-19 13:18:00 DEBUG User:97 - firstName returned.
+2020-08-19 13:18:01 INFO  GUI:308 - Logging out...
+2020-08-19 13:18:08 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:18:08 DEBUG User:43 - Full User object created.
+2020-08-19 13:18:08 INFO  UserDAO:104 - Returning found User.
+2020-08-19 13:18:08 DEBUG User:87 - userStatus returned.
+2020-08-19 13:18:08 DEBUG User:87 - userStatus returned.
+2020-08-19 13:18:08 DEBUG User:67 - password returned.
+2020-08-19 13:18:08 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 13:18:08 INFO  GUI:162 - Successful login.
+2020-08-19 13:18:08 DEBUG User:97 - firstName returned.
+2020-08-19 13:18:09 INFO  GUI:280 - Accessing customerServices
+2020-08-19 13:18:09 DEBUG User:77 - userType returned.
+2020-08-19 13:18:09 DEBUG User:77 - userType returned.
+2020-08-19 13:18:11 INFO  Driver:21 - Exiting the program.
+2020-08-19 13:20:10 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:20:10 DEBUG User:43 - Full User object created.
+2020-08-19 13:20:10 INFO  UserDAO:104 - Returning found User.
+2020-08-19 13:20:10 DEBUG User:87 - userStatus returned.
+2020-08-19 13:20:10 DEBUG User:87 - userStatus returned.
+2020-08-19 13:20:10 DEBUG User:67 - password returned.
+2020-08-19 13:20:10 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 13:20:10 INFO  GUI:162 - Successful login.
+2020-08-19 13:20:10 DEBUG User:97 - firstName returned.
+2020-08-19 13:20:11 INFO  GUI:294 - Accessing account services.
+2020-08-19 13:20:11 DEBUG User:77 - userType returned.
+2020-08-19 13:20:11 INFO  GUI:1185 - Accessing adminAccountServices
+2020-08-19 13:20:11 DEBUG User:97 - firstName returned.
+2020-08-19 13:20:12 INFO  GUI:1205 - Viewing all accounts.
+2020-08-19 13:20:12 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:20:12 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:20:12 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:20:12 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:20:12 INFO  AccountDAO:35 - Returning all Accounts.
+2020-08-19 13:20:12 DEBUG Account:54 - owners returned.
+2020-08-19 13:20:12 DEBUG Account:44 - accountID returned.
+2020-08-19 13:20:12 DEBUG Account:64 - accountType returned.
+2020-08-19 13:20:12 DEBUG Account:84 - status returned.
+2020-08-19 13:20:12 DEBUG Account:74 - amount returned.
+2020-08-19 13:20:12 DEBUG Account:94 - update returned.
+2020-08-19 13:20:12 DEBUG Update:32 - updateTime returned.
+2020-08-19 13:20:12 DEBUG Account:94 - update returned.
+2020-08-19 13:20:12 DEBUG Update:40 - updater returned.
+2020-08-19 13:20:12 DEBUG Account:54 - owners returned.
+2020-08-19 13:20:12 DEBUG Account:44 - accountID returned.
+2020-08-19 13:20:12 DEBUG Account:64 - accountType returned.
+2020-08-19 13:20:12 DEBUG Account:84 - status returned.
+2020-08-19 13:20:12 DEBUG Account:74 - amount returned.
+2020-08-19 13:20:12 DEBUG Account:94 - update returned.
+2020-08-19 13:20:12 DEBUG Update:32 - updateTime returned.
+2020-08-19 13:20:12 DEBUG Account:94 - update returned.
+2020-08-19 13:20:12 DEBUG Update:40 - updater returned.
+2020-08-19 13:20:16 INFO  GUI:1487 - Returning to Account Services Menu.
+2020-08-19 13:20:16 DEBUG User:77 - userType returned.
+2020-08-19 13:20:16 INFO  GUI:1185 - Accessing adminAccountServices
+2020-08-19 13:20:16 DEBUG User:97 - firstName returned.
+2020-08-19 13:20:17 INFO  GUI:1219 - Accessing User search by ID.
+2020-08-19 13:20:18 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:20:18 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:20:18 INFO  AccountDAO:81 - Returning all Accounts owned by 2.
+2020-08-19 13:20:18 DEBUG Account:54 - owners returned.
+2020-08-19 13:20:18 DEBUG Account:44 - accountID returned.
+2020-08-19 13:20:18 DEBUG Account:64 - accountType returned.
+2020-08-19 13:20:18 DEBUG Account:84 - status returned.
+2020-08-19 13:20:18 DEBUG Account:74 - amount returned.
+2020-08-19 13:20:18 DEBUG Account:94 - update returned.
+2020-08-19 13:20:18 DEBUG Update:32 - updateTime returned.
+2020-08-19 13:20:18 DEBUG Account:94 - update returned.
+2020-08-19 13:20:18 DEBUG Update:40 - updater returned.
+2020-08-19 13:20:19 INFO  GUI:1593 - Returning to Account Services Menu.
+2020-08-19 13:20:19 DEBUG User:77 - userType returned.
+2020-08-19 13:20:19 INFO  GUI:1185 - Accessing adminAccountServices
+2020-08-19 13:20:19 DEBUG User:97 - firstName returned.
+2020-08-19 13:20:20 INFO  GUI:1232 - Changing Status as Admin.
+2020-08-19 13:20:23 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:20:23 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:20:23 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 13:20:23 INFO  GUI:1880 - Changed to Approved status.
+2020-08-19 13:20:23 DEBUG User:47 - userID returned.
+2020-08-19 13:20:23 INFO  UserDAO:205 - Successfully changed the userStatus.
+2020-08-19 13:20:24 DEBUG User:77 - userType returned.
+2020-08-19 13:20:24 INFO  GUI:1185 - Accessing adminAccountServices
+2020-08-19 13:20:24 DEBUG User:97 - firstName returned.
+2020-08-19 13:20:24 INFO  GUI:1205 - Viewing all accounts.
+2020-08-19 13:20:25 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:20:25 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:20:25 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:20:25 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:20:25 INFO  AccountDAO:35 - Returning all Accounts.
+2020-08-19 13:20:25 DEBUG Account:54 - owners returned.
+2020-08-19 13:20:25 DEBUG Account:44 - accountID returned.
+2020-08-19 13:20:25 DEBUG Account:64 - accountType returned.
+2020-08-19 13:20:25 DEBUG Account:84 - status returned.
+2020-08-19 13:20:25 DEBUG Account:74 - amount returned.
+2020-08-19 13:20:25 DEBUG Account:94 - update returned.
+2020-08-19 13:20:25 DEBUG Update:32 - updateTime returned.
+2020-08-19 13:20:25 DEBUG Account:94 - update returned.
+2020-08-19 13:20:25 DEBUG Update:40 - updater returned.
+2020-08-19 13:20:25 DEBUG Account:54 - owners returned.
+2020-08-19 13:20:25 DEBUG Account:44 - accountID returned.
+2020-08-19 13:20:25 DEBUG Account:64 - accountType returned.
+2020-08-19 13:20:25 DEBUG Account:84 - status returned.
+2020-08-19 13:20:25 DEBUG Account:74 - amount returned.
+2020-08-19 13:20:25 DEBUG Account:94 - update returned.
+2020-08-19 13:20:25 DEBUG Update:32 - updateTime returned.
+2020-08-19 13:20:25 DEBUG Account:94 - update returned.
+2020-08-19 13:20:25 DEBUG Update:40 - updater returned.
+2020-08-19 13:20:31 INFO  Driver:21 - Exiting the program.
+2020-08-19 13:21:05 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:21:05 DEBUG User:43 - Full User object created.
+2020-08-19 13:21:05 INFO  UserDAO:104 - Returning found User.
+2020-08-19 13:21:05 DEBUG User:87 - userStatus returned.
+2020-08-19 13:21:05 DEBUG User:87 - userStatus returned.
+2020-08-19 13:21:05 DEBUG User:67 - password returned.
+2020-08-19 13:21:05 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 13:21:05 INFO  GUI:162 - Successful login.
+2020-08-19 13:21:05 DEBUG User:97 - firstName returned.
+2020-08-19 13:21:11 INFO  GUI:294 - Accessing account services.
+2020-08-19 13:21:11 DEBUG User:77 - userType returned.
+2020-08-19 13:21:11 INFO  GUI:1185 - Accessing adminAccountServices
+2020-08-19 13:21:11 DEBUG User:97 - firstName returned.
+2020-08-19 13:21:12 INFO  GUI:1219 - Accessing User search by ID.
+2020-08-19 13:21:14 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:21:14 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:21:14 INFO  AccountDAO:81 - Returning all Accounts owned by 2.
+2020-08-19 13:21:14 DEBUG Account:54 - owners returned.
+2020-08-19 13:21:14 DEBUG Account:44 - accountID returned.
+2020-08-19 13:21:14 DEBUG Account:64 - accountType returned.
+2020-08-19 13:21:14 DEBUG Account:84 - status returned.
+2020-08-19 13:21:14 DEBUG Account:74 - amount returned.
+2020-08-19 13:21:14 DEBUG Account:94 - update returned.
+2020-08-19 13:21:14 DEBUG Update:32 - updateTime returned.
+2020-08-19 13:21:14 DEBUG Account:94 - update returned.
+2020-08-19 13:21:14 DEBUG Update:40 - updater returned.
+2020-08-19 13:21:29 INFO  Driver:21 - Exiting the program.
+2020-08-19 13:21:40 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:21:40 DEBUG User:43 - Full User object created.
+2020-08-19 13:21:40 INFO  UserDAO:104 - Returning found User.
+2020-08-19 13:21:40 DEBUG User:87 - userStatus returned.
+2020-08-19 13:21:40 DEBUG User:87 - userStatus returned.
+2020-08-19 13:21:40 DEBUG User:67 - password returned.
+2020-08-19 13:21:40 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 13:21:40 INFO  GUI:162 - Successful login.
+2020-08-19 13:21:40 DEBUG User:97 - firstName returned.
+2020-08-19 13:21:41 INFO  GUI:294 - Accessing account services.
+2020-08-19 13:21:41 DEBUG User:77 - userType returned.
+2020-08-19 13:21:41 INFO  GUI:1185 - Accessing adminAccountServices
+2020-08-19 13:21:41 DEBUG User:97 - firstName returned.
+2020-08-19 13:21:42 INFO  GUI:1205 - Viewing all accounts.
+2020-08-19 13:21:42 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:21:42 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:21:42 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:21:42 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:21:42 INFO  AccountDAO:35 - Returning all Accounts.
+2020-08-19 13:21:42 DEBUG Account:54 - owners returned.
+2020-08-19 13:21:42 DEBUG Account:44 - accountID returned.
+2020-08-19 13:21:42 DEBUG Account:64 - accountType returned.
+2020-08-19 13:21:42 DEBUG Account:84 - status returned.
+2020-08-19 13:21:42 DEBUG Account:74 - amount returned.
+2020-08-19 13:21:42 DEBUG Account:94 - update returned.
+2020-08-19 13:21:42 DEBUG Update:32 - updateTime returned.
+2020-08-19 13:21:42 DEBUG Account:94 - update returned.
+2020-08-19 13:21:42 DEBUG Update:40 - updater returned.
+2020-08-19 13:21:42 DEBUG Account:54 - owners returned.
+2020-08-19 13:21:42 DEBUG Account:44 - accountID returned.
+2020-08-19 13:21:42 DEBUG Account:64 - accountType returned.
+2020-08-19 13:21:42 DEBUG Account:84 - status returned.
+2020-08-19 13:21:42 DEBUG Account:74 - amount returned.
+2020-08-19 13:21:42 DEBUG Account:94 - update returned.
+2020-08-19 13:21:42 DEBUG Update:32 - updateTime returned.
+2020-08-19 13:21:42 DEBUG Account:94 - update returned.
+2020-08-19 13:21:42 DEBUG Update:40 - updater returned.
+2020-08-19 13:21:48 INFO  GUI:1487 - Returning to Account Services Menu.
+2020-08-19 13:21:48 DEBUG User:77 - userType returned.
+2020-08-19 13:21:48 INFO  GUI:1185 - Accessing adminAccountServices
+2020-08-19 13:21:48 DEBUG User:97 - firstName returned.
+2020-08-19 13:21:49 INFO  GUI:1219 - Accessing User search by ID.
+2020-08-19 13:21:51 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:21:51 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:21:51 INFO  AccountDAO:81 - Returning all Accounts owned by 1.
+2020-08-19 13:21:51 DEBUG Account:54 - owners returned.
+2020-08-19 13:21:51 DEBUG Account:44 - accountID returned.
+2020-08-19 13:21:51 DEBUG Account:64 - accountType returned.
+2020-08-19 13:21:51 DEBUG Account:84 - status returned.
+2020-08-19 13:21:51 DEBUG Account:74 - amount returned.
+2020-08-19 13:21:51 DEBUG Account:94 - update returned.
+2020-08-19 13:21:51 DEBUG Update:32 - updateTime returned.
+2020-08-19 13:21:51 DEBUG Account:94 - update returned.
+2020-08-19 13:21:51 DEBUG Update:40 - updater returned.
+2020-08-19 13:21:53 INFO  GUI:1593 - Returning to Account Services Menu.
+2020-08-19 13:21:53 DEBUG User:77 - userType returned.
+2020-08-19 13:21:53 INFO  GUI:1185 - Accessing adminAccountServices
+2020-08-19 13:21:53 DEBUG User:97 - firstName returned.
+2020-08-19 13:21:58 INFO  GUI:1232 - Changing Status as Admin.
+2020-08-19 13:22:01 DEBUG User:77 - userType returned.
+2020-08-19 13:22:01 INFO  GUI:1185 - Accessing adminAccountServices
+2020-08-19 13:22:01 DEBUG User:97 - firstName returned.
+2020-08-19 13:22:03 INFO  GUI:1245 - Withdrawing as Admin.
+2020-08-19 13:22:09 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:22:09 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:22:09 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 13:22:09 DEBUG User:77 - userType returned.
+2020-08-19 13:22:09 DEBUG Account:74 - amount returned.
+2020-08-19 13:22:09 WARN  GUI:2048 - Withdraw unsuccessful, amount is greater than balance.
+2020-08-19 13:22:09 DEBUG Account:74 - amount returned.
+2020-08-19 13:22:12 DEBUG User:77 - userType returned.
+2020-08-19 13:22:12 INFO  GUI:1185 - Accessing adminAccountServices
+2020-08-19 13:22:12 DEBUG User:97 - firstName returned.
+2020-08-19 13:22:13 INFO  GUI:1258 - Depositing as Admin.
+2020-08-19 13:22:17 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:22:17 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:22:17 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 13:22:17 DEBUG User:77 - userType returned.
+2020-08-19 13:22:17 INFO  GUI:2133 - Attempting to deposit...
+2020-08-19 13:22:17 DEBUG Account:44 - accountID returned.
+2020-08-19 13:22:17 DEBUG User:47 - userID returned.
+2020-08-19 13:22:17 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:22:17 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:22:17 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 13:22:17 DEBUG Account:74 - amount returned.
+2020-08-19 13:22:17 INFO  AccountDAO:242 - Successfully updated the amount.
+2020-08-19 13:22:17 INFO  GUI:2135 - Deposit successful!
+2020-08-19 13:22:18 DEBUG User:77 - userType returned.
+2020-08-19 13:22:18 INFO  GUI:1185 - Accessing adminAccountServices
+2020-08-19 13:22:18 DEBUG User:97 - firstName returned.
+2020-08-19 13:22:20 INFO  GUI:1205 - Viewing all accounts.
+2020-08-19 13:22:20 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:22:20 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:22:20 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:22:20 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:22:20 INFO  AccountDAO:35 - Returning all Accounts.
+2020-08-19 13:22:20 DEBUG Account:54 - owners returned.
+2020-08-19 13:22:20 DEBUG Account:44 - accountID returned.
+2020-08-19 13:22:20 DEBUG Account:64 - accountType returned.
+2020-08-19 13:22:20 DEBUG Account:84 - status returned.
+2020-08-19 13:22:20 DEBUG Account:74 - amount returned.
+2020-08-19 13:22:20 DEBUG Account:94 - update returned.
+2020-08-19 13:22:20 DEBUG Update:32 - updateTime returned.
+2020-08-19 13:22:20 DEBUG Account:94 - update returned.
+2020-08-19 13:22:20 DEBUG Update:40 - updater returned.
+2020-08-19 13:22:20 DEBUG Account:54 - owners returned.
+2020-08-19 13:22:20 DEBUG Account:44 - accountID returned.
+2020-08-19 13:22:20 DEBUG Account:64 - accountType returned.
+2020-08-19 13:22:20 DEBUG Account:84 - status returned.
+2020-08-19 13:22:20 DEBUG Account:74 - amount returned.
+2020-08-19 13:22:20 DEBUG Account:94 - update returned.
+2020-08-19 13:22:20 DEBUG Update:32 - updateTime returned.
+2020-08-19 13:22:20 DEBUG Account:94 - update returned.
+2020-08-19 13:22:20 DEBUG Update:40 - updater returned.
+2020-08-19 13:22:22 INFO  GUI:1487 - Returning to Account Services Menu.
+2020-08-19 13:22:22 DEBUG User:77 - userType returned.
+2020-08-19 13:22:22 INFO  GUI:1185 - Accessing adminAccountServices
+2020-08-19 13:22:22 DEBUG User:97 - firstName returned.
+2020-08-19 13:22:23 INFO  GUI:1245 - Withdrawing as Admin.
+2020-08-19 13:22:28 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:22:28 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:22:28 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 13:22:28 DEBUG User:77 - userType returned.
+2020-08-19 13:22:28 DEBUG Account:74 - amount returned.
+2020-08-19 13:22:28 INFO  GUI:2053 - Attempting to withdraw...
+2020-08-19 13:22:28 DEBUG Account:44 - accountID returned.
+2020-08-19 13:22:28 DEBUG User:47 - userID returned.
+2020-08-19 13:22:28 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:22:28 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:22:28 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 13:22:28 DEBUG Account:74 - amount returned.
+2020-08-19 13:22:28 INFO  AccountDAO:242 - Successfully updated the amount.
+2020-08-19 13:22:28 INFO  GUI:2055 - Withdraw successful!
+2020-08-19 13:22:29 DEBUG User:77 - userType returned.
+2020-08-19 13:22:29 INFO  GUI:1185 - Accessing adminAccountServices
+2020-08-19 13:22:29 DEBUG User:97 - firstName returned.
+2020-08-19 13:22:32 INFO  GUI:1258 - Depositing as Admin.
+2020-08-19 13:22:38 INFO  AccountDAO:155 - No Account with that accountID exists.
+2020-08-19 13:22:39 WARN  GUI:2128 - Negative amount entered for deposit.
+2020-08-19 13:22:40 DEBUG User:77 - userType returned.
+2020-08-19 13:22:40 INFO  GUI:1185 - Accessing adminAccountServices
+2020-08-19 13:22:40 DEBUG User:97 - firstName returned.
+2020-08-19 13:22:42 DEBUG User:77 - userType returned.
+2020-08-19 13:22:42 INFO  GUI:1185 - Accessing adminAccountServices
+2020-08-19 13:22:42 DEBUG User:97 - firstName returned.
+2020-08-19 13:22:48 INFO  GUI:1271 - Transferring as Admin.
+2020-08-19 13:22:50 INFO  GUI:1271 - Transferring as Admin.
+2020-08-19 13:22:59 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:22:59 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:22:59 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 13:22:59 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:22:59 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:22:59 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 13:22:59 DEBUG User:77 - userType returned.
+2020-08-19 13:23:59 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:23:59 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:23:59 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 13:23:59 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:23:59 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:23:59 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 13:23:59 DEBUG User:77 - userType returned.
+2020-08-19 13:24:00 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:24:00 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:24:00 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 13:24:01 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:24:01 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:24:01 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 13:24:01 DEBUG User:77 - userType returned.
+2020-08-19 13:24:01 DEBUG User:77 - userType returned.
+2020-08-19 13:24:01 INFO  GUI:1185 - Accessing adminAccountServices
+2020-08-19 13:24:01 DEBUG User:97 - firstName returned.
+2020-08-19 13:24:01 DEBUG User:77 - userType returned.
+2020-08-19 13:24:01 INFO  GUI:1185 - Accessing adminAccountServices
+2020-08-19 13:24:01 DEBUG User:97 - firstName returned.
+2020-08-19 13:24:03 INFO  Driver:21 - Exiting the program.
+2020-08-19 13:24:47 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:24:47 DEBUG User:43 - Full User object created.
+2020-08-19 13:24:47 INFO  UserDAO:104 - Returning found User.
+2020-08-19 13:24:47 DEBUG User:87 - userStatus returned.
+2020-08-19 13:24:47 DEBUG User:87 - userStatus returned.
+2020-08-19 13:24:47 DEBUG User:67 - password returned.
+2020-08-19 13:24:47 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 13:24:47 INFO  GUI:162 - Successful login.
+2020-08-19 13:24:47 DEBUG User:97 - firstName returned.
+2020-08-19 13:24:48 INFO  GUI:294 - Accessing account services.
+2020-08-19 13:24:48 DEBUG User:77 - userType returned.
+2020-08-19 13:24:48 INFO  GUI:1185 - Accessing adminAccountServices
+2020-08-19 13:24:48 DEBUG User:97 - firstName returned.
+2020-08-19 13:24:49 INFO  GUI:1271 - Transferring as Admin.
+2020-08-19 13:24:54 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:24:54 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:24:54 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 13:24:54 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:24:54 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:24:54 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 13:24:54 DEBUG User:77 - userType returned.
+2020-08-19 13:24:54 DEBUG Account:74 - amount returned.
+2020-08-19 13:24:54 INFO  GUI:2227 - Transferring amount...
+2020-08-19 13:24:54 DEBUG Account:44 - accountID returned.
+2020-08-19 13:24:54 DEBUG Account:44 - accountID returned.
+2020-08-19 13:24:54 DEBUG User:47 - userID returned.
+2020-08-19 13:24:55 INFO  AccountDAO:242 - Successfully updated the amount.
+2020-08-19 13:24:55 INFO  AccountDAO:256 - Successfully updated 1.
+2020-08-19 13:24:55 INFO  AccountDAO:242 - Successfully updated the amount.
+2020-08-19 13:24:55 INFO  AccountDAO:258 - Successfully updated 2.
+2020-08-19 13:24:55 INFO  GUI:2229 - Transfer successful.
+2020-08-19 13:24:56 DEBUG User:77 - userType returned.
+2020-08-19 13:24:56 INFO  GUI:1185 - Accessing adminAccountServices
+2020-08-19 13:24:56 DEBUG User:97 - firstName returned.
+2020-08-19 13:25:03 INFO  GUI:1285 - Returning to Services Menu.
+2020-08-19 13:25:03 DEBUG User:97 - firstName returned.
+2020-08-19 13:25:04 INFO  GUI:308 - Logging out...
+2020-08-19 13:25:21 INFO  UserDAO:107 - No User with that userName exists.
+2020-08-19 13:25:21 DEBUG User:30 - New User object created.
+2020-08-19 13:25:21 DEBUG User:57 - userName returned.
+2020-08-19 13:25:21 DEBUG User:67 - password returned.
+2020-08-19 13:25:21 DEBUG User:77 - userType returned.
+2020-08-19 13:25:21 DEBUG User:87 - userStatus returned.
+2020-08-19 13:25:21 DEBUG User:97 - firstName returned.
+2020-08-19 13:25:21 DEBUG User:107 - lastName returned.
+2020-08-19 13:25:21 INFO  UserDAO:184 - Successfully added the new User.
+2020-08-19 13:25:28 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:25:28 DEBUG User:43 - Full User object created.
+2020-08-19 13:25:28 INFO  UserDAO:104 - Returning found User.
+2020-08-19 13:25:28 DEBUG User:87 - userStatus returned.
+2020-08-19 13:25:28 WARN  GUI:154 - userStatus still pending.
+2020-08-19 13:25:35 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:25:35 DEBUG User:43 - Full User object created.
+2020-08-19 13:25:35 INFO  UserDAO:104 - Returning found User.
+2020-08-19 13:25:35 DEBUG User:87 - userStatus returned.
+2020-08-19 13:25:35 DEBUG User:87 - userStatus returned.
+2020-08-19 13:25:35 DEBUG User:67 - password returned.
+2020-08-19 13:25:35 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 13:25:35 INFO  GUI:162 - Successful login.
+2020-08-19 13:25:35 DEBUG User:97 - firstName returned.
+2020-08-19 13:25:38 INFO  GUI:280 - Accessing customerServices
+2020-08-19 13:25:38 DEBUG User:77 - userType returned.
+2020-08-19 13:25:38 DEBUG User:97 - firstName returned.
+2020-08-19 13:25:39 INFO  GUI:368 - Viewing pending users.
+2020-08-19 13:25:40 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:25:40 DEBUG User:43 - Full User object created.
+2020-08-19 13:25:40 INFO  UserDAO:133 - Returning all Users with status Pending.
+2020-08-19 13:25:40 DEBUG User:47 - userID returned.
+2020-08-19 13:25:40 DEBUG User:57 - userName returned.
+2020-08-19 13:25:40 DEBUG User:67 - password returned.
+2020-08-19 13:25:40 DEBUG User:77 - userType returned.
+2020-08-19 13:25:40 DEBUG User:87 - userStatus returned.
+2020-08-19 13:25:40 DEBUG User:97 - firstName returned.
+2020-08-19 13:25:40 DEBUG User:107 - lastName returned.
+2020-08-19 13:25:40 DEBUG User:117 - update returned.
+2020-08-19 13:25:40 DEBUG Update:32 - updateTime returned.
+2020-08-19 13:25:40 DEBUG User:117 - update returned.
+2020-08-19 13:25:40 DEBUG Update:40 - updater returned.
+2020-08-19 13:25:41 INFO  GUI:757 - Returning to userServices Menu.
+2020-08-19 13:25:41 DEBUG User:77 - userType returned.
+2020-08-19 13:25:41 DEBUG User:97 - firstName returned.
+2020-08-19 13:25:43 DEBUG User:77 - userType returned.
+2020-08-19 13:25:45 INFO  UserServices:126 - Returning found user.
+2020-08-19 13:25:46 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:25:46 DEBUG User:43 - Full User object created.
+2020-08-19 13:25:46 INFO  UserDAO:80 - Returning found user.
+2020-08-19 13:25:46 INFO  GUI:972 - Changed to Approved status.
+2020-08-19 13:25:46 DEBUG User:47 - userID returned.
+2020-08-19 13:25:46 INFO  UserDAO:205 - Successfully changed the userStatus.
+2020-08-19 13:25:47 DEBUG User:77 - userType returned.
+2020-08-19 13:25:47 DEBUG User:97 - firstName returned.
+2020-08-19 13:25:48 INFO  GUI:418 - Returning to Services Menu.
+2020-08-19 13:25:48 DEBUG User:97 - firstName returned.
+2020-08-19 13:25:49 INFO  GUI:308 - Logging out...
+2020-08-19 13:25:56 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:25:56 DEBUG User:43 - Full User object created.
+2020-08-19 13:25:56 INFO  UserDAO:104 - Returning found User.
+2020-08-19 13:25:56 DEBUG User:87 - userStatus returned.
+2020-08-19 13:25:56 DEBUG User:87 - userStatus returned.
+2020-08-19 13:25:56 DEBUG User:67 - password returned.
+2020-08-19 13:25:56 INFO  UserServices:68 - Successfully logged in.
+2020-08-19 13:25:56 INFO  GUI:162 - Successful login.
+2020-08-19 13:25:56 DEBUG User:97 - firstName returned.
+2020-08-19 13:26:01 INFO  GUI:280 - Accessing customerServices
+2020-08-19 13:26:01 DEBUG User:77 - userType returned.
+2020-08-19 13:26:01 DEBUG User:77 - userType returned.
+2020-08-19 13:26:01 DEBUG User:97 - firstName returned.
+2020-08-19 13:26:03 INFO  GUI:538 - Changing password.
+2020-08-19 13:26:03 DEBUG User:77 - userType returned.
+2020-08-19 13:26:03 INFO  GUI:856 - Changing passwords as an employee or customer.
+2020-08-19 13:26:09 DEBUG User:47 - userID returned.
+2020-08-19 13:26:09 DEBUG User:47 - userID returned.
+2020-08-19 13:26:09 INFO  UserDAO:226 - Successfully changed the password.
+2020-08-19 13:26:10 DEBUG User:77 - userType returned.
+2020-08-19 13:26:10 DEBUG User:77 - userType returned.
+2020-08-19 13:26:10 DEBUG User:97 - firstName returned.
+2020-08-19 13:26:11 INFO  GUI:552 - Returning to Services Menu.
+2020-08-19 13:26:11 DEBUG User:97 - firstName returned.
+2020-08-19 13:26:12 INFO  GUI:294 - Accessing account services.
+2020-08-19 13:26:12 DEBUG User:77 - userType returned.
+2020-08-19 13:26:12 DEBUG User:77 - userType returned.
+2020-08-19 13:26:12 INFO  GUI:1371 - Accessing customerAccountServices
+2020-08-19 13:26:12 DEBUG User:97 - firstName returned.
+2020-08-19 13:26:14 INFO  GUI:1414 - Opening new joint account.
+2020-08-19 13:26:14 DEBUG User:47 - userID returned.
+2020-08-19 13:26:15 DEBUG AccountDAO:61 - No owners in owner1 match that userID.
+2020-08-19 13:26:15 DEBUG AccountDAO:75 - No owners in owner2 match that userID.
+2020-08-19 13:26:15 INFO  AccountDAO:79 - No owners match that userID.
+2020-08-19 13:26:15 INFO  AccountDAO:81 - Returning all Accounts owned by 3.
+2020-08-19 13:26:16 INFO  GUI:1529 - Returning to Account Services Menu.
+2020-08-19 13:26:16 DEBUG User:77 - userType returned.
+2020-08-19 13:26:16 DEBUG User:77 - userType returned.
+2020-08-19 13:26:16 INFO  GUI:1371 - Accessing customerAccountServices
+2020-08-19 13:26:16 DEBUG User:97 - firstName returned.
+2020-08-19 13:26:18 INFO  GUI:1401 - Opening new joint account.
+2020-08-19 13:26:22 DEBUG User:47 - userID returned.
+2020-08-19 13:26:22 INFO  GUI:1789 - New joint savings account selected.
+2020-08-19 13:26:22 DEBUG User:47 - userID returned.
+2020-08-19 13:26:22 DEBUG Account:29 - New Account object created.
+2020-08-19 13:26:22 DEBUG Account:54 - owners returned.
+2020-08-19 13:26:22 DEBUG Account:64 - accountType returned.
+2020-08-19 13:26:22 DEBUG Account:74 - amount returned.
+2020-08-19 13:26:22 DEBUG Account:84 - status returned.
+2020-08-19 13:26:22 INFO  AccountDAO:207 - Successfully added new Account.
+2020-08-19 13:26:22 INFO  GUI:1791 - New joint savings account created.
+2020-08-19 13:26:24 DEBUG User:77 - userType returned.
+2020-08-19 13:26:24 DEBUG User:77 - userType returned.
+2020-08-19 13:26:24 INFO  GUI:1371 - Accessing customerAccountServices
+2020-08-19 13:26:24 DEBUG User:97 - firstName returned.
+2020-08-19 13:26:26 INFO  GUI:1427 - Calling withdraw...
+2020-08-19 13:26:34 DEBUG User:77 - userType returned.
+2020-08-19 13:26:34 DEBUG User:77 - userType returned.
+2020-08-19 13:26:34 INFO  GUI:1371 - Accessing customerAccountServices
+2020-08-19 13:26:34 DEBUG User:97 - firstName returned.
+2020-08-19 13:26:35 INFO  GUI:1414 - Opening new joint account.
+2020-08-19 13:26:35 DEBUG User:47 - userID returned.
+2020-08-19 13:26:36 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:26:36 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:26:36 INFO  AccountDAO:81 - Returning all Accounts owned by 3.
+2020-08-19 13:26:36 DEBUG Account:54 - owners returned.
+2020-08-19 13:26:36 DEBUG Account:44 - accountID returned.
+2020-08-19 13:26:36 DEBUG Account:64 - accountType returned.
+2020-08-19 13:26:36 DEBUG Account:84 - status returned.
+2020-08-19 13:26:36 DEBUG Account:74 - amount returned.
+2020-08-19 13:26:36 DEBUG Account:94 - update returned.
+2020-08-19 13:26:36 DEBUG Update:32 - updateTime returned.
+2020-08-19 13:26:36 DEBUG Account:94 - update returned.
+2020-08-19 13:26:36 DEBUG Update:40 - updater returned.
+2020-08-19 13:26:37 INFO  GUI:1529 - Returning to Account Services Menu.
+2020-08-19 13:26:37 DEBUG User:77 - userType returned.
+2020-08-19 13:26:37 DEBUG User:77 - userType returned.
+2020-08-19 13:26:37 INFO  GUI:1371 - Accessing customerAccountServices
+2020-08-19 13:26:37 DEBUG User:97 - firstName returned.
+2020-08-19 13:26:38 INFO  GUI:1427 - Calling withdraw...
+2020-08-19 13:26:44 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:26:44 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:26:44 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 13:26:44 DEBUG User:77 - userType returned.
+2020-08-19 13:26:44 DEBUG User:47 - userID returned.
+2020-08-19 13:26:44 DEBUG Update:28 - Full Update object created.
+2020-08-19 13:26:44 DEBUG Account:40 - Full Account object created.
+2020-08-19 13:26:44 INFO  AccountDAO:151 - Returning the found Account.
+2020-08-19 13:26:44 DEBUG Account:54 - owners returned.
+2020-08-19 13:26:44 DEBUG Account:74 - amount returned.
+2020-08-19 13:26:44 WARN  GUI:2048 - Withdraw unsuccessful, amount is greater than balance.
+2020-08-19 13:26:44 DEBUG Account:74 - amount returned.
+2020-08-19 13:26:47 DEBUG User:77 - userType returned.
+2020-08-19 13:26:47 DEBUG User:77 - userType returned.
+2020-08-19 13:26:47 INFO  GUI:1371 - Accessing customerAccountServices
+2020-08-19 13:26:47 DEBUG User:97 - firstName returned.
+2020-08-19 13:26:48 INFO  Driver:21 - Exiting the program.

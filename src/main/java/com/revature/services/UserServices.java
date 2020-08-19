@@ -13,10 +13,12 @@ import com.revature.models.User;
 public class UserServices {
 	private static final Logger log = LogManager.getLogger(UserServices.class);
 	private static UserDAO udao = new UserDAO();
-	private User u;
+	private static User u;
 	
 	public static boolean register(User user) {
-		return udao.addUser(user, 0);
+		udao.addUser(user, 0);
+		log.info("UserID " + user.getUserID() + " has been registered!");
+		return true;
 	}
 	
 	public static boolean isInteger(String input) {
@@ -36,11 +38,13 @@ public class UserServices {
 		if(isInteger(input)) {
 			return Integer.parseInt(input);
 		} else {
+			log.warn("Something has gone seriously wrong.");
 			return -1;
 		}
 	}
 	
 	public User returnUserByName(String userName) {
+		log.debug("Returing User with userName " + userName + ".");
 		u = udao.findByUserName(userName);
 		return u;
 	}
@@ -48,17 +52,24 @@ public class UserServices {
 	public boolean isApproved(User u) {
 		String status = u.getUserStatus();
 		if(status.equals("Approved")) {
+			log.debug("User is Approved.");
 			return true;
 		} else {
+			log.debug("User is Deleted or Pending.");
 			return false;
 		}
 	}
 	
 	public boolean isDeleted(User u) {
 		String status = u.getUserStatus();
-		if(status.equals("Approved")) {
+		if(isApproved(u)) {
+			log.debug("User is Approved.");
+			return false;
+		} else if(status.equals("Pending")) {
+			log.debug("User is Pending.");
 			return false;
 		} else {
+			log.debug("User is Deleted.");
 			return true;
 		}
 	}
@@ -74,10 +85,12 @@ public class UserServices {
 	}
 	
 	public void logOut() {
+		log.info("Logging out current user.");
 		u = null;
 	}
 	
 	public List<User> findAll() {
+		log.debug("Returning a list of all users.");
 		return udao.findAll();
 	}
 	
@@ -113,10 +126,13 @@ public class UserServices {
 	
 	public String typeToString(int userType) {
 		if(userType == 0) {
+			log.debug("User is an Admin.");
 			return "Admin";
 		} else if(userType == 1) {
+			log.debug("User is an Employee.");
 			return "Employee";
 		} else {
+			log.debug("User is a Customer.");
 			return "Customer";
 		}
 	}
@@ -132,6 +148,7 @@ public class UserServices {
 	}
 	
 	public List<User> findPending() {
+		log.debug("Returning a list of all Pending Users.");
 		return udao.findByStatus("Pending");
 	}
 	
@@ -145,9 +162,5 @@ public class UserServices {
 	
 	public boolean changeType(int userID, int userType, int updatingUserID) {
 		return udao.changeType(userID, userType, updatingUserID);
-	}
-	
-	public Update getUpdate(int userID) {
-		return udao.getUpdate(userID);
 	}
 }

@@ -236,7 +236,7 @@ public class UserDAO implements IUserDAO {
 	@Override
 	public boolean changeType(int userID, int userType, int updatingUserID) {
 		try(Connection conn = ConnectionUtility.getConnection()){
-			String sql = "UPDATE users SET userType = ?, updated_by = ? WHERE user_id = ?;";
+			String sql = "UPDATE users SET user_type = ?, updated_by = ? WHERE user_id = ?;";
 			PreparedStatement statement = conn.prepareStatement(sql);
 			int index = 0;
 			statement.setInt(++index, userType);
