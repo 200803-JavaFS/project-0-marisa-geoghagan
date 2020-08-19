@@ -14,5 +14,6 @@ public interface IUserDAO {
 	public Update getUpdate(int userID);
 	public boolean addUser(User u, int updatingUserID); 
 	public boolean changeStatus(int userID, String status, int updatingUserID);
-	public boolean changePassword(int userID, String password);
+	public boolean changePassword(int userID, String password, int updatingUserID);
+	public boolean changeType(int userID, int userType, int updatingUserID);
 }

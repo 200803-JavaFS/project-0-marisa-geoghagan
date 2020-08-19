@@ -27,7 +27,7 @@ public class UserDAO implements IUserDAO {
 			ResultSet result = statement.executeQuery(sql);
 
 			while(result.next()) {
-				User u = new User(result.getInt("user_id"), result.getString("user_name"), result.getString("pass_word"), result.getInt("user_type"), result.getString("user_status"), new Update(result.getTimestamp("update_at"), result.getInt("updated_by")));
+				User u = new User(result.getInt("user_id"), result.getString("user_name"), result.getString("pass_word"), result.getInt("user_type"), result.getString("user_status"), result.getString("first_name"), result.getString("last_name"), new Update(result.getTimestamp("update_at"), result.getInt("updated_by")));
 				list.add(u); 
 			}
 			if(list.isEmpty())
@@ -52,7 +52,7 @@ public class UserDAO implements IUserDAO {
 			List<User> list = new ArrayList<>(); 
 			
 			while(result.next()) {
-				User u = new User(result.getInt("user_id"), result.getString("user_name"), result.getString("pass_word"), result.getInt("user_type"), result.getString("user_status"), new Update(result.getTimestamp("update_at"), result.getInt("updated_by")));
+				User u = new User(result.getInt("user_id"), result.getString("user_name"), result.getString("pass_word"), result.getInt("user_type"), result.getString("user_status"), result.getString("first_name"), result.getString("last_name"), new Update(result.getTimestamp("update_at"), result.getInt("updated_by")));
 				list.add(u); 
 			}
 			if(list.isEmpty())
@@ -76,7 +76,7 @@ public class UserDAO implements IUserDAO {
 			ResultSet result = statement.executeQuery();
 			
 			if(result.next()) {
-				User u = new User(result.getInt("user_id"), result.getString("user_name"), result.getString("pass_word"), result.getInt("user_type"), result.getString("user_status"), new Update(result.getTimestamp("update_at"), result.getInt("updated_by")));
+				User u = new User(result.getInt("user_id"), result.getString("user_name"), result.getString("pass_word"), result.getInt("user_type"), result.getString("user_status"), result.getString("first_name"), result.getString("last_name"), new Update(result.getTimestamp("update_at"), result.getInt("updated_by")));
 				log.info("Returning found user.");
 				return u;
 			} else {
@@ -100,7 +100,7 @@ public class UserDAO implements IUserDAO {
 			ResultSet result = statement.executeQuery();
 			
 			if(result.next()) {
-				User u = new User(result.getInt("user_id"), result.getString("user_name"), result.getString("pass_word"), result.getInt("user_type"), result.getString("user_status"), new Update(result.getTimestamp("update_at"), result.getInt("updated_by")));
+				User u = new User(result.getInt("user_id"), result.getString("user_name"), result.getString("pass_word"), result.getInt("user_type"), result.getString("user_status"), result.getString("first_name"), result.getString("last_name"), new Update(result.getTimestamp("update_at"), result.getInt("updated_by")));
 				log.info("Returning found User.");
 				return u;
 			} else {
@@ -125,7 +125,7 @@ public class UserDAO implements IUserDAO {
 			List<User> list = new ArrayList<>(); 
 			
 			while(result.next()) {
-				User u = new User(result.getInt("user_id"), result.getString("user_name"), result.getString("pass_word"), result.getInt("user_type"), result.getString("user_status"), new Update(result.getTimestamp("update_at"), result.getInt("updated_by")));
+				User u = new User(result.getInt("user_id"), result.getString("user_name"), result.getString("pass_word"), result.getInt("user_type"), result.getString("user_status"), result.getString("first_name"), result.getString("last_name"), new Update(result.getTimestamp("update_at"), result.getInt("updated_by")));
 				list.add(u); 
 			}
 			if(list.isEmpty())
@@ -168,16 +168,16 @@ public class UserDAO implements IUserDAO {
 	@Override
 	public boolean addUser(User u, int updatingUserID) {
 		try(Connection conn = ConnectionUtility.getConnection()){
-			String sql = "INSERT INTO users (user_id, user_name, pass_word, user_type, user_status, update_at, updated_by)" + "VALUES (?, ?, ?, ?, ?, ?, ?);";
+			String sql = "INSERT INTO users (user_id, user_name, pass_word, user_type, user_status, first_name, last_name, update_at, updated_by)" + "VALUES (DEFAULT, ?, ?, ?, ?, ?, ?, DEFAULT, ?);";
 			PreparedStatement statement = conn.prepareStatement(sql);
 			
 			int index = 0;
-			statement.setInt(++index, u.getUserID());
 			statement.setString(++index, u.getUserName());
 			statement.setString(++index, u.getPassword());
 			statement.setInt(++index, u.getUserType());
 			statement.setString(++index, u.getUserStatus());
-			statement.setTimestamp(++index, null);
+			statement.setString(++index, u.getFirstName());
+			statement.setString(++index,  u.getLastName());
 			statement.setInt(++index, updatingUserID);
 			
 			statement.execute();
@@ -213,13 +213,13 @@ public class UserDAO implements IUserDAO {
 	}
 
 	@Override
-	public boolean changePassword(int userID, String password) {
+	public boolean changePassword(int userID, String password, int updatingUserID) {
 		try(Connection conn = ConnectionUtility.getConnection()){
 			String sql = "UPDATE users SET pass_word = ?, updated_by = ? WHERE user_id = ?;";
 			PreparedStatement statement = conn.prepareStatement(sql);
 			int index = 0;
 			statement.setString(++index, password);
-			statement.setInt(++index, userID);
+			statement.setInt(++index, updatingUserID);
 			statement.setInt(++index, userID);
 			
 			statement.execute();
@@ -230,6 +230,27 @@ public class UserDAO implements IUserDAO {
 			e.printStackTrace();
 		}
 		log.error("Connection failed in UserDAO.changePassword().");
+		return false;
+	}
+	
+	@Override
+	public boolean changeType(int userID, int userType, int updatingUserID) {
+		try(Connection conn = ConnectionUtility.getConnection()){
+			String sql = "UPDATE users SET userType = ?, updated_by = ? WHERE user_id = ?;";
+			PreparedStatement statement = conn.prepareStatement(sql);
+			int index = 0;
+			statement.setInt(++index, userType);
+			statement.setInt(++index, updatingUserID);
+			statement.setInt(++index, userID);
+			
+			statement.execute();
+			log.info("Successfully changed the userType.");
+			return true;
+		} catch (SQLException e) {
+			log.warn("Encountered an SQLException in UserDAO.changeType().");
+			e.printStackTrace();
+		}
+		log.error("Connection failed in UserDAO.changeType().");
 		return false;
 	}
 }

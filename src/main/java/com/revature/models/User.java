@@ -10,6 +10,8 @@ public class User {
 	private String password;
 	private int userType;
 	private String userStatus;
+	private String firstName;
+	private String lastName;
 	private Update update;
 
 	public User() {
@@ -17,22 +19,26 @@ public class User {
 		log.debug("Blank User object created.");
 	}
 	
-	public User(String userName, String password, int userType, String userStatus) {
+	public User(String userName, String password, int userType, String userStatus, String firstName, String lastName) {
 		super();
 		this.userName = userName;
 		this.password = password;
 		this.userType = userType;
 		this.userStatus = userStatus;
+		this.firstName = firstName;
+		this.lastName = lastName;
 		log.debug("New User object created.");
 	}
 	
-	public User(int userID, String userName, String password, int userType, String userStatus, Update update) {
+	public User(int userID, String userName, String password, int userType, String userStatus, String firstName, String lastName, Update update) {
 		super();
 		this.userID = userID;
 		this.userName = userName;
 		this.password = password;
 		this.userType = userType;
 		this.userStatus = userStatus;
+		this.firstName = firstName;
+		this.lastName = lastName;
 		this.update = update;
 		log.debug("Full User object created.");
 	}
@@ -87,6 +93,26 @@ public class User {
 		this.userStatus = userStatus;
 	}
 	
+	public String getFirstName() {
+		log.debug("firstName returned.");
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		log.debug("firstName set.");
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		log.debug("lastName returned.");
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		log.debug("lastName set.");
+		this.lastName = lastName;
+	}
+	
 	public Update getUpdate() {
 		log.debug("update returned.");
 		return update;
@@ -100,13 +126,16 @@ public class User {
 	@Override
 	public String toString() {
 		return "User [userID=" + userID + ", userName=" + userName + ", password=" + password + ", userType=" + userType
-				+ ", userStatus=" + userStatus + ", " + update + "]";
+				+ ", userStatus=" + userStatus + ", firstName=" + firstName + ", lastName=" + lastName + ", "
+				+ update + "]";
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result + ((firstName == null) ? 0 : firstName.hashCode());
+		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
 		result = prime * result + ((update == null) ? 0 : update.hashCode());
 		result = prime * result + userID;
@@ -115,7 +144,7 @@ public class User {
 		result = prime * result + userType;
 		return result;
 	}
-
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj) {
@@ -131,6 +160,26 @@ public class User {
 			return false;
 		}
 		User other = (User) obj;
+		if (firstName == null) {
+			log.debug("UserA has a null firstName.");
+			if (other.firstName != null) {
+				log.debug("... but UserB doesn't.");
+				return false;
+			}
+		} else if (!firstName.equals(other.firstName)) {
+			log.debug("These Users have different firstNames.");
+			return false;
+		}
+		if (lastName == null) {
+			log.debug("UserA has a null lastName.");
+			if (other.lastName != null) {
+				log.debug("... but UserB doesn't.");
+				return false;
+			}
+		} else if (!lastName.equals(other.lastName)) {
+			log.debug("These Users have different lastNames.");
+			return false;
+		}
 		if (password == null) {
 			log.debug("UserA has a null password.");
 			if (other.password != null) {

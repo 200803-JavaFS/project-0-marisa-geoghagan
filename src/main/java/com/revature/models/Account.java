@@ -20,13 +20,12 @@ public class Account {
 		log.debug("Blank Account object created.");
 	}
 
-	public Account(int[] owners, boolean accountType, Update update) {
+	public Account(int[] owners, boolean accountType) {
 		super();
 		this.owners = owners;
 		this.accountType = accountType;
 		amount = 0;
 		status = "Pending";
-		this.update = update;
 		log.debug("New Account object created.");
 	}
 	

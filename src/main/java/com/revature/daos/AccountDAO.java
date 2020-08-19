@@ -52,13 +52,12 @@ public class AccountDAO implements IAccountDAO {
 			List<Account> list = new ArrayList<>();
 			boolean found = false;
 			
-			if(result.next()) {
+			while(result.next()) {
 				found = true;
-				while(result.next()) {
-					Account a = new Account(result.getInt("account_id"), new int[] {result.getInt("owner1"), result.getInt("owner2")}, result.getBoolean("account_type"), result.getDouble("amount"), result.getString("account_status"), new Update(result.getTimestamp("update_at"), result.getInt("updated_by")));
-					list.add(a);
-				}
-			} else {
+				Account a = new Account(result.getInt("account_id"), new int[] {result.getInt("owner1"), result.getInt("owner2")}, result.getBoolean("account_type"), result.getDouble("amount"), result.getString("account_status"), new Update(result.getTimestamp("update_at"), result.getInt("updated_by")));
+				list.add(a);
+			}
+			if (list.isEmpty()){
 				log.debug("No owners in owner1 match that userID.");
 			}
 			
@@ -69,11 +68,10 @@ public class AccountDAO implements IAccountDAO {
 			
 			if(result.next()) {
 				found = true;
-				while(result.next()) {
-					Account a = new Account(result.getInt("account_id"), new int[] {result.getInt("owner1"), result.getInt("owner2")}, result.getBoolean("account_type"), result.getDouble("amount"), result.getString("account_status"), new Update(result.getTimestamp("update_at"), result.getInt("updated_by")));
-					list.add(a);
-				}
-			} else {
+				Account a = new Account(result.getInt("account_id"), new int[] {result.getInt("owner1"), result.getInt("owner2")}, result.getBoolean("account_type"), result.getDouble("amount"), result.getString("account_status"), new Update(result.getTimestamp("update_at"), result.getInt("updated_by")));
+				list.add(a);
+			}
+			if (list.isEmpty()){
 				log.debug("No owners in owner2 match that userID.");
 			}
 			
@@ -168,7 +166,7 @@ public class AccountDAO implements IAccountDAO {
 	@Override
 	public Update getUpdate(int accountID) {
 		try(Connection conn = ConnectionUtility.getConnection()){
-			String sql = "SELECT update_at, updated_by FROM accounts WHERE account_type = ?;";
+			String sql = "SELECT update_at, updated_by FROM accounts WHERE account_id = ?;";
 			PreparedStatement statement = conn.prepareStatement(sql);
 			statement.setInt(1, accountID);
 			ResultSet result = statement.executeQuery();
@@ -193,12 +191,11 @@ public class AccountDAO implements IAccountDAO {
 	@Override
 	public boolean addAccount(Account a, int updatingUserID) {
 		try(Connection conn = ConnectionUtility.getConnection()){
-			String sql = "INSERT INTO accounts (account_id, owner1, owner2, account_type, amount, account_status, updated_by)" + "VALUES (?, ?, ?, ?, ?, ?, ?);";
+			String sql = "INSERT INTO accounts (account_id, owner1, owner2, account_type, amount, account_status, updated_by)" + "VALUES (DEFAULT, ?, ?, ?, ?, ?, ?);";
 				PreparedStatement statement = conn.prepareStatement(sql);
 				
 				int[] owners = a.getOwners();
 				int index = 0;
-				statement.setInt(++index, a.getAccountID());
 				statement.setInt(++index, owners[0]);
 				statement.setInt(++index, owners[1]);
 				statement.setBoolean(++index, a.getAccountType());
@@ -227,7 +224,7 @@ public class AccountDAO implements IAccountDAO {
 			ResultSet result = statement.executeQuery();
 			
 			if(result.next()) {
-				oldAmount = result.getDouble(Double.toString(amount));
+				oldAmount = result.getDouble("amount");
 			}
 			else {
 				log.info("No Account with that accountID exists.");
@@ -305,12 +302,12 @@ public class AccountDAO implements IAccountDAO {
 	@Override
 	public boolean changeStatus(int accountID, String status, int updatingUserID) {
 		try(Connection conn = ConnectionUtility.getConnection()){
-			String sql = "UPDATE users SET user_status = ?, updated_by = ? WHERE user_id = ?;";
+			String sql = "UPDATE accounts SET account_status = ?, updated_by = ? WHERE account_id = ?;";
 			PreparedStatement statement = conn.prepareStatement(sql);
 			int index = 0;
-			statement.setString(index++, status);
-			statement.setInt(index++, updatingUserID);
-			statement.setInt(index++, accountID);
+			statement.setString(++index, status);
+			statement.setInt(++index, updatingUserID);
+			statement.setInt(++index, accountID);
 			
 			statement.execute();
 			log.info("Successfully changed the accountStatus.");
