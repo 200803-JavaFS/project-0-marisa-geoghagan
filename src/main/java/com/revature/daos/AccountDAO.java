@@ -217,24 +217,9 @@ public class AccountDAO implements IAccountDAO {
 	@Override
 	public boolean updateAmount(int accountID, double amount, int updatingUserID) {
 		try(Connection conn = ConnectionUtility.getConnection()){
-			double oldAmount;
-			String sql = "SELECT amount FROM accounts WHERE account_id = ?;";
+			String sql = "UPDATE accounts SET amount = ?, updated_by = ? WHERE account_id = ?;";
 			PreparedStatement statement = conn.prepareStatement(sql);
-			statement.setInt(1, accountID);
-			ResultSet result = statement.executeQuery();
-			
-			if(result.next()) {
-				oldAmount = result.getDouble("amount");
-			}
-			else {
-				log.info("No Account with that accountID exists.");
-				return false;
-			}			
-			
-			double newAmount = oldAmount + amount;
-			sql = "UPDATE accounts SET amount = ?, updated_by = ? WHERE account_id = ?;";
-			statement = conn.prepareStatement(sql);
-			statement.setDouble(1, newAmount);
+			statement.setDouble(1, amount);
 			statement.setInt(2, updatingUserID);
 			statement.setInt(3, accountID);
 			
@@ -252,9 +237,11 @@ public class AccountDAO implements IAccountDAO {
 	@Override
 	public boolean transfer(int accountID1, int accountID2, double amount, int updatingUserID) {
 		try(Connection conn = ConnectionUtility.getConnection()){
-			updateAmount(accountID1, (amount * -1), updatingUserID);
+			Account a1 = findByAccountID(accountID1);
+			Account a2 = findByAccountID(accountID2);
+			updateAmount(accountID1, a1.getAmount() - amount, updatingUserID);
 			log.info("Successfully updated " + Integer.toString(accountID1) + ".");
-			updateAmount(accountID2, amount, updatingUserID);
+			updateAmount(accountID2, a2.getAmount() + amount, updatingUserID);
 			log.info("Successfully updated " + Integer.toString(accountID2) + ".");
 			return true;
 		} catch (SQLException e) {

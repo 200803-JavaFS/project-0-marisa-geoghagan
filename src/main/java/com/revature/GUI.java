@@ -1230,7 +1230,7 @@ public class GUI extends Frame {
 				@Override
 				public void actionPerformed(ActionEvent evt) {
 					log.info("Changing Status as Admin.");
-					changeAccountStatusAdminFrame();
+					changeAccountStatusFrame();
 					adminAccountServicesDisplay.setVisible(false);
 				}
 			});
@@ -1776,7 +1776,7 @@ public class GUI extends Frame {
 					log.info("New joint checking account selected.");
 					if(aServices.openAccount(true, owners, user.getUserID())) {
 						log.info("New joint checking account created.");
-						JOptionPane.showMessageDialog(openJointAccountDisplay, "Your new join Checking account must be approved before it can be used. Please wait patiently for approval.", "Message", JOptionPane.PLAIN_MESSAGE);
+						JOptionPane.showMessageDialog(openJointAccountDisplay, "Your new joint Checking account must be approved before it can be used. Please wait patiently for approval.", "Message", JOptionPane.PLAIN_MESSAGE);
 						accountServicesFrame();
 						openJointAccountDisplay.setVisible(false);
 					} else {
@@ -1823,178 +1823,178 @@ public class GUI extends Frame {
 		add(openJointAccountDisplay);
 		setVisible(true);
 	}
-
-	public void changeAccountStatusAdminFrame() {
-		Panel changeAccountStatusAdminDisplay = new Panel(new GridBagLayout());
-		GridBagConstraints c = new GridBagConstraints();
-		c.fill = GridBagConstraints.HORIZONTAL;
-		c.insets = new Insets(5,5,5,5);
-		c.gridx = 0;
-		c.gridy = 0;
-		changeAccountStatusAdminDisplay.add(new Label("Account ID: "), c);
-
-		c.gridx = 1;
-		c.gridy = 0;
-		TextField tfUserID = new TextField(30);
-		changeAccountStatusAdminDisplay.add(tfUserID, c);
-
-		c.insets = new Insets(0,0,0,0);
-		c.gridx = 2;
-		c.gridy = 0;
-		c.gridheight = 2;
-		ButtonGroup bg = new ButtonGroup();
-		Panel buttonPanel = new Panel();
-		JRadioButton pending = new JRadioButton("Pending", true);
-		buttonPanel.add(pending);
-		bg.add(pending);
-		JRadioButton approved = new JRadioButton("Approved");
-		buttonPanel.add(approved);
-		bg.add(approved);
-		JRadioButton closed = new JRadioButton("Closed");
-		buttonPanel.add(closed);
-		bg.add(closed);
-		changeAccountStatusAdminDisplay.add(buttonPanel, c);
-
-		c.insets = new Insets(10,0,0,10);
-		c.gridwidth = 2;
-		c.gridx = 0;
-		c.gridy = 1;
-		Button btnChange = new Button("Change Status");
-		btnChange.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent evt) {
-				int accountID = aServices.stringToInt(tfUserID.getText());
-				Account found = aServices.findByID(accountID);
-				if (found == null) {
-					JOptionPane.showMessageDialog(changeAccountStatusAdminDisplay, "No such Account ID exists in our database.", "Warning!", JOptionPane.WARNING_MESSAGE);
-					accountServicesFrame();
-					changeAccountStatusAdminDisplay.setVisible(false);
-				} else {
-					if(pending.isSelected()) {
-						log.info("Changed to Pending status.");
-						uServices.changeStatus(accountID, "Pending", user.getUserID());
-						JOptionPane.showMessageDialog(changeAccountStatusAdminDisplay, "Status successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
-						accountServicesFrame();
-						changeAccountStatusAdminDisplay.setVisible(false);
-					} else if(approved.isSelected()) {
-						log.info("Changed to Approved status.");
-						uServices.changeStatus(accountID, "Approved", user.getUserID());
-						JOptionPane.showMessageDialog(changeAccountStatusAdminDisplay, "Status successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
-						accountServicesFrame();
-						changeAccountStatusAdminDisplay.setVisible(false);
-					} else if(closed.isSelected()) {
-						log.info("Changed to Closed status.");
-						uServices.changeStatus(accountID, "Deleted", user.getUserID());
-						JOptionPane.showMessageDialog(changeAccountStatusAdminDisplay, "Status successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
-						accountServicesFrame();
-						changeAccountStatusAdminDisplay.setVisible(false);
-					} else {
-						log.warn("Something went horribly wrong.");
-						accountServicesFrame();
-						changeAccountStatusAdminDisplay.setVisible(false);
-					}
-				}
-			}
-		});
-		changeAccountStatusAdminDisplay.add(btnChange, c);
-
-		c.insets = new Insets(10,10,0,0);
-		c.gridx = 2;
-		c.gridy = 1;
-		Button btnBack = new Button("Back");
-		btnBack.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent evt) {
-				accountServicesFrame();
-				changeAccountStatusAdminDisplay.setVisible(false);
-			}
-		});
-		changeAccountStatusAdminDisplay.add(btnBack, c);
-
-		add(changeAccountStatusAdminDisplay);
-		setVisible(true);
-	}
 	
 	public void changeAccountStatusFrame() {
-		Panel changeAccountStatusDisplay = new Panel(new GridBagLayout());
-		GridBagConstraints c = new GridBagConstraints();
-		c.fill = GridBagConstraints.HORIZONTAL;
-		c.insets = new Insets(5,5,5,5);
-		c.gridx = 0;
-		c.gridy = 0;
-		changeAccountStatusDisplay.add(new Label("Account ID: "), c);
+		if(user.getUserType() == 0) {
+			Panel changeAccountStatusAdminDisplay = new Panel(new GridBagLayout());
+			GridBagConstraints c = new GridBagConstraints();
+			c.fill = GridBagConstraints.HORIZONTAL;
+			c.insets = new Insets(5,5,5,5);
+			c.gridx = 0;
+			c.gridy = 0;
+			changeAccountStatusAdminDisplay.add(new Label("Account ID: "), c);
 
-		c.gridx = 1;
-		c.gridy = 0;
-		TextField tfUserID = new TextField(30);
-		changeAccountStatusDisplay.add(tfUserID, c);
+			c.gridx = 1;
+			c.gridy = 0;
+			TextField tfUserID = new TextField(30);
+			changeAccountStatusAdminDisplay.add(tfUserID, c);
 
-		c.insets = new Insets(0,0,0,0);
-		c.gridx = 2;
-		c.gridy = 0;
-		c.gridheight = 2;
-		ButtonGroup bg = new ButtonGroup();
-		Panel buttonPanel = new Panel();
-		JRadioButton pending = new JRadioButton("Pending", true);
-		buttonPanel.add(pending);
-		bg.add(pending);
-		JRadioButton approved = new JRadioButton("Approved");
-		buttonPanel.add(approved);
-		bg.add(approved);
-		changeAccountStatusDisplay.add(buttonPanel, c);
+			c.insets = new Insets(0,0,0,0);
+			c.gridx = 2;
+			c.gridy = 0;
+			c.gridheight = 2;
+			ButtonGroup bg = new ButtonGroup();
+			Panel buttonPanel = new Panel();
+			JRadioButton pending = new JRadioButton("Pending", true);
+			buttonPanel.add(pending);
+			bg.add(pending);
+			JRadioButton approved = new JRadioButton("Approved");
+			buttonPanel.add(approved);
+			bg.add(approved);
+			JRadioButton closed = new JRadioButton("Closed");
+			buttonPanel.add(closed);
+			bg.add(closed);
+			changeAccountStatusAdminDisplay.add(buttonPanel, c);
 
-		c.insets = new Insets(10,0,0,10);
-		c.gridwidth = 2;
-		c.gridx = 0;
-		c.gridy = 1;
-		Button btnChange = new Button("Change Status");
-		btnChange.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent evt) {
-				int accountID = aServices.stringToInt(tfUserID.getText());
-				Account found = aServices.findByID(accountID);
-				if (found == null) {
-					JOptionPane.showMessageDialog(changeAccountStatusDisplay, "No such Account ID exists in our database.", "Warning!", JOptionPane.WARNING_MESSAGE);
-					accountServicesFrame();
-					changeAccountStatusDisplay.setVisible(false);
-				} else {
-					if(pending.isSelected()) {
-						log.info("Changed to Pending status.");
-						uServices.changeStatus(accountID, "Pending", user.getUserID());
-						JOptionPane.showMessageDialog(changeAccountStatusDisplay, "Status successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
+			c.insets = new Insets(10,0,0,10);
+			c.gridwidth = 2;
+			c.gridx = 0;
+			c.gridy = 1;
+			Button btnChange = new Button("Change Status");
+			btnChange.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					int accountID = aServices.stringToInt(tfUserID.getText());
+					Account found = aServices.findByID(accountID);
+					if (found == null) {
+						JOptionPane.showMessageDialog(changeAccountStatusAdminDisplay, "No such Account ID exists in our database.", "Warning!", JOptionPane.WARNING_MESSAGE);
 						accountServicesFrame();
-						changeAccountStatusDisplay.setVisible(false);
-					} else if(approved.isSelected()) {
-						log.info("Changed to Approved status.");
-						uServices.changeStatus(accountID, "Approved", user.getUserID());
-						JOptionPane.showMessageDialog(changeAccountStatusDisplay, "Status successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
+						changeAccountStatusAdminDisplay.setVisible(false);
+					} else {
+						if(pending.isSelected()) {
+							log.info("Changed to Pending status.");
+							aServices.changeStatus(accountID, "Pending", user.getUserID());
+							JOptionPane.showMessageDialog(changeAccountStatusAdminDisplay, "Status successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
+							accountServicesFrame();
+							changeAccountStatusAdminDisplay.setVisible(false);
+						} else if(approved.isSelected()) {
+							log.info("Changed to Approved status.");
+							aServices.changeStatus(accountID, "Approved", user.getUserID());
+							JOptionPane.showMessageDialog(changeAccountStatusAdminDisplay, "Status successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
+							accountServicesFrame();
+							changeAccountStatusAdminDisplay.setVisible(false);
+						} else if(closed.isSelected()) {
+							log.info("Changed to Closed status.");
+							aServices.changeStatus(accountID, "Deleted", user.getUserID());
+							JOptionPane.showMessageDialog(changeAccountStatusAdminDisplay, "Status successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
+							accountServicesFrame();
+							changeAccountStatusAdminDisplay.setVisible(false);
+						} else {
+							log.warn("Something went horribly wrong.");
+							accountServicesFrame();
+							changeAccountStatusAdminDisplay.setVisible(false);
+						}
+					}
+				}
+			});
+			changeAccountStatusAdminDisplay.add(btnChange, c);
+
+			c.insets = new Insets(10,10,0,0);
+			c.gridx = 2;
+			c.gridy = 1;
+			Button btnBack = new Button("Back");
+			btnBack.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					accountServicesFrame();
+					changeAccountStatusAdminDisplay.setVisible(false);
+				}
+			});
+			changeAccountStatusAdminDisplay.add(btnBack, c);
+
+			add(changeAccountStatusAdminDisplay);
+			setVisible(true);
+		} else {
+			Panel changeAccountStatusDisplay = new Panel(new GridBagLayout());
+			GridBagConstraints c = new GridBagConstraints();
+			c.fill = GridBagConstraints.HORIZONTAL;
+			c.insets = new Insets(5,5,5,5);
+			c.gridx = 0;
+			c.gridy = 0;
+			changeAccountStatusDisplay.add(new Label("Account ID: "), c);
+	
+			c.gridx = 1;
+			c.gridy = 0;
+			TextField tfUserID = new TextField(30);
+			changeAccountStatusDisplay.add(tfUserID, c);
+	
+			c.insets = new Insets(0,0,0,0);
+			c.gridx = 2;
+			c.gridy = 0;
+			c.gridheight = 2;
+			ButtonGroup bg = new ButtonGroup();
+			Panel buttonPanel = new Panel();
+			JRadioButton pending = new JRadioButton("Pending", true);
+			buttonPanel.add(pending);
+			bg.add(pending);
+			JRadioButton approved = new JRadioButton("Approved");
+			buttonPanel.add(approved);
+			bg.add(approved);
+			changeAccountStatusDisplay.add(buttonPanel, c);
+	
+			c.insets = new Insets(10,0,0,10);
+			c.gridwidth = 2;
+			c.gridx = 0;
+			c.gridy = 1;
+			Button btnChange = new Button("Change Status");
+			btnChange.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					int accountID = aServices.stringToInt(tfUserID.getText());
+					Account found = aServices.findByID(accountID);
+					if (found == null) {
+						JOptionPane.showMessageDialog(changeAccountStatusDisplay, "No such Account ID exists in our database.", "Warning!", JOptionPane.WARNING_MESSAGE);
 						accountServicesFrame();
 						changeAccountStatusDisplay.setVisible(false);
 					} else {
-						log.warn("Something went horribly wrong.");
-						accountServicesFrame();
-						changeAccountStatusDisplay.setVisible(false);
+						if(pending.isSelected()) {
+							log.info("Changed to Pending status.");
+							aServices.changeStatus(accountID, "Pending", user.getUserID());
+							JOptionPane.showMessageDialog(changeAccountStatusDisplay, "Status successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
+							accountServicesFrame();
+							changeAccountStatusDisplay.setVisible(false);
+						} else if(approved.isSelected()) {
+							log.info("Changed to Approved status.");
+							aServices.changeStatus(accountID, "Approved", user.getUserID());
+							JOptionPane.showMessageDialog(changeAccountStatusDisplay, "Status successfully changed.", "Message", JOptionPane.PLAIN_MESSAGE);
+							accountServicesFrame();
+							changeAccountStatusDisplay.setVisible(false);
+						} else {
+							log.warn("Something went horribly wrong.");
+							accountServicesFrame();
+							changeAccountStatusDisplay.setVisible(false);
+						}
 					}
 				}
-			}
-		});
-		changeAccountStatusDisplay.add(btnChange, c);
-
-		c.insets = new Insets(10,10,0,0);
-		c.gridx = 2;
-		c.gridy = 1;
-		Button btnBack = new Button("Back");
-		btnBack.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent evt) {
-				accountServicesFrame();
-				changeAccountStatusDisplay.setVisible(false);
-			}
-		});
-		changeAccountStatusDisplay.add(btnBack, c);
-
-		add(changeAccountStatusDisplay);
-		setVisible(true);
+			});
+			changeAccountStatusDisplay.add(btnChange, c);
+	
+			c.insets = new Insets(10,10,0,0);
+			c.gridx = 2;
+			c.gridy = 1;
+			Button btnBack = new Button("Back");
+			btnBack.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent evt) {
+					accountServicesFrame();
+					changeAccountStatusDisplay.setVisible(false);
+				}
+			});
+			changeAccountStatusDisplay.add(btnBack, c);
+	
+			add(changeAccountStatusDisplay);
+			setVisible(true);
+		}
 	}
 	
 	public void withdrawFrame() {
@@ -2046,8 +2046,7 @@ public class GUI extends Frame {
 					JOptionPane.showMessageDialog(withdrawDisplay, "That account isn't approved yet. Thank you for your patience.", "Warning!", JOptionPane.WARNING_MESSAGE);
 					withdrawDisplay.setVisible(false);
 					withdrawFrame();
-				}
-				if (amount < 0) {
+				} else if (amount < 0) {
 					log.warn("Negative amount entered for withdraw.");
 					JOptionPane.showMessageDialog(withdrawDisplay, "Please enter a positive amount.", "Warning!", JOptionPane.WARNING_MESSAGE);
 					withdrawDisplay.setVisible(false);
@@ -2061,7 +2060,7 @@ public class GUI extends Frame {
 					log.info("Attempting to withdraw...");
 					if(aServices.withdraw(account.getAccountID(), amount, user.getUserID())) {
 						log.info("Withdraw successful!");
-						JOptionPane.showMessageDialog(withdrawDisplay, "Amount successfully withdrawn.", "Message", JOptionPane.PLAIN_MESSAGE);
+						JOptionPane.showMessageDialog(withdrawDisplay, "$" + amount + " successfully withdrawn.\nNew account balance is $" + (account.getAmount() - amount) + ".", "Message", JOptionPane.PLAIN_MESSAGE);
 					} else {
 						log.warn("Withdraw unsuccessful.");
 						JOptionPane.showMessageDialog(withdrawDisplay, "Withdrawl was unsuccessful; please contact an administrator.", "Warning!", JOptionPane.WARNING_MESSAGE);
@@ -2137,8 +2136,7 @@ public class GUI extends Frame {
 					JOptionPane.showMessageDialog(depositDisplay, "That account isn't approved yet. Thank you for your patience.", "Warning!", JOptionPane.WARNING_MESSAGE);
 					depositDisplay.setVisible(false);
 					depositFrame();
-				}
-				if (amount < 0) {
+				} else if (amount < 0) {
 					log.warn("Negative amount entered for deposit.");
 					JOptionPane.showMessageDialog(depositDisplay, "Please enter a positive amount.", "Warning!", JOptionPane.WARNING_MESSAGE);
 					depositDisplay.setVisible(false);
@@ -2147,7 +2145,7 @@ public class GUI extends Frame {
 					log.info("Attempting to deposit...");
 					if(aServices.deposit(account.getAccountID(), amount, user.getUserID())) {
 						log.info("Deposit successful!");
-						JOptionPane.showMessageDialog(depositDisplay, "Amount successfully deposited.", "Message", JOptionPane.PLAIN_MESSAGE);
+						JOptionPane.showMessageDialog(depositDisplay, "$" + amount + " successfully deposited.\nNew account balance is $" + (account.getAmount() + amount) + ".", "Message", JOptionPane.PLAIN_MESSAGE);
 					} else {
 						log.warn("Deposit unsuccessful.");
 						JOptionPane.showMessageDialog(depositDisplay, "Deposit was unsuccessful; please contact an administrator.", "Warning!", JOptionPane.WARNING_MESSAGE);
@@ -2212,8 +2210,8 @@ public class GUI extends Frame {
 		c.gridwidth = 3;
 		c.gridx = 0;
 		c.gridy = 1;
-		Button btnChange = new Button("Change Status");
-		btnChange.addActionListener(new ActionListener() {
+		Button btnTransfer = new Button("Transfer");
+		btnTransfer.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent evt) {
 				double amount = aServices.stringToDouble(tfAmount.getText());
@@ -2228,13 +2226,12 @@ public class GUI extends Frame {
 					transferDisplay.setVisible(false);
 					transferFrame();
 				}
-				if (!account.getStatus().equals("Approved")) {
+				if (!giving.getStatus().equals("Approved") || !receiving.getStatus().equals("Approved")) {
 					log.warn("Account has not been approved.");
-					JOptionPane.showMessageDialog(transferDisplay, "That account isn't approved yet. Thank you for your patience.", "Warning!", JOptionPane.WARNING_MESSAGE);
+					JOptionPane.showMessageDialog(transferDisplay, "One of those accounts aren't approved yet. Thank you for your patience.", "Warning!", JOptionPane.WARNING_MESSAGE);
 					transferDisplay.setVisible(false);
 					withdrawFrame();
-				}
-				if (amount < 0) {
+				} else if (amount < 0) {
 					log.warn("Negative amount entered for transfer.");
 					JOptionPane.showMessageDialog(transferDisplay, "Please enter a positive amount.", "Warning!", JOptionPane.WARNING_MESSAGE);
 					transferDisplay.setVisible(false);
@@ -2248,13 +2245,13 @@ public class GUI extends Frame {
 					log.info("Transferring amount...");
 					aServices.transfer(giving.getAccountID(), receiving.getAccountID(), amount, user.getUserID());
 					log.info("Transfer successful.");
-					JOptionPane.showMessageDialog(transferDisplay, "Amount successfully transferred.", "Message", JOptionPane.PLAIN_MESSAGE);
+					JOptionPane.showMessageDialog(transferDisplay, "$" + amount + " successfully transferred.\nNew account balance is $" + (giving.getAmount() - amount) + ".", "Message", JOptionPane.PLAIN_MESSAGE);
 					transferDisplay.setVisible(false);
 					accountServicesFrame();
 				}
 			}
 		});
-		transferDisplay.add(btnChange, c);
+		transferDisplay.add(btnTransfer, c);
 
 		c.insets = new Insets(10,10,0,0);
 		c.gridx = 3;

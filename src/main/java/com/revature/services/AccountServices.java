@@ -126,24 +126,29 @@ public class AccountServices {
 		}
 	}
 	
+	public boolean changeStatus(int userID, String status, int updatingUserID) {
+		return adao.changeStatus(userID, status, updatingUserID);
+	}
+	
 	public boolean openAccount(boolean type, int[] owners, int updatingUserID) {
 		log.info("UserID " + updatingUserID + " created a new " + typeToString(type) + " account owned by " + owners[0] + " and " + owners[1] + ".");
 		return adao.addAccount(new Account(owners, type), updatingUserID);
 	}
 	
 	public boolean withdraw(int accountID, double amount, int updatingUserID) {
-		log.info("UserID " + updatingUserID + "withdrew $" + amount + " from accountID " + accountID + ".");
+		log.info("UserID " + updatingUserID + " withdrew $" + amount + " from accountID " + accountID + ".");
 		double updated = checkAmount(accountID) - amount;
 		return adao.updateAmount(accountID, updated, updatingUserID);
 	}
 	
 	public boolean deposit(int accountID, double amount, int updatingUserID) {
-		log.info("UserID " + updatingUserID + "deposited $" + amount + " into accountID " + accountID + ".");
+		log.info("UserID " + updatingUserID + " deposited $" + amount + " into accountID " + accountID + ".");
 		double updated = checkAmount(accountID) + amount;
 		return adao.updateAmount(accountID, updated, updatingUserID);
 	}
 	
 	public boolean transfer(int accountID1, int accountID2, double amount, int updatingUserID) {
+		double updated = checkAmount(accountID1) + amount;
 		log.info("Transferred $" + amount + " from accountID " + accountID1 + " to accountID " + accountID2 + ".");
 		return adao.transfer(accountID1, accountID2, amount, updatingUserID);
 	}
